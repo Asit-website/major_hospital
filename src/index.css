@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-#app { height: 100% }
+/* #app { height: 100% } */
+
 html,
 body {
-  position: relative;
-  height: 100%;
+  /* position: relative; */
+  /* height: 100%; */
+  overflow-x: hidden;
 }
 
 body {
@@ -25,7 +27,6 @@ body {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-
   /* Center slide text vertically */
   /* display: -webkit-box;
   display: -ms-flexbox;
@@ -46,4 +47,327 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.home-pop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0004;
+  z-index: 1000;
+  overflow: auto;
+}
+.home-pop::-webkit-scrollbar{
+  display: none;
+}
+.popup-container {
+  max-width: 675px;
+  width: 100%;
+  background: white;
+  padding: 0px 0px;
+  border-radius: 10px;
+  margin: 150px auto;
+
+}
+.popup-container h2{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+.popup-container .apo{
+  background-color: #FCD44B;
+  padding: 20px 0px;
+  border-radius: 10px;
+}
+.intle img{
+  width: 15px;
+}
+.home-pop .intle{
+  color: #ffffff;
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  font-size: 20px;
+  /* top: 1.5rem; */
+  z-index: 90;
+  /* right: 25rem; */
+  cursor: pointer;
+  left: 68%;
+  top: 205px;
+}
+.popup-container form{
+  width: 100%;
+  padding: 30px 70px;
+}
+.popup-container form input,
+.popup-container form select{
+  border-bottom: 1px solid #BCBABA;
+  outline: none;
+  color: #222F3E;
+  font-family: "Medium";
+  font-size: 19.5px;
+}
+.popup-container form input[type="date"]{
+  border-bottom: 1px solid #BCBABA;
+  outline: none;
+  color: #222F3E;
+  font-family: "Medium";
+  font-size: 19.5px;
+}
+.popup-container form label{
+  color: #222F3E;
+  font-family: "Medium";
+  font-size: 19.5px;
+}
+.label2{
+  font-family: gilroy;
+  font-weight: 700;
+}
+.popsub{
+  background-color: #E74C3C;
+  width: 170px;
+  height: 40px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 20px;
+  color: #ffffff;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 15px;
+}
+.contact-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-image: url('./images/group.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 60px;
+}
+.contact-back .sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.sect h2{
+  color: #ffffff;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+.any-question{
+  padding: 60px 160px;
+}
+.contact-header{
+  overflow: hidden;
+}
+.contact-header h2{
+   color: #222F3E;
+   font-family: gilroy;
+   font-weight: 700;
+   font-size: 25px;
+   text-align: center;
+   letter-spacing: 1px;
+}
+.contact-header p{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  line-height: 10px;
+}
+.two-side-cont{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+.two-side-cont label{
+  color: #000;
+  position: relative;
+  top: 40px;
+  font-family: gilroy;
+   font-weight: 700;
+   font-size: 16px;
+   padding: 0 20px;
+}
+.two-side-cont input::placeholder,
+.two-side-cont textarea::placeholder{
+  color: #222F3E;
+  font-size: 12px;
+  font-family: "Medium";
+  position: relative;
+  top: 8px;
+}
+.input-fields1{
+  margin-right: 20px;
+}
+
+.textarea1 textarea::placeholder{
+  font-size: 16.5px;
+}
+.input-fields1 input,
+.input-fields1 select,
+textarea{
+  border: 1px solid rgba(191, 191, 201, 0.5);
+  outline: none;
+  width: 500px;
+  height: 70px;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.input-fields1 select{
+ margin-top: 10px;
+}
+.textarea1{
+  margin-left: 20px;
+}
+.textarea1 textarea{
+  border: 1px solid rgba(191, 191, 201, 0.5);
+  outline: none;
+  max-width: 100%;
+  height: 375px;
+  resize: none;
+  width: 500px;
+}
+.footer{
+  padding: 40px 60px;
+}
+footer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.first-foot h3{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 18px;
+}
+.foot-para{
+  margin-top: 16px;
+}
+.foot-para p{
+  color: #222F3E;
+  font-family: "Medium";
+  opacity: 0.7;
+  font-size: 15px;
+  margin: 6px 0px;
+}
+.second-foot h3{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 18px;
+}
+.third-foot h3{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 18px;
+}
+.fourth-foot h3{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 18px;
+}
+.select-foot{
+  margin-top: 22px;
+}
+.select-foot select{
+  border: 1px solid #E2E2E4;
+  width: 280px;
+  max-width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  font-family: gilroy;
+  font-weight: 600;
+  font-size: 14.5px;
+  color: #484848;
+  padding: 0 15px;
+  letter-spacing: .5px;
+  outline: none;
+}
+.hours{
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: 60px;
+  width: 280px;
+  border-radius: 10px;
+  max-width: 100%;
+  padding: 0px 15px;
+}
+.hours1{
+  background-color: #E65344;
+  border: 1.5px solid #00B9F2;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: relative;
+}
+.hours1 img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 13px;
+}
+.hours-text{
+  margin-left: 10px;
+}
+.hours-text p{
+ line-height: 18px;
+  color: #E65344;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 14px;
+}
+.hours-text span{
+  color: #484848;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 15px;
+}
+.appoint-req{
+  margin-top: 45px;
+}
+.appoint-req button{
+  border: 2px solid #E65344;
+  width: 270px;
+  height: 42px;
+  border-radius: 20px;
+  color: #E65344;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+.logo-foot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.logo-foot img{
+  width: 150px;
 }

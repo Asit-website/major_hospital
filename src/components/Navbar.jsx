@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { BsGeoAlt, BsGlobe2, BsChevronDown, BsSearch } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 import  navLogo  from '../images/navigation-logo.png';
 
 export const Navbar = () => {
@@ -33,7 +34,7 @@ export const Navbar = () => {
         <div className='flex items-center'>
             <p className='mr-2'>About Us</p>
             <p className='mr-2'>Career</p>
-            <p className='mr-2'>Contact Us</p>
+           <NavLink to="/contact"><p className='mr-2'>Contact Us</p></NavLink>
             <div className='verticalDivider'/>
         </div>
 
@@ -48,10 +49,10 @@ export const Navbar = () => {
       {/* ./Upper Navigation */}
       {/* Main Navigation*/}
       <div className='main-navigation flex justify-around items-center bottom-divider'>
-        <div className='nav-logo'>
-          <img src={navLogo}/>
+       <NavLink to="/"> <div className='nav-logo'>
+          <img  src={navLogo}/>
         </div>
-
+        </NavLink>
         <div className='main-menu-items flex justify-between'>
           <p>Find a Doctor</p>
           <p>Book Health Check-Up</p>

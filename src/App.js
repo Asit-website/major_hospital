@@ -2,12 +2,22 @@ import './App.css';
 import './styles/home.css'
 import { Navbar } from './components/Navbar';
 import { Home } from './screens/Home';
-
+import { useState } from 'react';
+import {BrowserRouter as Router, Routes,Route} from 'react-router-dom';
+import Contact from './screens/Contact';
+import Footer from './components/Footer';
 function App() {
+  const [apointPop,setApointPop] = useState(false);
   return (
-    <div >
-      <Home/>
-    </div>
+    <Router>
+      
+      <Routes>
+          <Route exact path='/' element={<Home apointPop={apointPop} setApointPop={setApointPop}/>}/>
+          <Route exact path='/contact' element={<Contact/>}/>
+      </Routes>
+      <Footer/>
+    </Router>
+    
   );
 }
 
