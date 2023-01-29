@@ -260,6 +260,12 @@ footer{
   font-weight: 700;
   font-size: 18px;
 }
+.first-foot h4{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 16px;
+}
 .foot-para{
   margin-top: 16px;
 }
@@ -370,4 +376,12 @@ footer{
 }
 .logo-foot img{
   width: 150px;
+}
+.social-link{
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.social-link img{
+  width: 22px;
 }

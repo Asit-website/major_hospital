@@ -1,6 +1,10 @@
 import React from 'react';
 import call from '../images/call.png';
 import navigation from '../images/navigation-logo.png'
+import fb from '../images/fb.png'
+import insta from '../images/insta.png'
+import twit from '../images/twit.png'
+import youtube from '../images/youtube.png'
 const Footer = () => {
   return (
     <>
@@ -13,6 +17,16 @@ const Footer = () => {
                 <p>Departments</p>
                 <p>Doctors</p>
                 <p>Location</p>
+            </div>
+           
+            <div className="social mt-6">
+            <h4>Follow us</h4>
+            <div className="social-link">
+                <img  src={fb} alt="" />
+                <img className='ml-4' src={twit} alt="" />
+                <img className='ml-4' src={insta} alt="" />
+                <img className='ml-4' src={youtube} alt="" />
+            </div>
             </div>
          </div>
          <div className='second-foot'>
