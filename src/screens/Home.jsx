@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { AppointmentForm } from '../components/AppointmentForm'
 import { Navbar } from '../components/Navbar'
+import ApointmentPopup from '../popup/ApointmentPopup'
 
 const specialists = [
   {
@@ -29,7 +30,7 @@ const specialists = [
   },
 ]
 
-export const Home = () => {
+export const Home = ({apointPop,setApointPop}) => {
 
   const [selSpecialist, setSelSpecialist] = useState(0);
 
@@ -37,6 +38,7 @@ export const Home = () => {
     setSelSpecialist(id);
   }
   return (
+    <>
     <div>
         <Navbar/>
         {/** Banner */}
@@ -49,7 +51,7 @@ export const Home = () => {
                     <p className='text-2xl text-gray-800 my-3'>The hospital you trust to care for those
                     you love.</p>
 
-                    <button className='yellow-btn my-5 '>Book an Appointment</button>
+                    <button onClick={()=> setApointPop(true)} className='yellow-btn my-5 '>Book an Appointment</button>
                 </div>
             </div>
 
@@ -85,5 +87,10 @@ export const Home = () => {
 
 
     </div>
+
+    {
+       apointPop && <ApointmentPopup setApointPop={setApointPop}/>
+    }
+    </>
   )
 }
