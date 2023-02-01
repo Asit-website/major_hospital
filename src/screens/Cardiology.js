@@ -1,16 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Navbar } from '../components/Navbar';
-import vect from '../images/vect.png';
-import dr from '../images/dr.png';
-import dr1 from '../images/dr1.png';
-import dr2 from '../images/dr2.png';
-import untar from '../images/untar.png';
-import dr3 from '../images/dr3.png'
-import half from '../images/half.png'
 import cardiologyApi from '../api/cardilogiApi';
 import ApointmentPopup from '../popup/ApointmentPopup';
+import { Link } from 'react-router-dom';
 const Cardiology = ({apointPop,setApointPop}) => {
-  const [item,setItem] = useState(cardiologyApi);
+ const [item,setItem] = useState(cardiologyApi);
   const filterBySearch = (event) =>{
      const query = event.target.value;
      var updateList = [...cardiologyApi]
@@ -63,7 +57,7 @@ const Cardiology = ({apointPop,setApointPop}) => {
               item.map(val=>{
                 return(
                   <>
-                  <div className="card">
+                  <div key={val._id} className="card">
                    <img className='main-img' src={val.images} alt="" />
                    <div className="igh">
                    <div className="name-card">
@@ -72,10 +66,10 @@ const Cardiology = ({apointPop,setApointPop}) => {
                        <p>{val.content}</p>
                        <p>{val.content1}</p>
                      </div>
-                     <div className="viwe-profile">
+                    <Link to={`/cardio/${val.name}`} > <div className="viwe-profile">
                           <p>{val.view}</p>
                      </div>
-
+                     </Link>
                    </div>
                    <hr />
                    <div className="information-doc">

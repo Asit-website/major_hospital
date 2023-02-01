@@ -685,3 +685,304 @@ max-width: 100%;
   font-size: 17px !important;
 }
 /* =================navbar css end================= */
+
+/* =======================book health================= */
+.cardio-check{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 38vh;
+  background-image: url('./images/health.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+}
+.second-nsp1{
+  margin-left: 48px;
+}
+.second-nsp1 select{
+  width: 280px;
+  max-width: 100%;
+}
+.health-card h3{
+  color: #000000;
+  font-family: "Semi Bold" !important;
+  font-size: 26px;
+  text-align: center;
+}
+.health-card{
+  padding: 40px 80px;
+}
+.health-sard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.health-sard .health-box{
+   margin: 0px 15px;
+   width: 25%;
+}
+.health-box img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.health-box{
+  border-radius: 10px;
+  position: relative;
+}
+.health-box h2{
+  color: #222F3E;
+  font-family: gilroy !important;
+  font-weight: 700 !important;
+  font-size: 25px;
+}
+.health-box p{
+  color: #222F3E;
+  font-family: "Medium";
+  font-size: 15.5px;
+  line-height: 18px;
+}
+.health-box .off{
+  position: absolute;
+  left: 83%;
+  background-color: #E74C3C;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.off p{
+ color: #FFFFFF;
+ font-family: "Medium";
+ font-size: 12px;
+ line-height: 13px;
+}
+.health-btn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.health-btn .know_more{
+  width: 150px;
+  background-color: #FDC91E;
+  height: 40px;
+  border-radius: 30px;
+  color: #E74C3C;
+  font-family: gilroy !important;
+  font-weight: 700;
+  font-size: 14px;
+}
+.health-btn .book_more{
+  width: 150px;
+  background-color: #E74C3C;
+  height: 40px;
+  border-radius: 30px;
+  color: #FFFFFF;
+  font-family: gilroy !important;
+  font-weight: 700;
+  font-size: 14px;
+}
+.health-sox{
+  padding: 15px;
+}
+.para-he{
+  margin-top: 3px;
+}
+.tigh{
+  display: block;
+ 
+}
+.systen{
+  cursor: pointer;
+}
+.systen:hover.tigh{
+  display: flex;
+  cursor: pointer;
+}
+/* ==================end=========================== */
+
+/* =============iodolgy start========== */
+.iodolgy-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 38vh;
+  background-image: url('./images/iodology.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+}
+.iodo-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.iodo-sect h2{
+  color: #ffffff;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+.iodology-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 80px;
+}
+.first-iodo{
+  width: 38em;
+  margin-right: 120px;
+}
+.first-iodo h2{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700 !important;
+  font-size: 21px;
+}
+.first-iodo h3{
+  color: #222F3E;
+  font-family: gilroy !important;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 38px;
+  margin-top: 10px;
+}
+.first-iodo p{
+  color: #222F3E;
+  font-family: gilroy !important;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 15px;
+}
+.first-iodo button{
+  background-color: #E74C3C;
+  font-family: gilroy !important;
+  font-weight: 700;
+  font-size: 19px;
+  width: 270px;
+  height: 50px;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-top: 36px;
+}
+.second-iodo{
+  margin-left: 120px;
+}
+.second-iodo img{
+  /* height: 420px; */
+  width: 600px;
+  max-width: 100%;
+}
+.aim{
+  background-color: #FDF3F3;
+  padding: 30px;
+  padding: 40px 140px;
+}
+.aim h2{
+  font-family: gilroy !important;
+  font-weight: 700 !important;
+  font-size: 35px;
+  color: #222F3E;
+}
+.aim p{
+  color: #222F3E;
+  font-family: gilroy !important;
+  font-weight: 700 !important;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.achieve-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 38vh;
+  background-image: url('./images/feedback1.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+}
+.achive-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.achive-sect h2{
+  color: #ffffff;
+  font-family: "Semi Bold";
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+.second-iodo1{
+  margin-right: 80px;
+  margin-left: 0px !important;
+}
+.second-iodo1 img{
+  width: 650px;
+  max-width: 100%;
+}
+.first-iodo1{
+  margin-left: 80px;
+  margin-right: 0px !important;
+}
+.img-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 80px;
+}
+.img-section img{
+  margin: 0px 10px;
+  max-width: 420px;
+  width: 100%;
+}
+.what-expert{
+  padding: 40px 80px;
+}
+.what-expert h2{
+  color: #000000;
+  font-family: gilroy !important;
+  font-weight: 700 !important;
+  font-size: 34px;
+  text-align: center;
+}
+.what-expert p{
+  color: #222F3E;
+  font-family: "Medium";
+ font-size: 22px;
+ text-align: center;
+}
+.women-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  position: relative;
+}
+.wo-img{
+  margin: 0 10px;
+  position: relative;
+}
+.wo-img .imhk{
+  position: absolute;
+  z-index: 10000;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  filter: brightness(100%);
+  width: 60px;
+}
+.wo-img img{
+  filter: brightness(.5);
+  max-width: 645px;
+  width: 100%;
+}
+/* ===============iodolgy end=============== */
