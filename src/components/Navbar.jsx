@@ -36,7 +36,7 @@ export const Navbar = () => {
             <p className='flex items-center mr-2' >Choose Language <BsChevronDown className='ml-2'/></p>
             <div className='verticalDivider'/>
         </div>
-
+{/* ===============nav============ */}
         <div className='flex items-center'>
            <div className=''>
            <NavLink to="/acheive"> <p  className='mr-2 relative systen'>About Us</p></NavLink>
