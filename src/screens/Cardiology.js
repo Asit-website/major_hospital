@@ -57,7 +57,7 @@ const Cardiology = ({apointPop,setApointPop}) => {
               item.map(val=>{
                 return(
                   <>
-                  <div key={val._id} className="card">
+                  <div key={val.id} className="card">
                    <img className='main-img' src={val.images} alt="" />
                    <div className="igh">
                    <div className="name-card">
@@ -66,10 +66,10 @@ const Cardiology = ({apointPop,setApointPop}) => {
                        <p>{val.content}</p>
                        <p>{val.content1}</p>
                      </div>
-                    <Link to={`/cardio/${val.name}`} > <div className="viwe-profile">
-                          <p>{val.view}</p>
+                    <div className="viwe-profile">
+                        <Link to={`/cardio/${val.id}`}><p>{val.view}</p></Link>
                      </div>
-                     </Link>
+                    
                    </div>
                    <hr />
                    <div className="information-doc">

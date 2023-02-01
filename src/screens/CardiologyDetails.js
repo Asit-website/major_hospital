@@ -4,12 +4,12 @@ import cardiologyApi from '../api/cardilogiApi';
 import { Navbar } from '../components/Navbar'
 
 const CardiologyDetails = () => {
-    const { name } = useParams();
+    const { id } = useParams();
    
     const [item,setItem] = useState(cardiologyApi);
 
     const details = item.filter((it,e)=>{
-        return it.name === name;
+       return it.id === id 
     });
 
     
