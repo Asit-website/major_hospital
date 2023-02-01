@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -153,7 +153,7 @@ body {
   height: 70vh;
   background-image: url('./images/group.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: darken;
-  margin: 0px 60px;
+  margin: 0px 80px;
 }
 .contact-back .sect{
   position: absolute;
@@ -220,6 +220,7 @@ body {
 
 .textarea1 textarea::placeholder{
   font-size: 16.5px;
+  font-family: "Medium";
 }
 .input-fields1 input,
 .input-fields1 select,
@@ -229,6 +230,7 @@ textarea{
   width: 500px;
   height: 70px;
   max-width: 100%;
+  border-radius: 5px;
   padding: 0 20px;
 }
 
@@ -385,3 +387,301 @@ footer{
 .social-link img{
   width: 22px;
 }
+
+/* ===============fedback css============= */
+.feedback-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-image: url('./images/feedback1.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+}
+.feedback-back .sect-fed{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.sect-fed h2{
+  color: #ffffff;
+  font-family: "Semi Bold";
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+.share-feed{
+  padding: 40px 120px;
+}
+.share-feed h2{
+  color: #000000;
+  font-family: "Semi Bold";
+  font-size: 24px;
+  text-align: center;
+}
+.share-feed p{
+  color: #000000;
+  font-family: "Medium";
+  font-size: 22px;
+  text-align: center;
+}
+.shadow-feed{
+  background-color: #EAEAEA;
+  border-radius: 15px;
+  width: 100%;
+  padding: 40px 30px;
+  margin-top: 45px;
+  /* height: 460px; */
+}
+.shadow-feed input{
+  width: 100%;
+}
+.shadow-feed input[type="radio"]{
+  width: 20px;
+  display: block;
+  margin: auto;
+  height: auto;
+  margin-top: 10px;
+}
+.shadow-feed .two-side-cont{
+  margin-top: 0px !important;
+}
+.shadow-feed .two-side-cont .input-fields1{
+  margin-right: 30px;
+}
+.shadow-feed .two-side-cont .textarea1{
+  margin-left: 30px;
+}
+.shadow-feed .textarea1 textarea{
+  width: 630px;
+max-width: 100%;
+ height: 265px;
+ border: 1.6px solid rgba(112, 112, 112, 0.46);
+}
+.shadow-feed .textarea1 textarea::placeholder{
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+.lett{
+  background-color: #FFFFFF;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+.diff-sut{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.diff-sut img{
+  width: 36px;
+  display: block;
+  margin: auto;
+}
+.diff-sut h4{
+  text-align: center;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top:5px;
+}
+.feed-btn{
+  text-align: right;
+  margin-top: 30px;
+}
+.feed-btn button{
+  background-color: #E74C3C;
+  font-family: gilroy;
+  font-weight: 700;
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+/* ================feedback css end============ */
+
+/* ==================cardioLogy css=================== */
+.cardio-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-image: url('./images/womanapp.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+}
+.cardio-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.cardio-sect h2{
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 50px;
+  color: #FFFFFF;
+  letter-spacing: .5px;
+}
+.sing{
+  border-bottom: 1px solid #BCC5C7;
+  width: 280px;
+  max-width: 100%;
+  outline: none;
+}
+.pyo{
+  border-bottom: 1px solid #BCC5C7;
+  width: 200px;
+  max-width: 100%;
+  outline: none;
+  margin-left: 20px;
+}
+.second-nsp{
+  margin-left: 80px;
+}
+.second-nsp p{
+  color: #000000;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 15px;
+}
+.areas{
+  color: #E74C3C;
+}
+.filter{
+  padding: 30px 60px;
+}
+.filter-group{
+  margin-left: 15px;
+}
+.igh{
+  padding: 15px;
+}
+.sard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.card{
+  border-radius: 10px;
+  margin: 8px 10px;
+  width: 23.5%;
+}
+.card .main-img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.name-card{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.text-card h3{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 19px;
+}
+.text-card p{
+  color:#222F3E ;
+  font-family: "Medium"; 
+  font-size: 15px;
+  line-height: 12px; /* pehle 16*/
+  margin-top: 6px;
+}
+.viwe-profile p{
+  color: #E74C3C;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 13px;
+}
+.card hr{
+  margin-top: 10px;
+}
+.information-doc h3{
+  color: #000000;
+  font-family: "Semi Bold";
+  font-size: 16.5px;
+}
+.information-doc p{
+  color: #000000;
+  font-size: 13px;
+  font-family: "Medium"; 
+}
+.tara{
+  margin-top: 12px;
+}
+.tara img{
+  width: 15px;
+}
+.card button{
+  width: 100%;
+  background-color: #E74C3C;
+  color: #ffffff;
+  height: 40px;
+  border-radius: 30px;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 13.5px;
+  margin-top: 20px;
+}
+.information-doc{
+  margin-top: 10px;
+}
+
+/* ======================cardiology css end================== */
+
+/* =================navbar css start============= */
+.first-nav P{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 13.5px;
+}
+.second-nav p{
+  color: #222F3E;
+  font-family: "Semi Bold" !important;
+  font-size: 15.5px !important;
+}
+.major-para{
+  color: #222F3E;
+  font-family: gilroy;
+  font-size: 23px;
+}
+.destination-para{
+  font-family: gilroy !important;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 55px;
+  color: #222F3E;
+}
+.trust-hos{
+  font-family: "Medium";
+  font-size: 23px;
+  color: #222F3E;
+  line-height: 25px;
+}
+.yellow-btn1{
+  font-family: gilroy !important;
+  font-weight: 700 !important;
+  color: #D50505 !important;
+  font-size: 16px !important;
+}
+.yellow-btn5{
+  width: 350px;
+  text-align: center;
+  color: #000000 !important;
+  font-family: gilroy !important;
+  font-weight: 700 !important;
+  font-size: 17px !important;
+}
+/* =================navbar css end================= */

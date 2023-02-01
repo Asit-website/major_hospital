@@ -18,7 +18,7 @@ export const Navbar = () => {
     <div className='Navbar '>
 
     {/* Upper Navigation */}
-      <div className='upper-nav flex justify-end py-2 px-20 text-sm font-medium '>
+      <div className='upper-nav flex justify-end py-2 px-20 text-sm font-medium first-nav '>
         <div className='flex items-center'>
             <BsGeoAlt className='mr-2'/>
             <p className='mr-2'>Hospital near me</p>
@@ -43,7 +43,7 @@ export const Navbar = () => {
             <FaPhoneAlt className=''/>
           </div>
           <p className='mr-2 contact-number-red'>+91 8800401411</p>
-          <div className='red-btn mx-2'>Share your feedback</div>
+         <NavLink to="/feedback"><div className='red-btn mx-2'>Share your feedback</div></NavLink>
         </div>
       </div>
       {/* ./Upper Navigation */}
@@ -53,7 +53,7 @@ export const Navbar = () => {
           <img  src={navLogo}/>
         </div>
         </NavLink>
-        <div className='main-menu-items flex justify-between'>
+        <div className='main-menu-items flex justify-between second-nav'>
           <p>Find a Doctor</p>
           <p>Book Health Check-Up</p>
           <p>Our Hospitals</p>
@@ -70,6 +70,7 @@ export const Navbar = () => {
                 <p>Gastroenterology</p>
                 <p>Physiotherapy</p>
                 <p>Nutrition Services</p>
+               <NavLink to="/cardio"><p>Cardiology</p></NavLink>
               </div>
             </div>
           </p>
@@ -81,7 +82,7 @@ export const Navbar = () => {
           <div className='mx-5 main-menu-search'>
             <BsSearch />
           </div>
-          <div className='red-btn mx-5'>Search</div>
+          <div className='red-btn red-btn1 mx-5'>Register</div>
         </div>
       
       </div>
