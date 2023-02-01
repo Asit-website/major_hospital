@@ -7,10 +7,16 @@ import  navLogo  from '../images/navigation-logo.png';
 export const Navbar = () => {
 
   const [show, setShow] = useState('none');
+  const [show1,setShow1] = useState('none');
   const handleDropdown = () => {
     setShow(show === 'none' ? 'flex' : 'none');
       document.getElementById('dropdown-item').style.display = show;
 
+  }
+
+  const handleDropdown1 = () =>{
+       setShow1(show === 'none' ? 'block' : 'none');
+       document.getElementById('drop-menu').style.display = show1;
   }
 
 
@@ -21,7 +27,7 @@ export const Navbar = () => {
       <div className='upper-nav flex justify-end py-2 px-20 text-sm font-medium first-nav '>
         <div className='flex items-center'>
             <BsGeoAlt className='mr-2'/>
-            <p className='mr-2'>Hospital near me</p>
+           <NavLink to="/iodolgy"><p className='mr-2'>Hospital near me</p></NavLink>
             <div className='verticalDivider'/>
         </div>
 
@@ -32,7 +38,9 @@ export const Navbar = () => {
         </div>
 
         <div className='flex items-center'>
-            <p className='mr-2'>About Us</p>
+           <div className=''>
+           <NavLink to="/acheive"> <p  className='mr-2 relative systen'>About Us</p></NavLink>
+            </div>
             <p className='mr-2'>Career</p>
            <NavLink to="/contact"><p className='mr-2'>Contact Us</p></NavLink>
             <div className='verticalDivider'/>
@@ -55,7 +63,7 @@ export const Navbar = () => {
         </NavLink>
         <div className='main-menu-items flex justify-between second-nav'>
           <p>Find a Doctor</p>
-          <p>Book Health Check-Up</p>
+         <NavLink to="/health"><p>Book Health Check-Up</p></NavLink>
           <p>Our Hospitals</p>
           <p className='flex items-center dropdown-menu-item'  onClick={handleDropdown}>Specialistes <BsChevronDown className='ml-2'/>
             <div className='flex dropdown-sub-menu p-1' id='dropdown-item'>
