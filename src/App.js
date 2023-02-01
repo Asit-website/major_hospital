@@ -24,7 +24,7 @@ function App() {
           <Route exact path='/contact' element={<Contact/>}/>
           <Route path='/feedback' element={<Feedback/>}/>
           <Route path='/cardio' element={<Cardiology apointPop={apointPop} setApointPop={setApointPop}/>}/>
-          <Route path='/cardio/:name' element={<CardiologyDetails/>}/>
+          <Route  path='/cardio/:id' element={<CardiologyDetails/>}/>
           <Route path='/health' element={<HealthCheckup apointPop={apointPop} setApointPop/>}/>
           <Route path='/iodolgy' element={<Iodology/>}/>
           <Route path='/acheive' element={<Achievement/>}/>
