@@ -45,13 +45,13 @@ export const Home = ({apointPop,setApointPop}) => {
         <div className='relative '>
             <div className='home-banner flex items-center px-20'>
                 <div className='home-banner-details w-[35%]'>
-                    <p className='text-xl text-gray-800 my-3'>Major Hospital</p>
-                    <p className='text-5xl font-bold'>A Destination for
+                    <p className='text-xl text-gray-800 my-3 major-para'>Major Hospital</p>
+                    <p className='text-5xl font-bold destination-para'>A Destination for
                     Advanced Care</p>
-                    <p className='text-2xl text-gray-800 my-3'>The hospital you trust to care for those
-                    you love.</p>
+                    <p className='text-2xl text-gray-800 my-3 trust-hos'>The hospital you trust to care for those
+                   <br /> you love.</p>
 
-                    <button onClick={()=> setApointPop(true)} className='yellow-btn my-5 '>Book an Appointment</button>
+                    <button onClick={()=> setApointPop(true)} className='yellow-btn my-5 yellow-btn1 '>Book an Appointment</button>
                 </div>
             </div>
 
