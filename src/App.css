@@ -119,9 +119,9 @@
     position : relative;
 }
 
-.dropdown-sub-menu{
+.dropdown-sub-menu,.dropdown-about-sub-menu{
     display : none;
-    z-index : 999;
+    z-index : 999999;
     position : absolute;
     top : 50px;
     background-color : red;
@@ -131,12 +131,18 @@
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
     border : 1px solid #f0f0f0;
 }
-
+.dropdown-about-sub-menu{
+    width : 120px;
+}
 .y-divider{
     border-right : 1px solid #B7B7B7;
     margin : 0px 10px;
 }
 
+.bottom-divider{
+    border-bottom : 1px solid #B7B7B7;
+    
+}
 .sub-menu-items p {
     margin : 10px 0px;
 }

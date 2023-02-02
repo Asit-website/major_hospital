@@ -38,7 +38,7 @@ const Achievement = () => {
         <div className="what-expert">
             <h2>what our Expert Says</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-            <div className="women-section">
+            <div className="women-section mt-9">
                  <div className="wo-img">
                      <img className='imhk' src={btn} alt="" />
                       <img src={women1} alt="women" />

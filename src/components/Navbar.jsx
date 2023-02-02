@@ -8,6 +8,7 @@ export const Navbar = () => {
 
   const [show, setShow] = useState('none');
   const [show1,setShow1] = useState('none');
+  const [showAbout,setShowAbout] = useState('none');
   const handleDropdown = () => {
     setShow(show === 'none' ? 'flex' : 'none');
       document.getElementById('dropdown-item').style.display = show;
@@ -19,6 +20,10 @@ export const Navbar = () => {
        document.getElementById('drop-menu').style.display = show1;
   }
 
+  const handleAboutDropdown = () => {
+    setShowAbout(showAbout === 'none' ? 'flex' : 'none');
+      document.getElementById('about-us-dropdown').style.display = showAbout;
+  }
 
   return (
     <div className='Navbar '>
@@ -39,7 +44,15 @@ export const Navbar = () => {
 {/* ===============nav============ */}
         <div className='flex items-center'>
            <div className=''>
-           <NavLink to="/acheive"> <p  className='mr-2 relative systen'>About Us</p></NavLink>
+            <p  className='mr-2 relative systen flex items-center dropdown-menu-item' onClick={handleAboutDropdown}>About Us
+            <div className='flex dropdown-about-sub-menu p-1' id='about-us-dropdown'>
+            <div className='w-[100%] sub-menu-items'>
+              <NavLink to="/iodolgy"><p className='bottom-divider pb-1'>Our Ideology</p></NavLink>
+              <NavLink to="/acheive"><p className='bottom-divider pb-1'>Our Achievement</p></NavLink>
+              <p>Special Clinic</p>
+            </div>
+          </div>
+           </p>
             </div>
             <p className='mr-2'>Career</p>
            <NavLink to="/contact"><p className='mr-2'>Contact Us</p></NavLink>

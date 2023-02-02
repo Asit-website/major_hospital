@@ -6,14 +6,11 @@
 
 html,
 body {
-  /* position: relative; */
-  /* height: 100%; */
   overflow-x: hidden;
 }
 
 body {
-  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
   margin: 0;
   padding: 0;
@@ -964,7 +961,7 @@ max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   position: relative;
 }
 .wo-img{
@@ -982,7 +979,7 @@ max-width: 100%;
 }
 .wo-img img{
   filter: brightness(.5);
-  max-width: 645px;
+  max-width: 600px;
   width: 100%;
 }
 /* ===============iodolgy end=============== */
