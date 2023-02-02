@@ -6,7 +6,7 @@ import women1 from '../images/women1.png'
 import patient_w from '../images/patient-story-w.png'
 import btn from '../images/btn.png'
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-
+import servicesApi from '../api/servicesApi';
 const specialists = [
   {
     id : 1,
@@ -132,8 +132,26 @@ export const Home = () => {
             <div className='text-3xl text-center font-bold'>Our Services</div>
             <div className='text-lg text-center font-bold my-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>
         
+            <div className='flex justify-center mx-20'>
+              {
+                servicesApi.map(service => 
+                  <div key={service.id} className='service-card pb-8'>
+                    <div className='service-card-img'>
+                      <img src={service.service_img} alt='services'/>
+                    </div>
+                    <p className='my-5 mx-2 text-xl font-semibold text-[#101010]'>{service.name}</p>
+                    <p className='mb-5 mx-2 text-sm text-[#101010]'>{service.desc}</p>
+                    <div className='flex justify-center '><span className='red-btn red-btn1 '>Know More</span></div>
+                  </div>
+                  )
+              }
+            </div>
         </div>
         {/** ./Our Services */}
+
+        {/** Meet Our Team */}
+        <div className='our-team bg-[#F5F5F5]'>jhihih</div>
+        {/** ./Meet Our Team */}
 
 
 
