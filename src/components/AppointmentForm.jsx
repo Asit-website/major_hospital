@@ -24,7 +24,7 @@ export const AppointmentForm = () => {
 
                 <div className='flex mt-5 items-center'>
                     <div className='white-btn mr-5'>VIEW SCHEDULE</div>
-                    <div className='yellow-btn mr-5'>SUBMIT</div>
+                    <div className='yellow-btn yellow-btn5 mr-5'>SUBMIT</div>
                     <div className='text-sm text-white'>Please fill out all of the fields correctly. your records will be saved in our database securely.</div>
                 </div>
             </div>
