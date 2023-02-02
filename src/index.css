@@ -979,7 +979,165 @@ max-width: 100%;
 }
 .wo-img img{
   filter: brightness(.5);
-  max-width: 600px;
-  width: 100%;
+  width: 645px;
+  /* max-width: 100%; */
 }
 /* ===============iodolgy end=============== */
+
+/* ================cardilogy details page=============== */
+.details-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 58vh;
+  background-image: url('./images/details.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 65px;
+}
+.details-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.details-sect h2{
+  font-size: 50px;
+  font-family: "Bold";
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.doctor-det{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+  position: absolute;
+  bottom: -80px;
+  
+}
+.img-mah img{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #AFBCC0;
+  /* object-position: right; */
+}
+.card-details{
+  border: 1px solid #EDF1F2;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.appoint-desc{
+  display: flex;
+  align-items: center;
+}
+.appoint-desc img{
+  width: 35px;
+}
+.appo-para{
+  margin-left: 6px;
+}
+.appo-para h3{
+  color: #222F3E;
+  font-family: gilroy !important;
+  font-weight: 700 !important;
+  font-size: 18.5px;
+  letter-spacing: .5px;
+}
+.appo-para p{
+  color: #222F3E;
+  font-family: gilroy !important;
+  font-weight: 700 !important;
+  font-size: 16.5px;
+  line-height: 16px;
+  letter-spacing: .5px;
+}
+.call-det{
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+}
+.call-det img{
+  width: 25px;
+}
+.call-det p{
+  margin-left: 6px;
+  color: #222F3E;
+  font-family: gilroy !important;
+  font-weight: 700 !important;
+  font-size: 16.5px;
+  line-height: 16px;
+  letter-spacing: .5px;
+}
+.buttpn-group{
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.buttpn-group .bookst{
+  background-color: #E74C3C;
+  width: 230px;
+  height: 45px;
+  border-radius: 30px;
+  color: #FFFFFF;
+  font-family: gilroy !important;
+  font-weight: 700 !important;
+  cursor: pointer;
+  font-size: 15px;
+}
+.buttpn-group .mes{
+  width: 175px;
+  height: 45px;
+  border: 2px solid #E74C3C;
+  border-radius: 30px;
+ color: #E74C3C;
+ font-family: gilroy !important;
+ font-weight: 700 !important;
+ cursor: pointer;
+ font-size: 15px;
+ margin-left: 10px;
+}
+.or{
+  position: relative;
+  margin-left: 20px;
+}
+.or .or1{
+  border: 1px solid #AFBCC0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 100;
+
+}
+.or hr{
+  transform: rotate(90deg);
+  border: .2px solid #AFBCC0;
+  position: relative;
+  top: -13px;
+  opacity: 0.5;
+}
+.or .sd{
+  top: 13px;
+}
+.or1 p{
+  font-family: gilroy !important;
+ font-weight: 700 !important;
+ font-size: 12px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.expert-det{
+  padding: 120px 120px;
+}
+/* ===============cardilogy details page end=============== */
