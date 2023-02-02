@@ -4,6 +4,8 @@ import cardiologyApi from '../api/cardilogiApi';
 import { Navbar } from '../components/Navbar'
 import appoint from '../images/appoint.png';
 import call1 from '../images/call1.png';
+import rupay from '../images/rupay.png';
+import cert from '../images/cert.png';
 const CardiologyDetails = () => {
     const { id } = useParams();
    
@@ -71,9 +73,25 @@ const CardiologyDetails = () => {
       <div className="expert-det">
               <div className="expert-first">
                   <h2>Cardiology</h2>
+                  <p className='asoc'>Associate Director Cardiology</p>
+                  <p className='asoc1'>MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI (VIETNAM), FESC.</p>
+
+                  <div className="rupay flex items-center">
+                     <img src={rupay} alt="rupay" />
+                     <p>1599</p>
+                  </div>
               </div>
               <div className="expert-second">
-                  
+                  <h2>Certificates</h2>
+                  <div className="flex items-center">
+                  <div className='ghj'></div>
+                  <div className="certificate flex mt-6">
+                      <img src={cert} alt="cert" />
+                      <img className='ml-6' src={cert} alt="cert" />
+                      <img className='ml-6' src={cert} alt="cert" />
+                      <img className='ml-6' src={cert} alt="cert" />
+                  </div>
+                  </div>
               </div>
          </div>
     </>
