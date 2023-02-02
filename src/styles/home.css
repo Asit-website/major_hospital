@@ -91,3 +91,16 @@
     font-size : 18px;
     border-radius : 3px;
 }
+
+.service-card{
+    max-width : 260px;
+    width : 100%;
+    background-color : #ffffff;
+    margin : 20px 10px;
+    border-radius : 10px;
+}
+
+.service-card-img img{
+    max-width : 260px;
+    width : 100%;
+}
