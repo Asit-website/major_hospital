@@ -12,6 +12,7 @@ import CardiologyDetails from './screens/CardiologyDetails';
 import HealthCheckup from './screens/HealthCheckup';
 import Iodology from './screens/Iodology';
 import Achievement from './screens/Achievement';
+import InternalMedicine from './screens/InternalMedicine';
 
 function App() {
   const [apointPop,setApointPop] = useState(false);
@@ -24,10 +25,11 @@ function App() {
           <Route exact path='/contact' element={<Contact/>}/>
           <Route path='/feedback' element={<Feedback/>}/>
           <Route path='/cardio' element={<Cardiology apointPop={apointPop} setApointPop={setApointPop}/>}/>
-          <Route  path='/cardio/:id' element={<CardiologyDetails/>}/>
+          <Route  path='/cardio/:id' element={<CardiologyDetails apointPop={apointPop} setApointPop={setApointPop}/>}/>
           <Route path='/health' element={<HealthCheckup apointPop={apointPop} setApointPop/>}/>
           <Route path='/iodolgy' element={<Iodology/>}/>
           <Route path='/acheive' element={<Achievement/>}/>
+          <Route path='/medicine' element={<InternalMedicine/>}/>
       </Routes>
       <Footer/>
     </Router>

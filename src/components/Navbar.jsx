@@ -82,7 +82,7 @@ export const Navbar = () => {
             <div className='flex dropdown-sub-menu p-1' id='dropdown-item'>
               <div className='y-divider w-1/2 sub-menu-items'>
                 <p>Ophthalmology</p>
-                <p>Internal Medicine</p>
+               <NavLink to="/medicine"><p>Internal Medicine</p></NavLink>
                 <p>Cold Laser Therapy</p>
                 <p>Dental</p>
               </div>

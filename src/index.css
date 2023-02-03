@@ -1137,8 +1137,10 @@ max-width: 100%;
  left: 50%;
  transform: translate(-50%,-50%);
 }
+.expert-ret{
+  padding: 90px 100px;
+}
 .expert-det{
-  padding: 120px 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1192,4 +1194,416 @@ max-width: 100%;
   border: .5px solid #CAD8DC;
   opacity: 0.5;
 }
+.aviability-section{
+  margin-top: 10px;
+}
+.aviability-section h3{
+  color: #000000;
+  font-family: "Semi Bold";
+  font-size: 32px;
+  opacity: 0.7;
+}
+.doctor-table{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-top: 15px;
+}
+.doctor_name h4{
+  color: #ffffff;
+  text-align: center;
+  font-family: "Semi Bold";
+  font-size: 18px;
+}
+.doctor_name td{
+   background-color: #333333;
+   padding: 20px 30px;
+   border: 1px solid #FFFFFF;
+}
+.doctor_name1 td{
+  padding: 20px 30px;
+  border: 1px solid #FFFFFF;
+}
+.doctor_name1 p{
+  text-align: center;
+  color: #000000;
+}
+.doctor_name1 .name-doc{
+  font-family: "Medium";
+  font-size: 17px;
+}
+.doctor_name1 .name-doc1{
+  font-family: "Medium";
+  font-size: 13px;
+}
+.doctor_name1 hr{
+  border: 1.5px solid #000000;
+  width: 20px;
+  opacity: 0.5;
+  display: block;
+  margin: auto;
+}
+.tds{
+  background-color: #C2DBF7;
+  opacity: 0.8;
+}
+.tds1{
+  background-color: #ffffff;
+}
+.ghk{
+  font-size: 50px;
+}
+.about-rent{
+background-color: #FCEDEC;
+ padding: 20px 0px;
+}
+.about-card{
+  background-color: #FFFFFF;
+  padding: 20px 20px;
+  margin: 0px 100px;
+  max-width: 1000px;
+  width: 100%; 
+}
+.about-card h3{
+  color: #000000;
+  font-family: "Bold";
+  font-size: 22px;
+}
+.about-card .hr{
+  margin:0px -20px;
+  border-bottom: 1px solid #000000;
+  opacity: 0.4;
+  margin-top: 20px;
+  /* height: 0px; */
+}
+.about-card .about-na{
+  font-family: "Medium";
+  font-size: 17px;
+  color: #000000;
+  line-height: 15px;
+}
+.about-foot{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 15px;
+  border-radius: 15px;
+}
+
+.abg{
+  height: 170px;
+  opacity: 0.5;
+  border-right: 1px solid #000000;
+}
+.location-ab{
+  display: flex;
+  align-items: center;
+}
+.location-ab img{
+  width: 16px;
+}
+.location-ab p{
+  margin-left: 6px;
+}
+.first-foot1 h2,.second-foot1 h2{
+   color: #000000;
+   font-family: "Semi Bold";
+   font-size: 17px;
+   opacity: 0.5;
+}
+.para-qualify{
+  margin-top: 9px;
+}
+.para-qualify p{
+  color: #000000;
+  font-family: "Semi Bold";
+  font-size: 17px;
+  margin: 6px 0px;
+}
+
 /* ===============cardilogy details page end=============== */
+
+
+/* ====================internal medicine css start================== */
+.medicine-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:35vh;
+  background-image: url('./images/medicine.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+}
+.medicine-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.medicine-sect h2{
+  color: #ffffff;
+  font-family: "Semi Bold";
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: .5px;
+}
+.about-institute{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+  /* position: relative; */
+}
+.institute{
+  /* width: 40em; */
+  width: 35em;
+  margin-right: 100px;
+  margin-top: 30px;
+}
+.institute h4{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 21px;
+}
+.institute h2{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 38px;
+  margin-top: 12px;
+}
+.institute p{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  margin-top: 15px;
+  font-size: 15px;
+}
+.institute-img{
+  margin-left: 100px;
+  position: relative;
+  margin-top: 30px;
+}
+.institute-img .dov-img{
+  /* width: 36em; */
+ max-width: 600px;
+ width: 100%;
+ filter: brightness(.5);
+}
+.institute-img .sov-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  filter: brightness(100%);
+  z-index: 100;
+  width: 60px;
+}
+.word-leader{
+  display: flex;
+  align-items: center;
+  padding: 40px 100px;
+  justify-content: center;
+  background-color: #FDF3F3;
+}
+.first-word{
+  margin-right: 40px;
+}
+.first-word{
+  position: relative;
+}
+.rohan{
+  position: absolute;
+  z-index: 100;
+  top: 74%;
+  left: 5%;
+}
+.rohan h3{
+  color: #FFFFFF;
+  font-family: gilroy;
+  font-size: 22px;
+  font-weight: 700;
+}
+.rohan small{
+  font-family: gilroy;
+  font-weight: 400;
+  font-size: 18px;
+  opacity: .9;
+  color: #FFFFFF;
+  line-height: 15px;
+}
+.rohan p{
+  color: #ffffff;
+  font-size: 22px;
+  font-family: gilroy;
+  font-weight: 400;
+  opacity: .9;
+  margin-top: 5px;
+}
+.first-word img {
+  max-width: 370px;
+  width: 100%;
+  filter: brightness(.6);
+}
+
+.second-word{
+  width: 35em;
+  margin-left: 40px;
+}
+.second-word h2{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 34px;
+}
+.second-word p{
+  color: #222F3E;
+  font-family: "Semi Bold"; 
+  font-size: 15px;
+  margin-top: 10px;
+}
+.second-word h4{
+  color: #FF2020;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 18.5px;
+  text-decoration: underline;
+  margin-top: 15px;
+}
+.treats{
+  padding: 40px 100px;
+}
+.treats img{
+  display: block;
+  margin: auto;
+}
+.treats h2{
+  color: #222F3E;
+  text-align: center;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 34px;
+  margin-top: 10px;
+}
+.treats .treats-p{
+  text-align: center;
+  color: #222F3E;
+  font-family: "Semi Bold"; 
+  font-size: 15px;
+  margin-top: 6px;
+}
+.lorem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lorem P{
+  color: #222F3E;
+  font-family: "Semi Bold"; 
+  font-size: 19px;
+  text-align: center;
+  margin: 0px 24px;
+  margin-top: 30px;
+}
+.treats-back{
+  margin-top: 40px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:45vh;
+  background-image: url('./images/patient.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-blend-mode: darken;
+}
+.treats-sect h2{
+  color: #FFFFFF;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+}
+.treats-sect{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  display: block;
+  margin: auto;
+  transform: translate(-50%,-50%);
+}
+.treats-sect p{
+  color: #FFFFFF;
+  font-family: "Medium"; 
+  font-size: 15px;
+  text-align: center;
+}
+.consult{
+  background-color: #FDF3F3;
+  margin: 0px 70px;
+  position: relative;
+  top: -100px;
+  z-index: 100;
+  padding: 40px 15px;
+}
+.consult .exy{
+  text-align: center;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 34px;
+}
+.card1{
+  background-color: white;
+  width: 29.5%;
+  margin: 8px 20px;
+
+}
+.success{
+  padding: 30px 100px;
+  position: relative;
+  top: -120px;
+  /* background-color: red; */
+}
+.success h2{
+  text-align: center;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 35px;
+  color: #000000;
+  opacity: 0.7;
+}
+.success p{
+  text-align: center;
+  font-family: "Semi Bold"; 
+  font-size: 15px;
+  color: #222F3E;
+}
+.img-suc {
+  margin-top: 40px;
+  position: relative;
+}
+.img-suc .vic{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  filter: brightness(100%);
+  width: 60px;
+}
+.img-suc img{
+  filter: brightness(.5);
+  width: 100%;
+}
+.see_more{
+  text-align: center;
+  color: #FF2020 !important;
+  font-family: gilroy;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+/* ==========================internal medicine css end=================== */
