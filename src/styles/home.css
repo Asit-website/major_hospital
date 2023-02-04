@@ -104,3 +104,136 @@
     max-width : 260px;
     width : 100%;
 }
+
+.speciality-card{
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+.our-team{
+   background-image : url('../../src/images/stethoscope.png');
+  
+  background-position:   bottom 200px left 150px ; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 320px 320px;
+}
+
+.ba-red-btn, .ba-white-btn{
+    color : #ffffff;
+    background-color : #E74C3C;
+    padding : 8px 20px;
+    font-size : 14px;
+    border-radius : 3px;
+    
+}
+
+.ba-white-btn{
+    color : #000;
+    background-color : #fff;
+}
+
+.our-blogs{
+    background-color : rgba(255, 255, 255, 0.8);
+}
+
+.patient-reviews{
+    position : relative;
+    background-color : #EBEEF3;
+    background-image : url('../../src/images/patient-review-bg.png');
+  
+  background-position:  center ; 
+  background-repeat: no-repeat; 
+  background-size: 90%;
+}
+
+.testimonial-img img{
+    max-height : 70px;
+    max-width : 70px;
+    margin : 30px 0px;
+
+}
+
+.testmonial-floating-img{
+    position : absolute;
+    transition : transform 0.2s;
+}
+
+.testmonial-floating-img:hover{
+    opacity : 0.7;
+    cursor : pointer;
+    transform : scale(1.2);
+}
+
+.test1{
+    max-height : 40px;
+    max-width : 40px;
+    top : 20%;
+    left : 10%;
+}
+
+.test2{
+    max-height : 40px;
+    max-width : 40px;
+    top : 25%;
+    left : 25%;
+}
+
+.test3{
+    max-height : 25px;
+    max-width : 25px;
+    top : 40%;
+    left : 15%;
+}
+
+.test4{
+    max-height : 40px;
+    max-width : 40px;
+    top : 60%;
+    left : 10%;
+}
+
+.test5{
+    max-height : 25px;
+    max-width : 25px;
+    top : 60%;
+    left : 25%;
+}
+
+.test6{
+    max-height : 40px;
+    max-width : 40px;
+    top : 25%;
+    right : 10%;
+}
+
+.test7{
+    max-height : 40px;
+    max-width : 40px;
+    top : 20%;
+    right : 25%;
+}
+
+.test8{
+    top : 40%;
+    right : 15%;
+}
+
+.test9{
+    top : 60%;
+    right : 10%;
+}
+
+.test10{
+    top : 60%;
+    right : 25%;
+}
+
+.blog-card-main{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius : 20px;
+}
+
+.blog-card-secondary{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius : 10px;
+}

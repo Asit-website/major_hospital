@@ -1,12 +1,42 @@
 import React, { useState } from 'react'
+
+
+//importing icons
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+
+//importing Apis
+import servicesApi from '../api/servicesApi';
+
+//importing components
+import { SpecialistCard } from '../components/SpecialistCard'
 import { AppointmentForm } from '../components/AppointmentForm'
 import { Navbar } from '../components/Navbar'
+
+// importing images
+import dr from '../images/dr.png'
+import dr1 from '../images/dr1.png'
+import dr2 from '../images/dr2.png'
+import dr3 from '../images/dr3.png'
+import vect from '../images/vect.png'
+import untar from '../images/untar.png'
+import testimonial from '../images/testimonial-img.png'
+import test01 from '../images/test01.png'
+import test02 from '../images/test02.png'
+import test03 from '../images/test03.png'
+import test04 from '../images/test04.png'
+import test05 from '../images/test05.png'
+import test06 from '../images/test06.png'
+import test07 from '../images/test07.png'
+import test08 from '../images/test08.png'
+import test09 from '../images/test09.png'
 import women from '../images/women.png'
 import women1 from '../images/women1.png'
 import patient_w from '../images/patient-story-w.png'
 import btn from '../images/btn.png'
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import servicesApi from '../api/servicesApi';
+import blog01 from '../images/blog01.png'
+import blog02 from '../images/blog02.png'
+import blog03 from '../images/blog03.png'
+
 const specialists = [
   {
     id : 1,
@@ -150,8 +180,126 @@ export const Home = () => {
         {/** ./Our Services */}
 
         {/** Meet Our Team */}
-        <div className='our-team bg-[#F5F5F5]'>jhihih</div>
+        <div className='our-team bg-[#F5F5F5] flex justify-between px-40'>
+              <div className='w-[35%] mt-10 mr-20'>
+                <p className='text-[#E74C3C] font-semibold my-1'>Meet Our Team</p>
+                <p className='text-4xl font-bold my-2'>Group of certified &
+                Experienced Doctors.</p>
+                <p className='text-xl leading-7'>Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.</p>
+                <div className='my-3'>
+                  <button className='ba-red-btn mr-5'>Book Appoinment</button>
+                  <button className='ba-white-btn '>View All Doctors</button>
+                </div>
+              </div>
+              <div className='flex w-[65%] justify-start'>
+
+                <div className='my-10'>
+                  <SpecialistCard img={dr} name='Dr. Mahi Rawat' vect={vect} untar={untar}/>
+                  <SpecialistCard img={dr2} name='Dr. Sakshi Sena' vect={vect} untar={untar}/>
+                </div>
+                <div className='mt-20 mb-10'>
+                  <SpecialistCard img={dr1} name='Dr. Rohan Shrma' vect={vect} untar={untar} />
+                  <SpecialistCard img={dr3} name='Dr. Rohan Shrma' vect={vect} untar={untar}/>
+                </div>
+              </div>
+        </div>
         {/** ./Meet Our Team */}
+        {/** Our Blogs */}
+        <div className='our-blogs py-10 px-10'>
+              
+                <p className='text-center text-3xl font-bold'>Our Blogs</p>
+                <p className='text-lg text-center font-bold mt-2 mb-10'>Stay up to date with our most recent news and updates</p>
+
+                <div className='flex justify-center '>
+
+                  <div className='blog-card-main w-[45%] mx-5'>
+                    <img className='h-[250px]' src={blog01}/>
+                    <div className='p-5'>
+                        <div className='flex justify-between'>
+                        <div className='font-semibold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+                        <div className='text-sm font-semibold text-gray-600'>2 January 2023</div>
+                      </div>
+                      <div className='my-2 text-md text-[#222F3E]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</div>
+                      <div className='text-[#E74C3C] font-bold underline underline-offset-4 cursor-pointer'>Know More</div>
+                    </div>
+                    
+                  </div>
+
+                  <div className='blog-cards-secondary w-[45%] mx-5'>
+                    <div className='blog-card-secondary flex mb-6 items-center'>
+                      <img className='w-[300px] h-[200px]' src={blog02} />
+                      <div className='text-sm p-5'>
+                        <div className='flex justify-between my-2'>
+                          <p className='font-bold'>Chronic Kidney Disease – The Silent Killer</p>
+                          <p className='text-xs font-bold'>05 January</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div className='text-[#E74C3C] font-bold underline underline-offset-4 cursor-pointer mt-1'>Know More</div>
+                      </div>
+                    </div>
+
+                    <div className='blog-card-secondary flex items-center'>
+                      <img className='w-[300px] h-[200px]' src={blog03}/>
+                      <div className='text-sm p-5'>
+                        <div className='flex justify-between my-2'>
+                          <p className='font-bold'>What to do when you have Stroke?</p>
+                          <p className='text-xs font-bold'>13 January</p>
+                        </div>
+                        <p>Stroke is also called as Brain Attack. It is a paralysis attack in which person loses power of any body part. It is caused by blockage in the arteries supplying blood to the brain</p>
+                        <div className='text-[#E74C3C] font-bold underline underline-offset-4 cursor-pointer mt-1'>Know More</div>
+                      </div>
+                    </div>
+
+                    
+                    
+
+                  </div>
+                
+                </div>
+
+                <div className='mt-10 flex justify-center'>
+                  <button className=' bg-[#E74C3C] font-bold px-[50px] py-[10px] text-[#ffffff] rounded-[5px] text-sm'>View All Blog</button>
+                </div>
+              
+        </div>
+        {/** ./Our Blogs */}
+        {/** Patient Reviews */}
+        <div className='patient-reviews flex justify-center py-20'>
+        
+        <div className=' text-center w-[40%]'>
+          <p className='text-[#E74C3C] font-semibold my-1'>Testimonial</p>
+          <p className='text-3xl font-extrabold text-slate-600'>Satisfied Patients Reviews</p>
+          <div className='flex justify-center testimonial-img'>
+              <img src={testimonial} alt='testimonial-img'/>
+          </div>
+          
+          <p className='mb-5 text-slate-500'>
+            I appreciate your hospital really good environment and excellent patient care. you are
+            continuously handle patient treatment wonderfully. Thanks for your great service. Please
+            enjoy the chocolates.
+          </p>
+          <div className="tara flex mb-3 justify-center">
+              <img  src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+          </div>
+          <p className='font-bold text-slate-700'>Amanda Kinedy</p>
+        </div>
+              <img src={test01} className='testmonial-floating-img test1' alt='testimonial'/>
+              <img src={test01} className='testmonial-floating-img test2' alt='testimonial'/>
+              <img src={test02} className='testmonial-floating-img test3' alt='testimonial'/>
+              <img src={test03} className='testmonial-floating-img test4' alt='testimonial'/>
+              <img src={test04} className='testmonial-floating-img test5' alt='testimonial'/>
+              <img src={test05} className='testmonial-floating-img test6' alt='testimonial'/>
+              <img src={test06} className='testmonial-floating-img test7' alt='testimonial'/>
+              <img src={test07} className='testmonial-floating-img test8' alt='testimonial'/>
+              <img src={test08} className='testmonial-floating-img test9' alt='testimonial'/>
+              <img src={test09} className='testmonial-floating-img test10' alt='testimonial'/>
+        </div>
+        {/** ./Patient Reviews */}
 
 
 
