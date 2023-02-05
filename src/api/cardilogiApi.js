@@ -36,7 +36,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/half.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"haryana"
     },
     {
         id:"4",
@@ -49,7 +50,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"haryana"
     },
     {
         id:"5",
@@ -62,7 +64,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"mumbai"
     },
     {
         id:"6",
@@ -75,7 +78,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"mumbai"
     },
 
     {
@@ -89,7 +93,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"mumbai"
     },
     {
         id:"8",
@@ -102,7 +107,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"mumbai"
     },
     {
         id:"9",
@@ -115,7 +121,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"haryana"
     },
     {
         id:"10",
@@ -128,7 +135,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"mumbai"
     },
     {
         id:"11",
@@ -141,7 +149,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"haryana"
     },
     {
         id:"12",
@@ -154,7 +163,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"mumbai"
     },
     {
         id:"13",
@@ -167,7 +177,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"mumbai"
     },
     {
         id:"14",
@@ -180,7 +191,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"mumbai"
     },
     {
         id:"15",
@@ -193,7 +205,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"haryana"
     },
     {
         id:"16",
@@ -206,7 +219,8 @@ const cardiologyApi = [
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
-        appoint:"Book an Appointment"
+        appoint:"Book an Appointment",
+        location:"mumbai"
     },
     
 ]
