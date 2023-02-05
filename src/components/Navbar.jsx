@@ -81,16 +81,16 @@ export const Navbar = () => {
           <p className='flex items-center dropdown-menu-item'  onClick={handleDropdown}>Specialistes <BsChevronDown className='ml-2'/>
             <div className='flex dropdown-sub-menu p-1' id='dropdown-item'>
               <div className='y-divider w-1/2 sub-menu-items'>
-                <p>Ophthalmology</p>
+               <NavLink to="/opthomology"><p>Ophthalmology</p></NavLink>
                <NavLink to="/medicine"><p>Internal Medicine</p></NavLink>
-                <p>Cold Laser Therapy</p>
-                <p>Dental</p>
+               <NavLink to="/coldLeaser"><p>Cold Laser Therapy</p></NavLink>
+               <NavLink to="/dental"><p>Dental</p></NavLink>
               </div>
 
               <div className='sub-menu-items w-1/2'>
-                <p>Gastroenterology</p>
-                <p>Physiotherapy</p>
-                <p>Nutrition Services</p>
+               <NavLink to="/gasto"><p>Gastroenterology</p></NavLink>
+               <NavLink to="/physcio"><p>Physiotherapy</p></NavLink>
+               <NavLink to="/nutro"><p>Nutrition Services</p></NavLink>
                <NavLink to="/cardio"><p>Cardiology</p></NavLink>
               </div>
             </div>

@@ -1335,6 +1335,9 @@ background-color: #FCEDEC;
   background-blend-mode: darken;
   margin: 0px 80px;
 }
+.medicine-back1{
+  background-image: url('./images/ratina.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
 .medicine-sect{
   position: absolute;
   top: 50%;
@@ -1476,9 +1479,16 @@ background-color: #FCEDEC;
 .treats{
   padding: 40px 100px;
 }
-.treats img{
+.treats .hath,
+.consult .hath{
   display: block;
   margin: auto;
+}
+.treats .hath{
+  width: 40px;
+}
+.consult .hath{
+  width: 40px;
 }
 .treats h2{
   color: #222F3E;
@@ -1574,7 +1584,7 @@ background-color: #FCEDEC;
   color: #000000;
   opacity: 0.7;
 }
-.success p{
+.success .medis{
   text-align: center;
   font-family: "Semi Bold"; 
   font-size: 15px;
@@ -1606,5 +1616,42 @@ background-color: #FCEDEC;
   font-size: 22px;
   margin-top: 40px;
 }
-
+.patients{
+  margin-top: 30px;
+  text-align: center;
+  color: #FF2020 !important;
+  font-family: gilroy;
+  font-weight: 700;
+  text-decoration: underline;
+  font-size:22px;
+}
 /* ==========================internal medicine css end=================== */
+
+/* =======================paginationCss================== */
+.paginationBttns{
+  width: 80%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.next a{
+  color: #E74C3C !important;
+}
+.paginationActive {
+  background-color: wheat;
+}
+.previousBttn{
+  display: none;
+}
+.paginationBttns a{
+  color: #000000;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 2px 10px;
+  cursor: pointer;
+  margin: 0 4px;
+}
+/* ====================paginationCssEnd===================== */
