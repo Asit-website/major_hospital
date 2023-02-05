@@ -69,6 +69,26 @@ const Cardiology = ({ apointPop, setApointPop }) => {
 
     setItem(updateList);
   };
+
+
+
+  //  ==================sorting by location===============
+  const allCatValues = [...new Set(cardiologyApi.slice(2,16).map((CurrElem) => CurrElem.location)),"all"];
+
+  const [catItems , setCatItems] = useState(allCatValues);
+
+  const filterItem = (Cate) =>{
+    if(Cate === "all"){
+      setItem(cardiologyApi);
+      return;
+  }
+
+  const newItem = cardiologyApi.filter((Curr) =>{
+        return Curr.location === Cate;
+  });
+
+  setItem(newItem);
+  }
   return (
     <>
       <Navbar />
@@ -120,12 +140,20 @@ const Cardiology = ({ apointPop, setApointPop }) => {
             <label for="underline_select" class="sr-only">
               Underline select
             </label>
-            <select id="underline_select" class="block py-2  pyo">
-              <option selected>Choose a country</option>
+            <select onClick={(e)=> filterItem(e.target.value)} id="underline_select" class="block py-2  pyo">
+            <option value="all">Location</option>
+            {
+              catItems.map((CurrElem,index)=>{
+                 return(
+                    <option key={index} value={CurrElem}>{CurrElem}</option>
+                 )
+              })
+            }
+              {/* <option selected>Choose a country</option>
               <option value="US">United States</option>
               <option value="CA">Canada</option>
               <option value="FR">France</option>
-              <option value="DE">Germany</option>
+              <option value="DE">Germany</option> */}
             </select>
           </div>
         </div>
