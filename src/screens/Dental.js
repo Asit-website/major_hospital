@@ -1,30 +1,27 @@
-import React, { useState } from 'react';
+import React,{useState} from 'react'
+import ApointmentPopup from '../popup/ApointmentPopup'
 import { Navbar } from '../components/Navbar';
-import dotor from '../images/dotor.png';
+import rec from '../images/rec.png';
 import btn from '../images/btn.png'
-import dawa from '../images/dawa.png'
 import Frame from '../images/Frame.png'
 import hath from '../images/hath.jpg'
 import { Link } from 'react-router-dom';
-import opthoApi from '../api/opthoApi';
-import ther from '../images/ther.png'
-import cardilogiApi from '../api/cardilogiApi'
-import ApointmentPopup from '../popup/ApointmentPopup';
-
-const InternalMedicine = ({apointPop,setApointPop}) => {
-    const [item,setItem] = useState(cardilogiApi);
+import das from '../images/das.png';
+import doc4 from '../images/doc4.png';
+import cardiologyApi from '../api/cardilogiApi';
+const Dental = ({apointPop,setApointPop}) => {
+    const [item,setItem] = useState(cardiologyApi);
     const [visible,setVisible] = useState(3);
 
     const showMoreDoctore = () =>{
         setVisible((prevValue)=> prevValue + 3);
     }
-
   return (
-    <>
-        <Navbar/>
-            <div className="medicine-back">
+     <>
+         <Navbar/>
+            <div className="medicine-back medicine-back1">
                  <div className="medicine-sect">
-                     <h2>Internal Medicine</h2>
+                     <h2>Dental</h2>
                  </div>
             </div>
 
@@ -36,7 +33,7 @@ const InternalMedicine = ({apointPop,setApointPop}) => {
                 </div>
                 <div className="institute-img">
                 <img className='sov-img'  src={btn} alt="" />
-                     <img className='dov-img' src={dotor} alt="dotor" />
+                     <img className='dov-img' src={doc4} alt="dotor" />
                 </div>
             </div>
 
@@ -47,7 +44,7 @@ const InternalMedicine = ({apointPop,setApointPop}) => {
                       <small>Chairman</small>
                       <p>Institute of Ophthalmology</p>
                    </div>
-                    <img src={dawa} alt="dawa" />
+                    <img src={rec} alt="dawa" />
                  </div>
                  <div className="second-word">
                     <h2>A word from our leaders</h2>
@@ -90,9 +87,8 @@ const InternalMedicine = ({apointPop,setApointPop}) => {
                    <div className="name-card">
                      <div className="text-card">
                        <h3>{val.name}</h3>
-                       <p>Senior Internal Medicine Expert at Major</p>
+                       <p>Senior Dental Expert at Major</p>
                        <p>Hospital Haryana</p>
-                       {/* <p>{val.content1}</p> */}
                      </div>
                     <div className="viwe-profile">
                         <Link to={`/cardio/${val.id}`}><p>{val.view}</p></Link>
@@ -132,7 +128,7 @@ const InternalMedicine = ({apointPop,setApointPop}) => {
                 <p className='medis'>See how Medanta’s doctors treated patients using advanced technologies and <br /> sophisticated procedures.</p>
                 <div className="img-suc">
                 <img className='vic' src={btn} alt="" />
-                    <img  src={ther} alt="" />
+                    <img  src={das} alt="" />
                 </div>
 
                 <p className='patients'>All patient’s stories</p>
@@ -140,10 +136,10 @@ const InternalMedicine = ({apointPop,setApointPop}) => {
             </div>
 
             {
-              apointPop && <ApointmentPopup setApointPop={setApointPop}/>
+                apointPop && <ApointmentPopup setApointPop={setApointPop}/>
             }
-    </>
+     </>
   )
 }
 
-export default InternalMedicine
+export default Dental

@@ -1,6 +1,32 @@
 const cardiologyApi = [
     {
         id:"1",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283442/asit/dr3_rj35lo.png",
+        name:"Dr. Mahi Rawat",
+        content:"Senior Cardiology Expert at Major",
+        content1:"Hospital Haryana",
+        view:"View Profile",
+        information:"Associate Director Ophthalmology",
+        informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
+        informationCont1:"(VIETNAM), FESC.",
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
+        appoint:"Book an Appointment",
+    },
+    {
+        id:"2",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283436/asit/dr1_byfydh.png",
+        name:"Dr. Rohan Sharma",
+        content:"Senior Cardiology Expert at Major",
+        content1:"Hospital Haryana",
+        view:"View Profile",
+        information:"Associate Director Ophthalmology",
+        informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
+        informationCont1:"(VIETNAM), FESC.",
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/untar.png"],
+        appoint:"Book an Appointment"
+    },
+    {
+        id:"3",
         images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283355/asit/dr_i9c19c.png",
         name:"Dr. Mahi Rawat",
         content:"Senior Cardiology Expert at Major",
@@ -9,11 +35,11 @@ const cardiologyApi = [
         information:"Associate Director Cardiology",
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
-        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/half.png"],
         appoint:"Book an Appointment"
     },
     {
-        id:"2",
+        id:"4",
         images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283436/asit/dr1_byfydh.png",
         name:"Dr. Rohan Sharma",
         content:"Senior Cardiology Expert at Major",
@@ -26,7 +52,7 @@ const cardiologyApi = [
         appoint:"Book an Appointment"
     },
     {
-        id:"3",
+        id:"5",
         images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283439/asit/dr2_e5lg6p.png",
         name:"Dr. Sakshi Sena",
         content:"Senior Cardiology Expert at Major",
@@ -39,7 +65,7 @@ const cardiologyApi = [
         appoint:"Book an Appointment"
     },
     {
-        id:"4",
+        id:"6",
         images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283442/asit/dr3_rj35lo.png",
         name:"Dr. Mahi Sharma",
         content:"Senior Cardiology Expert at Major",
@@ -53,7 +79,7 @@ const cardiologyApi = [
     },
 
     {
-        id:"5",
+        id:"7",
         images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283355/asit/dr_i9c19c.png",
         name:"Dr. Mahi Rawat",
         content:"Senior Cardiology Expert at Major",
@@ -66,7 +92,7 @@ const cardiologyApi = [
         appoint:"Book an Appointment"
     },
     {
-        id:"6",
+        id:"8",
         images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283436/asit/dr1_byfydh.png",
         name:"Dr. Rohan Sharma",
         content:"Senior Cardiology Expert at Major",
@@ -79,7 +105,7 @@ const cardiologyApi = [
         appoint:"Book an Appointment"
     },
     {
-        id:"7",
+        id:"9",
         images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283439/asit/dr2_e5lg6p.png",
         name:"Dr. Sakshi Sena",
         content:"Senior Cardiology Expert at Major",
@@ -92,7 +118,85 @@ const cardiologyApi = [
         appoint:"Book an Appointment"
     },
     {
-        id:"8",
+        id:"10",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283442/asit/dr3_rj35lo.png",
+        name:"Dr. Mahi Sharma",
+        content:"Senior Cardiology Expert at Major",
+        content1:"Hospital Haryana",
+        view:"View Profile",
+        information:"Associate Director Cardiology",
+        informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
+        informationCont1:"(VIETNAM), FESC.",
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
+        appoint:"Book an Appointment"
+    },
+    {
+        id:"11",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283442/asit/dr3_rj35lo.png",
+        name:"Dr. Mahi Sharma",
+        content:"Senior Cardiology Expert at Major",
+        content1:"Hospital Haryana",
+        view:"View Profile",
+        information:"Associate Director Cardiology",
+        informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
+        informationCont1:"(VIETNAM), FESC.",
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
+        appoint:"Book an Appointment"
+    },
+    {
+        id:"12",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283442/asit/dr3_rj35lo.png",
+        name:"Dr. Mahi Sharma",
+        content:"Senior Cardiology Expert at Major",
+        content1:"Hospital Haryana",
+        view:"View Profile",
+        information:"Associate Director Cardiology",
+        informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
+        informationCont1:"(VIETNAM), FESC.",
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
+        appoint:"Book an Appointment"
+    },
+    {
+        id:"13",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283442/asit/dr3_rj35lo.png",
+        name:"Dr. Mahi Sharma",
+        content:"Senior Cardiology Expert at Major",
+        content1:"Hospital Haryana",
+        view:"View Profile",
+        information:"Associate Director Cardiology",
+        informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
+        informationCont1:"(VIETNAM), FESC.",
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
+        appoint:"Book an Appointment"
+    },
+    {
+        id:"14",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283442/asit/dr3_rj35lo.png",
+        name:"Dr. Mahi Sharma",
+        content:"Senior Cardiology Expert at Major",
+        content1:"Hospital Haryana",
+        view:"View Profile",
+        information:"Associate Director Cardiology",
+        informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
+        informationCont1:"(VIETNAM), FESC.",
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
+        appoint:"Book an Appointment"
+    },
+    {
+        id:"15",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283442/asit/dr3_rj35lo.png",
+        name:"Dr. Mahi Sharma",
+        content:"Senior Cardiology Expert at Major",
+        content1:"Hospital Haryana",
+        view:"View Profile",
+        information:"Associate Director Cardiology",
+        informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
+        informationCont1:"(VIETNAM), FESC.",
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
+        appoint:"Book an Appointment"
+    },
+    {
+        id:"16",
         images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283442/asit/dr3_rj35lo.png",
         name:"Dr. Mahi Sharma",
         content:"Senior Cardiology Expert at Major",
