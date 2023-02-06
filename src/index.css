@@ -39,11 +39,25 @@ body {
   align-items: center; */
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+
+:root {
+  --swiper-theme-color: #E74C3C!important;
+}
+
+.swiper-pagination-bullet-active {
+  width : 20px!important;
+  height : 8px!important;
+  border-radius : 8px!important;
+}
+
+.swiper-pagination-bullet {
+  background-color : #E74C3C!important;
+  height : 8px!important;
+  border-radius : 8px!important;
+}
+
+.swiper-pagination-bullets{
+  bottom : 25px!important;
 }
 
 .home-pop{

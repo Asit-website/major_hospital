@@ -1,5 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
+
+import { Pagination, Navigation } from "swiper";
 
 //importing icons
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
@@ -65,6 +69,11 @@ const specialists = [
 ]
 
 export const Home = () => {
+  const swiperRef = useRef();
+  const swiperRef1 = useRef();
+
+  const specialistMin = 0;
+  const specialistMax = 0;
 
   const [selSpecialist, setSelSpecialist] = useState(0);
 
@@ -98,7 +107,17 @@ export const Home = () => {
             <div className='text-center text-lg mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>        
           </div>
 
-          <div className='specialist-cards flex mx-20 my-10 justify-between '>
+          <Swiper
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+          >
+
+          <SwiperSlide>
+          <div className='specialist-cards flex mx-20 my-10 justify-between pb-8'>
           {specialists.map(specialist => 
             <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]' : 'specialist-card'} onClick={() => handleSpecialist(specialist.id)}>
               <div className=' flex justify-center items-center'>
@@ -112,15 +131,60 @@ export const Home = () => {
             )}
             
           </div>
-        
+          </SwiperSlide>
+
+          <SwiperSlide>
+          <div className='specialist-cards flex mx-20 my-10 justify-between pb-8 '>
+          {specialists.map(specialist => 
+            <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]' : 'specialist-card'} onClick={() => handleSpecialist(specialist.id)}>
+              <div className=' flex justify-center items-center'>
+                <div className={selSpecialist === specialist.id ? 'specialist-card-img bg-[#FFF5D7]' : 'specialist-card-img bg-[#FFF5D7]'}>
+                  <img src={selSpecialist === specialist.id ? specialist.img_dark : specialist.img_light}/>
+                </div> 
+              </div>
+              <div className={selSpecialist === specialist.id ? 'text-center font-semibold text-2xl mb-8 text-white' : 'text-center font-semibold text-2xl mb-8'}>{specialist.title}</div>
+
+            </div>
+            )}
+            
+          </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+          <div className='specialist-cards flex mx-20 my-10 justify-between pb-8'>
+          {specialists.map(specialist => 
+            <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]' : 'specialist-card'} onClick={() => handleSpecialist(specialist.id)}>
+              <div className=' flex justify-center items-center'>
+                <div className={selSpecialist === specialist.id ? 'specialist-card-img bg-[#FFF5D7]' : 'specialist-card-img bg-[#FFF5D7]'}>
+                  <img src={selSpecialist === specialist.id ? specialist.img_dark : specialist.img_light}/>
+                </div> 
+              </div>
+              <div className={selSpecialist === specialist.id ? 'text-center font-semibold text-2xl mb-8 text-white' : 'text-center font-semibold text-2xl mb-8'}>{specialist.title}</div>
+
+            </div>
+            )}
+            
+          </div>
+          </SwiperSlide>
+          </Swiper>
         </div>
         {/** ./Specialities */}
         {/** Videos Slider */}
-        <div className='video-slider flex items-center justify-center'>
-        <div className='swipe-left-btn'>
+        
+        <div className=' flex items-center justify-center px-10'>
+        <div className='swipe-left-btn' onClick={() => swiperRef.current.slidePrev()}>
             <FaAngleLeft/>
         </div>
-        <div className="women-section">
+        <Swiper
+        modules={[ Navigation]}
+        onBeforeInit={(swiper) => {
+          swiperRef.current = swiper;
+        }}
+        className='video-slider '
+        >
+        
+        
+        <SwiperSlide className="women-section">
                   <div className="wo-img">
                   <img className='imhk' src={btn} alt="" />
                       <img src={women} alt="women1" />
@@ -130,22 +194,60 @@ export const Home = () => {
                       <img src={women1} alt="women" />
                  </div>
                  
-        </div>
+        </SwiperSlide>
         
-        <div className='swipe-right-btn'>
+
+        
+        <SwiperSlide className="women-section">
+                  <div className="wo-img">
+                  <img className='imhk' src={btn} alt="" />
+                      <img src={women} alt="women1" />
+                  </div>
+                 <div className="wo-img">
+                     <img className='imhk' src={btn} alt="" />
+                      <img src={women1} alt="women" />
+                 </div>
+                 
+        </SwiperSlide>
+        
+
+        <SwiperSlide className="women-section">
+                  <div className="wo-img">
+                  <img className='imhk' src={btn} alt="" />
+                      <img src={women} alt="women1" />
+                  </div>
+                 <div className="wo-img">
+                     <img className='imhk' src={btn} alt="" />
+                      <img src={women1} alt="women" />
+                 </div>
+                 
+        </SwiperSlide>
+        
+        
+        </Swiper>
+        <div className='swipe-right-btn' onClick={() => swiperRef.current.slideNext()}>
             <FaAngleRight/>
         </div>
         </div>
         {/** ./Videos Slider */}
         {/** Patient Stories */}
+        <Swiper 
+        modules={[ Navigation]}
+        onBeforeInit={(swiper) => {
+          swiperRef1.current = swiper;
+        }}
+        
+        >
+        
+        <SwiperSlide>
         <div className='patient-stories-section flex mx-[130px] items-center my-[80px]'>
             <div className="wo-img relative w-[50%]">
               <img className='imhk' src={btn} alt="" />
               <img src={patient_w} alt="women" />
-              <div className='swipe-left-btn absolute right-0 bottom-5'>
+              <div className='swipe-left-btn absolute right-0 bottom-5' onClick={() => swiperRef1.current.slidePrev()}>
                 <FaAngleLeft/>
               </div>
-              <div className='swipe-right-btn absolute -right-[50px] bottom-5'>
+              <div className='swipe-right-btn absolute -right-[50px] bottom-5' onClick={() => swiperRef1.current.slideNext()}>
                 <FaAngleRight/>
               </div>
             </div>
@@ -156,13 +258,91 @@ export const Home = () => {
               <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
             </div>
         </div>
+        </SwiperSlide>
+        
+        <SwiperSlide>
+        <div className='patient-stories-section flex mx-[130px] items-center my-[80px]'>
+            <div className="wo-img relative w-[50%]">
+              <img className='imhk' src={btn} alt="" />
+              <img src={patient_w} alt="women" />
+              <div className='swipe-left-btn absolute right-0 bottom-5' onClick={() => swiperRef1.current.slidePrev()}>
+                <FaAngleLeft/>
+              </div>
+              <div className='swipe-right-btn absolute -right-[50px] bottom-5' onClick={() => swiperRef1.current.slideNext()}>
+                <FaAngleRight/>
+              </div>
+            </div>
+            <div className='w-[40%] ml-20'>
+              <p className='text-2xl font-bold'>Patient's Stories</p>
+              <p className='text-4xl font-bold mt-2'>Where Health Meets Care</p>
+              <p className='text-xl mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
+            </div>
+        </div>
+        </SwiperSlide>
+        
+        <SwiperSlide>
+        <div className='patient-stories-section flex mx-[130px] items-center my-[80px]'>
+            <div className="wo-img relative w-[50%]">
+              <img className='imhk' src={btn} alt="" />
+              <img src={patient_w} alt="women" />
+              <div className='swipe-left-btn absolute right-0 bottom-5' onClick={() => swiperRef1.current.slidePrev()}>
+                <FaAngleLeft/>
+              </div>
+              <div className='swipe-right-btn absolute -right-[50px] bottom-5' onClick={() => swiperRef1.current.slideNext()}>
+                <FaAngleRight/>
+              </div>
+            </div>
+            <div className='w-[40%] ml-20'>
+              <p className='text-2xl font-bold'>Patient's Stories</p>
+              <p className='text-4xl font-bold mt-2'>Where Health Meets Care</p>
+              <p className='text-xl mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
+            </div>
+        </div>
+        </SwiperSlide>
+        
+        <SwiperSlide>
+        <div className='patient-stories-section flex mx-[130px] items-center my-[80px]'>
+            <div className="wo-img relative w-[50%]">
+              <img className='imhk' src={btn} alt="" />
+              <img src={patient_w} alt="women" />
+              <div className='swipe-left-btn absolute right-0 bottom-5' onClick={() => swiperRef1.current.slidePrev()}>
+                <FaAngleLeft/>
+              </div>
+              <div className='swipe-right-btn absolute -right-[50px] bottom-5' onClick={() => swiperRef1.current.slideNext()}>
+                <FaAngleRight/>
+              </div>
+            </div>
+            <div className='w-[40%] ml-20'>
+              <p className='text-2xl font-bold'>Patient's Stories</p>
+              <p className='text-4xl font-bold mt-2'>Where Health Meets Care</p>
+              <p className='text-xl mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
+            </div>
+        </div>
+        </SwiperSlide>
+
+        
+       
+        </Swiper>
         {/** ./Patient Stories */}
         {/** Our Services */}
         <div className='our-services-section bg-[#FEF9F9] py-10'>
+        
             <div className='text-3xl text-center font-bold'>Our Services</div>
             <div className='text-lg text-center font-bold my-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>
-        
-            <div className='flex justify-center mx-20'>
+            
+            <Swiper
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+            >
+            <SwiperSlide>
+            <div className='flex justify-center mx-20 pb-10'>
               {
                 servicesApi.map(service => 
                   <div key={service.id} className='service-card pb-8'>
@@ -176,6 +356,59 @@ export const Home = () => {
                   )
               }
             </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+            <div className='flex justify-center mx-20 pb-10'>
+              {
+                servicesApi.map(service => 
+                  <div key={service.id} className='service-card pb-8'>
+                    <div className='service-card-img'>
+                      <img src={service.service_img} alt='services'/>
+                    </div>
+                    <p className='my-5 mx-2 text-xl font-semibold text-[#101010]'>{service.name}</p>
+                    <p className='mb-5 mx-2 text-sm text-[#101010]'>{service.desc}</p>
+                    <div className='flex justify-center '><span className='red-btn red-btn1 '>Know More</span></div>
+                  </div>
+                  )
+              }
+            </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+            <div className='flex justify-center mx-20 pb-10'>
+              {
+                servicesApi.map(service => 
+                  <div key={service.id} className='service-card pb-8'>
+                    <div className='service-card-img'>
+                      <img src={service.service_img} alt='services'/>
+                    </div>
+                    <p className='my-5 mx-2 text-xl font-semibold text-[#101010]'>{service.name}</p>
+                    <p className='mb-5 mx-2 text-sm text-[#101010]'>{service.desc}</p>
+                    <div className='flex justify-center '><span className='red-btn red-btn1 '>Know More</span></div>
+                  </div>
+                  )
+              }
+            </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+            <div className='flex justify-center mx-20 pb-10'>
+              {
+                servicesApi.map(service => 
+                  <div key={service.id} className='service-card pb-8'>
+                    <div className='service-card-img'>
+                      <img src={service.service_img} alt='services'/>
+                    </div>
+                    <p className='my-5 mx-2 text-xl font-semibold text-[#101010]'>{service.name}</p>
+                    <p className='mb-5 mx-2 text-sm text-[#101010]'>{service.desc}</p>
+                    <div className='flex justify-center '><span className='red-btn red-btn1 '>Know More</span></div>
+                  </div>
+                  )
+              }
+            </div>
+            </SwiperSlide>
+            </Swiper>
         </div>
         {/** ./Our Services */}
 
@@ -265,6 +498,16 @@ export const Home = () => {
         </div>
         {/** ./Our Blogs */}
         {/** Patient Reviews */}
+        <div >
+        <Swiper 
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+        <SwiperSlide>
         <div className='patient-reviews flex justify-center py-20'>
         
         <div className=' text-center w-[40%]'>
@@ -298,6 +541,81 @@ export const Home = () => {
               <img src={test07} className='testmonial-floating-img test8' alt='testimonial'/>
               <img src={test08} className='testmonial-floating-img test9' alt='testimonial'/>
               <img src={test09} className='testmonial-floating-img test10' alt='testimonial'/>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='patient-reviews flex justify-center py-20'>
+        
+        <div className=' text-center w-[40%]'>
+          <p className='text-[#E74C3C] font-semibold my-1'>Testimonial</p>
+          <p className='text-3xl font-extrabold text-slate-600'>Satisfied Patients Reviews</p>
+          <div className='flex justify-center testimonial-img'>
+              <img src={testimonial} alt='testimonial-img'/>
+          </div>
+          
+          <p className='mb-5 text-slate-500'>
+            I appreciate your hospital really good environment and excellent patient care. you are
+            continuously handle patient treatment wonderfully. Thanks for your great service. Please
+            enjoy the chocolates.
+          </p>
+          <div className="tara flex mb-3 justify-center">
+              <img  src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+          </div>
+          <p className='font-bold text-slate-700'>Amanda Kinedy</p>
+        </div>
+              <img src={test01} className='testmonial-floating-img test1' alt='testimonial'/>
+              <img src={test01} className='testmonial-floating-img test2' alt='testimonial'/>
+              <img src={test02} className='testmonial-floating-img test3' alt='testimonial'/>
+              <img src={test03} className='testmonial-floating-img test4' alt='testimonial'/>
+              <img src={test04} className='testmonial-floating-img test5' alt='testimonial'/>
+              <img src={test05} className='testmonial-floating-img test6' alt='testimonial'/>
+              <img src={test06} className='testmonial-floating-img test7' alt='testimonial'/>
+              <img src={test07} className='testmonial-floating-img test8' alt='testimonial'/>
+              <img src={test08} className='testmonial-floating-img test9' alt='testimonial'/>
+              <img src={test09} className='testmonial-floating-img test10' alt='testimonial'/>
+        </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className='patient-reviews flex justify-center py-20'>
+        
+        <div className=' text-center w-[40%]'>
+          <p className='text-[#E74C3C] font-semibold my-1'>Testimonial</p>
+          <p className='text-3xl font-extrabold text-slate-600'>Satisfied Patients Reviews</p>
+          <div className='flex justify-center testimonial-img'>
+              <img src={testimonial} alt='testimonial-img'/>
+          </div>
+          
+          <p className='mb-5 text-slate-500'>
+            I appreciate your hospital really good environment and excellent patient care. you are
+            continuously handle patient treatment wonderfully. Thanks for your great service. Please
+            enjoy the chocolates.
+          </p>
+          <div className="tara flex mb-3 justify-center">
+              <img  src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+              <img className='ml-1' src={vect} alt="" />
+          </div>
+          <p className='font-bold text-slate-700'>Amanda Kinedy</p>
+        </div>
+              <img src={test01} className='testmonial-floating-img test1' alt='testimonial'/>
+              <img src={test01} className='testmonial-floating-img test2' alt='testimonial'/>
+              <img src={test02} className='testmonial-floating-img test3' alt='testimonial'/>
+              <img src={test03} className='testmonial-floating-img test4' alt='testimonial'/>
+              <img src={test04} className='testmonial-floating-img test5' alt='testimonial'/>
+              <img src={test05} className='testmonial-floating-img test6' alt='testimonial'/>
+              <img src={test06} className='testmonial-floating-img test7' alt='testimonial'/>
+              <img src={test07} className='testmonial-floating-img test8' alt='testimonial'/>
+              <img src={test08} className='testmonial-floating-img test9' alt='testimonial'/>
+              <img src={test09} className='testmonial-floating-img test10' alt='testimonial'/>
+        </div>
+        </SwiperSlide>
+        </Swiper>
         </div>
         {/** ./Patient Reviews */}
 
