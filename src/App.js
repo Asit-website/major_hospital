@@ -32,7 +32,7 @@ function App() {
           <Route path='/feedback' element={<Feedback/>}/>
           <Route path='/cardio' element={<Cardiology apointPop={apointPop} setApointPop={setApointPop}/>}/>
           <Route  path='/cardio/:id' element={<CardiologyDetails apointPop={apointPop} setApointPop={setApointPop}/>}/>
-          <Route path='/health' element={<HealthCheckup apointPop={apointPop} setApointPop/>}/>
+          <Route path='/health' element={<HealthCheckup apointPop={apointPop} setApointPop={setApointPop}/>}/>
           <Route path='/iodolgy' element={<Iodology/>}/>
           <Route path='/acheive' element={<Achievement/>}/>
           <Route path='/medicine' element={<InternalMedicine apointPop={apointPop} setApointPop={setApointPop}/>}/>

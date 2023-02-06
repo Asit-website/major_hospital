@@ -73,7 +73,7 @@ const Cardiology = ({ apointPop, setApointPop }) => {
 
 
   //  ==================sorting by location===============
-  const allCatValues = [...new Set(cardiologyApi.slice(2,16).map((CurrElem) => CurrElem.location)),"all"];
+  const allCatValues = [...new Set(cardiologyApi.slice(2,16).map((CurrElem) => CurrElem.location))];
 
   const [catItems , setCatItems] = useState(allCatValues);
 
@@ -149,11 +149,6 @@ const Cardiology = ({ apointPop, setApointPop }) => {
                  )
               })
             }
-              {/* <option selected>Choose a country</option>
-              <option value="US">United States</option>
-              <option value="CA">Canada</option>
-              <option value="FR">France</option>
-              <option value="DE">Germany</option> */}
             </select>
           </div>
         </div>
@@ -163,8 +158,6 @@ const Cardiology = ({ apointPop, setApointPop }) => {
             previousLabel={"Previous"}
             nextLabel={"Next"}
             pageCount={pageCount}
-           
-          
             onPageChange={changePage}
             containerClassName={"paginationBttns"}
             previousLinkClassName={"previousBttn"}
