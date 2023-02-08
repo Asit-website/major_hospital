@@ -540,6 +540,7 @@ max-width: 100%;
   font-size: 50px;
   color: #FFFFFF;
   letter-spacing: .5px;
+  text-align: center;
 }
 .sing{
   border-bottom: 1px solid #BCC5C7;
@@ -1351,7 +1352,20 @@ background-color: #FCEDEC;
   margin: 0px 80px;
 }
 .medicine-back1{
-  background-image: url('./images/ratina.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-image: url('./images/nutration.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.medicine-back2{
+  background-image: url('./images/phys.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+.medicine-back3{
+  background-image: url('./images/gasto.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+.medicine-back4{
+  background-image: url('./images/cold.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+.medicine-back5{
+  background-image: url('./images/ratina.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
 .medicine-sect{
   position: absolute;
@@ -1544,6 +1558,9 @@ background-color: #FCEDEC;
   background-image: url('./images/patient.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-blend-mode: darken;
 }
+.treats-back1{
+  background-image: url('./images/therpy.png'), radial-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
 .treats-sect h2{
   color: #FFFFFF;
   font-family: gilroy;
@@ -1672,4 +1689,269 @@ background-color: #FCEDEC;
 .off1{
   display: none;
 }
+.our-blogs2{
+  position: relative;
+  top: -70px;
+}
+.our-blogs2 .gast{
+  font-size: 34px;
+  font-family: gilroy;
+  font-weight: 700;
+  color: #000000;
+}
+.our-blogs2 .blog-btn1{
+  background-color:#E74C3C ;
+  width: 270px;
+  height: 42px;
+  border-radius: 5px;
+  color: #FFFFFF;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: .5px;
+}
+.our-blogs2 .stays{
+  color: #000000;
+  font-family: "Semi Bold";
+  font-size: 20px;
+}
 /* ====================paginationCssEnd===================== */
+
+
+
+
+
+/* ===================media query css============= */
+@media only screen and (max-width:1070px){
+  .medicine-back{
+     margin: 0px 30px;
+  }
+  .about-institute{
+    padding: 50px 30px;
+  }
+  .word-leader{
+    padding: 40px 30px;
+  }
+  .treats{
+    padding: 40px 30px;
+  }
+  .our-blogs2{
+    padding: 10px 10px;
+  }
+  .blog-meta{
+    flex-direction: column;
+  }
+  .blog-meta p{
+     margin-top: 5px;
+  }
+  .cardio-check{
+    margin: 0 30px;
+  }
+}
+
+@media only screen and (max-width:972px){
+  .first-word img{
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width:911px){
+  .institute{
+    margin-right: 30px;
+  }
+  .institute-img{
+    margin-left: 30px;
+  }
+  .blog-meta1{
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-card-main{
+    width: 80%;
+  }
+  .blog-cards-secondary{
+    width: 80%;
+  }
+  .blog-card-mar{
+    margin-top: 15px;
+  }
+  footer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-foot{
+    text-align: center;
+  }
+  .second-foot{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .third-foot{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .fourth-foot{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .appoint-req button{
+    display: block;
+    margin: auto;
+  }
+  .footer{
+    padding: 40px 30px;
+  }
+  .health-card{
+    padding: 40px 30px;
+  }
+  .blog-card-secondary{
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width:1290px){
+  .card1{
+    width: 44%;
+  }
+  .health-card .health-box{
+    width: auto;
+  }
+}
+
+@media only screen and (max-width:750px){
+  .about-institute{
+    flex-direction: column;
+    align-items: center;
+  }
+  .institute{
+    margin-right: 0px;
+    width: 90%;
+  }
+  .institute-img{
+    margin-left: 0px;
+  }
+  .word-leader{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .first-word{
+    margin-right: 0px;
+  }
+  .second-word{
+    margin-left: 0px;
+    width: 90%;
+  }
+  .first-word img{
+    margin-top: 30px;
+  }
+  .treats-sect{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transform: translate(0px,0px);
+    padding: 15px;
+  }
+  .consult{
+    margin: 0px 30px;
+  }
+}
+
+@media only screen and (max-width:890px){
+  .card1{
+    width: 60%;
+  }
+  .filter-group{
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-nsp{
+    margin-left: 0px;
+  }
+  .filter-group{
+    margin-left: 0px;
+  }
+  .pyo{
+    margin-left: 0px;
+  }
+  .second-nsp1 select{
+    margin: 15px 0px;
+  }
+}
+
+@media only screen and (max-width:580px){
+  .blog-card-secondary{
+    flex-direction: column ;
+
+  }
+  .blog-card-secondary img{
+    width: 100%;
+    height: auto;
+  }
+  .consult .exy{
+    line-height: 35px;
+  }
+  .card1{
+    width: 100%;
+  }
+  
+}
+
+@media only screen and (max-width:417px){
+  .second-word h2{
+    line-height: 35px;
+  }
+  .lorem{
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-card-main{
+    width: 100%;
+  }
+  .blog-cards-secondary{
+    width: 100%;
+  }
+  .consult{
+    margin: 0 10px;
+    padding: 40px 0px;
+  }
+  .medicine-back{
+    margin: 0 20px;
+  }
+  .about-institute{
+    padding: 50px 20px;
+  }
+  .institute{
+    width: 100%;
+  }
+  .word-leader{
+    padding: 40px 20px;
+  }
+  .second-word{
+    width: 100%;
+  }
+  .treats{
+    padding: 40px 20px;
+  }
+  .treats-sect h2{
+    line-height: 35px;
+  }
+  .treats-sect p{
+    margin-top: 10px;
+  }
+  .name-card{
+    flex-direction: column;
+  }
+  .viwe-profile {
+    margin-top: 5px;
+  }
+  .text-card p{
+    line-height: 16px;
+  }
+  .health-card .health-box{
+    width: 100%;
+  }
+  .health-card{
+    padding: 40px 20px;
+  }
+  
+}
