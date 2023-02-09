@@ -20,6 +20,10 @@ body {
   width: 100%;
   height: 100%;
 }
+.nav-logo img{
+  width: 160px;
+  max-width: 160px;
+}
 
 .swiper-slide {
   text-align: center;
@@ -178,6 +182,7 @@ body {
   font-weight: 700;
   font-size: 50px;
   letter-spacing: 1px;
+  text-align: center;
 }
 .any-question{
   padding: 60px 160px;
@@ -224,6 +229,10 @@ body {
   font-family: "Medium";
   position: relative;
   top: 8px;
+}
+.two-side-cont input[type="text"]{
+  position: relative;
+  top: 0px !important;
 }
 .input-fields1{
   margin-right: 20px;
@@ -422,6 +431,7 @@ footer{
   font-family: "Semi Bold";
   font-size: 50px;
   letter-spacing: 1px;
+  text-align: center;
 }
 .share-feed{
   padding: 40px 120px;
@@ -842,6 +852,7 @@ max-width: 100%;
   font-weight: 700;
   font-size: 50px;
   letter-spacing: 1px;
+  text-align: center;
 }
 .iodology-section{
   display: flex;
@@ -934,6 +945,7 @@ max-width: 100%;
   font-family: "Semi Bold";
   font-size: 50px;
   letter-spacing: 1px;
+  text-align: center;
 }
 .second-iodo1{
   margin-right: 80px;
@@ -952,9 +964,10 @@ max-width: 100%;
   align-items: center;
   justify-content: center;
   padding: 10px 80px;
+  flex-wrap: wrap;
 }
 .img-section img{
-  margin: 0px 10px;
+  margin: 10px 10px;
   max-width: 420px;
   width: 100%;
 }
@@ -1723,6 +1736,9 @@ background-color: #FCEDEC;
 
 /* ===================media query css============= */
 @media only screen and (max-width:1070px){
+  .about-card{
+    margin: 0 30px;
+  }
   .medicine-back{
      margin: 0px 30px;
   }
@@ -1747,8 +1763,106 @@ background-color: #FCEDEC;
   .cardio-check{
     margin: 0 30px;
   }
+  .iodolgy-back{
+    margin: 0 30px;
+  }
+  .iodology-section{
+    padding: 70px 30px;
+  }
+  .aim{
+    padding: 40px 30px;
+  }
+  .achieve-back{
+    margin: 0px 30px;
+  }
+  .img-section{
+    padding: 10px 30px;
+  }
+  .what-expert{
+    padding: 40px 30px;
+  }
+  .cardio-back{
+    margin: 0 30px;
+  }
+  .filter{
+    padding: 30px 30px;
+  }
+  .details-back{
+    margin: 0 30px;
+  }
+  .expert-ret{
+    padding: 90px 30px;
+  }
+  .contact-back{
+    margin: 0 30px;
+  }
+  .any-question{
+    padding: 60px 30px;
+  }
+  .two-side-cont{
+    flex-direction: column;
+  }
+  .textarea1{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .textarea1 textarea{
+    width: 100%;
+  }
+  .input-fields1{
+    margin-right: 0px;
+    width: 100%;
+  }
+  .input-fields1 input{
+    width: 100%;
+  }
+  .feedback-back{
+    margin: 0 30px;
+  }
+  .share-feed{
+    padding: 40px 30px;
+  }
+  .shadow-feed .two-side-cont .textarea1{
+    margin-left: 0px;
+  }
+  .shadow-feed .textarea1 textarea{
+    width: 100%;
+  }
+  .feed-btn{
+    text-align: center;
+  }
 }
-
+@media only screen and (max-width:1023px){
+  .card-details{
+    flex-direction: column;
+    align-items: center;
+  }
+  .call-det{
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+  .or{
+    display: none;
+  }
+  .buttpn-group{
+    margin-top: 20px;
+  }
+  .doctor-det{
+    bottom: -160px;
+  }
+  .details-sect h2{
+    line-height: 50px;
+  }
+  .expert-det{
+    margin-top: 100px;
+  }
+  .doctor-table{
+    width: 800px;
+    max-width: 100%;
+    display: block;
+    overflow: scroll;
+  }
+}
 @media only screen and (max-width:972px){
   .first-word img{
     height: 400px;
@@ -1758,6 +1872,24 @@ background-color: #FCEDEC;
 @media only screen and (max-width:911px){
   .institute{
     margin-right: 30px;
+  }
+  .cardio-sect h2{
+    line-height: 51px;
+  }
+  .iodo-sect h2{
+    line-height: 51px;
+  }
+  .achive-sect h2{
+    line-height: 51px;
+  }
+  .medicine-sect h2{
+    line-height: 42px;
+  }
+  .sect-fed h2{
+    line-height: 51px;
+  }
+  .sect h2{
+    line-height: 51px;
   }
   .institute-img{
     margin-left: 30px;
@@ -1807,6 +1939,18 @@ background-color: #FCEDEC;
   .blog-card-secondary{
     margin-top: 25px;
   }
+  .first-iodo{
+    margin-right: 30px;
+  }
+  .second-iodo{
+    margin-left: 30px;
+  }
+  .first-iodo1{
+    margin-left: 30px;
+  }
+  .second-iodo1{
+    margin-right: 30px;
+  }
 }
 
 @media only screen and (max-width:1290px){
@@ -1815,6 +1959,25 @@ background-color: #FCEDEC;
   }
   .health-card .health-box{
     width: auto;
+  }
+  .card{
+    width: auto;
+  }
+  .img-mah{
+    margin-right: 10px;
+  }
+  .card-details{
+    margin-left: 10px;
+  }
+  .doctor-det{
+    flex-direction: column;
+  }
+  .share-feed{
+    padding: 40px 30px;
+  }
+  .nav-logo img{
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -1854,7 +2017,49 @@ background-color: #FCEDEC;
   .consult{
     margin: 0px 30px;
   }
+  .iodology-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-iodo{
+    margin-right: 0px;
+    width: 90%;
+  }
+  .second-iodo{
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  .first-iodo1{
+     margin-left: 0px;
+     margin-top: 40px;
+  }
+  .second-iodo1{
+    margin-right: 0px;
+  }
+  .women-section{
+    flex-direction: column;
+  }
+  .wo-img{
+    margin: 10px 0px;
+  }
 }
+
+@media only screen and (max-width:1150px){
+  .about-card{
+    width: auto;
+  }
+  .certificate{
+    flex-direction: column;
+  }
+  .certificate img{
+    margin-left: 0px !important;
+    margin: 10px 0px;
+  }
+  .ghj{
+    display: none;
+  }
+}
+
 
 @media only screen and (max-width:890px){
   .card1{
@@ -1876,6 +2081,36 @@ background-color: #FCEDEC;
   .second-nsp1 select{
     margin: 15px 0px;
   }
+  .second-nsp{
+    margin-top: 20px;
+  }
+  .abg{
+    display: none;
+  }
+  .about-foot{
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-foot1{
+    text-align: center;
+    margin-top: 15px;
+  }
+  .location-ab{
+    justify-content: center;
+  }
+  .second-foot1{
+    text-align: center;
+    margin-top: 15px;
+  }
+  .para-qualify{
+    text-align: center;
+  }
+  .about-card h3{
+    text-align: center;
+  }
+  .about-card p{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width:580px){
@@ -1893,12 +2128,36 @@ background-color: #FCEDEC;
   .card1{
     width: 100%;
   }
-  
+  .first-iodo{
+    width: 100%;
+  }
+  .aim h2{
+    line-height: 42px;
+  }
+  .buttpn-group{
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttpn-group .mes{
+    margin-top: 15px;
+  }
+  .doctor-det{
+    bottom: -215px;
+  }
+  .expert-det{
+    margin-top: 140px;
+  }
+  .card-details{
+    margin-left: 0px;
+  }
 }
 
 @media only screen and (max-width:417px){
   .second-word h2{
     line-height: 35px;
+  }
+  .filter{
+    padding: 30px 20px;
   }
   .lorem{
     flex-direction: column;
@@ -1953,5 +2212,109 @@ background-color: #FCEDEC;
   .health-card{
     padding: 40px 20px;
   }
-  
+  .iodolgy-back{
+    margin: 0 20px;
+  }
+  .iodology-section{
+    padding: 70px 20px;
+  }
+  .aim{
+    padding: 40px 20px;
+  }
+  .achieve-back{
+    margin: 0 20px;
+  }
+  .img-section{
+    padding: 10px 20px;
+  }
+  .what-expert{
+    padding: 40px 20px;
+  }
+  .wo-img .imhk{
+     width: 40px;
+  }
+  .cardio-check{
+    margin: 0 20px;
+  }
+  .health-btn .book_more{
+    margin-left: 10px;
+  }
+  .cardio-back{
+    margin: 0px 20px;
+  }
+  .expert-ret{
+    padding: 90px 20px;
+  }
+  .expert-det{
+    flex-direction: column;
+    align-items: center;
+  }
+  .expert-first{
+    text-align: center;
+  }
+  .about-card{
+    margin: 0px 20px;
+  }
+  .rupay{
+    justify-content: center;
+  }
+  .certificate{
+    margin-left: 0px;
+  }
+  .crtw{
+    justify-content: center;
+  }
+  .expert-second h2{
+    margin-left: 0px;
+  }
+  .aviability-section h3{
+    text-align: center;
+  }
+  .details-back{
+    margin: 0px 0px;
+  }
+  .doctor-det{
+    padding: 0 20px;
+  }
+  .any-question{
+    padding: 60px 20px;
+  }
+  .feedback-back{
+    margin: 0 20px;
+  }
+  .share-feed{
+    padding: 40px 20px;
+  }
+  .shadow-feed{
+    padding: 40px 20px;
+  }
+  .share-feed h2{
+    line-height: 30px;
+  }
+  .feed-btn button{
+    width: 250px;
+    max-width: 100%;
+  }
+  .diff-sut .first-suit{
+    margin: 15px 0px;
+  }
+}
+
+@media only screen and (max-width:320px){
+  .achive-sect h2{
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .what-expert h2{
+    line-height: 35px;
+  }
+  .what-expert p{
+    margin-top: 10px;
+  }
+  .diff-sut{
+    flex-direction: column;
+  }
+  .medicine-sect h2{
+    font-size: 30px;
+  }
 }

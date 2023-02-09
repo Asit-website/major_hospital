@@ -8,12 +8,24 @@ export const Navbar = () => {
 
   const [show, setShow] = useState('none');
   const [show1,setShow1] = useState('none');
+
+  const [open,setOpen] = useState(false);
   const [showAbout,setShowAbout] = useState('none');
   const handleDropdown = () => {
     setShow(show === 'none' ? 'flex' : 'none');
       document.getElementById('dropdown-item').style.display = show;
 
   }
+
+  const styleMenu = {
+    left: open ? 0 : "-100%"
+  }
+
+  const funcMenu = () =>{
+     setOpen(!open);
+  }
+
+
 
   const handleDropdown1 = () =>{
        setShow1(show === 'none' ? 'block' : 'none');
@@ -24,6 +36,8 @@ export const Navbar = () => {
     setShowAbout(showAbout === 'none' ? 'flex' : 'none');
       document.getElementById('about-us-dropdown').style.display = showAbout;
   }
+
+  
 
   return (
     <div className='Navbar '>
@@ -36,13 +50,13 @@ export const Navbar = () => {
             <div className='verticalDivider'/>
         </div>
 
-        <div className='flex items-center'>
+        <div className='flex items-center near-me'>
             <BsGlobe2 className='mr-2'/>
             <p className='flex items-center mr-2' >Choose Language <BsChevronDown className='ml-2'/></p>
             <div className='verticalDivider'/>
         </div>
 {/* ===============nav============ */}
-        <div className='flex items-center'>
+        <div className='flex items-center near-me1'>
            <div className=''>
             <p  className='mr-2 relative systen flex items-center dropdown-menu-item' onClick={handleAboutDropdown}>About Us
             <div className='flex dropdown-about-sub-menu p-1' id='about-us-dropdown'>
@@ -59,7 +73,7 @@ export const Navbar = () => {
             <div className='verticalDivider'/>
         </div>
 
-        <div className='flex items-center '>
+        <div className='flex items-center near-me2 '>
           <div className='mr-2 alt-phn-circle'>
             <FaPhoneAlt className=''/>
           </div>
@@ -69,7 +83,12 @@ export const Navbar = () => {
       </div>
       {/* ./Upper Navigation */}
       {/* Main Navigation*/}
-      <div className='main-navigation flex justify-around items-center bottom-divider'>
+      <div className='ki flex items-center justify-between'>
+      <i onClick={funcMenu} id="men" className="fa-solid fa-bars solji"></i>
+      <img src={navLogo} alt="" />
+      </div>
+      <div  className='main-navigation'>
+      <div style={styleMenu}  className="flex justify-around items-center bottom-divider main-navigation1">
        <NavLink to="/"> <div className='nav-logo'>
           <img  src={navLogo}/>
         </div>
@@ -106,6 +125,7 @@ export const Navbar = () => {
           <div className='red-btn red-btn1 mx-5'>Register</div>
         </div>
       
+      </div>
       </div>
       {/* ./Main Navigation*/}
     </div>
