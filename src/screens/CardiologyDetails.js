@@ -84,7 +84,7 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
           </div>
           <div className="expert-second">
             <h2>Certificates</h2>
-            <div className="flex items-center">
+            <div className="flex crtw items-center">
               <div className="ghj"></div>
               <div className="certificate flex mt-6">
                 <img src={cert} alt="cert" />
