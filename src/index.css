@@ -4,6 +4,8 @@
 
 /* #app { height: 100% } */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600&family=Montserrat&family=Nunito+Sans&family=Playfair+Display&family=Poppins&family=Roboto&family=Roboto+Slab&display=swap');
+
 html,
 body {
   overflow-x: hidden;
@@ -1731,9 +1733,362 @@ background-color: #FCEDEC;
 /* ====================paginationCssEnd===================== */
 
 
+/* ==================our hospital css start================== */
+.hospital-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 36vh;
+  background-image: url('./images/hospital.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+}
+.hospital-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hospital-sect h2{
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+.hospital-section{
+  padding: 50px 80px;
+}
+.hospital-section h2{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+.hospital-card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.hospital-card .hospital-box{
+  margin: 20px 15px;
+}
+.hospital-text{
+  padding: 15px 0px;
+  margin-top: 10px;
+}
+.hospital-box h3{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 26.5px;
+  line-height: 30px;
+}
+.hospital-box p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+/* ===================our hospital css  end=================== */
 
+/* ==================our clinic css start===================== */
+.clinic-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 36vh;
+  background-image: url('./images/special.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+}
+.clinic-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.clinic-sect h2{
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+/* ===================our clinic css end======================= */
 
-
+/* ================job opening css start========= */
+.career-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 36vh;
+  background-image: url('./images/carer.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+}
+.carer-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.carer-sect h2{
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+}
+/* =====================job opening css end================ */
+.carer-section{
+  background-color: #FDF3F3;
+  padding: 20px 40px;
+  margin: 30px 35px;
+  margin-top: 20px;
+}
+.serach-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.search-carer select{
+  width: 210px;
+  max-width: 100%;
+  background: transparent;
+  border-bottom: 1px solid #D5D5D5;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 5px 0px;
+  outline: none;
+}
+.search-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-button .sea{
+  background-color: #E74C3C;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  width: 140px;
+  height: 35px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.search-button .reset{
+  border: 2px solid #E74C3C;
+  background-color: transparent;
+  color: #E74C3C;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  width: 140px;
+  height: 35px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.table-opening{
+  background-color: #FFFFFF;
+  padding: 30px 40px;
+  position: relative;
+  top: 80px;
+}
+.table-sect h2{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+}
+.table-sect1 p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+.table-sect1 button{
+  background-color:#E74C3C ;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  width: 140px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.about-major{
+  padding: 60px 80px;
+}
+.about-major h2{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  text-align: center;
+}
+.about-major p{
+  font-weight: 400;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: .5px;
+  text-align: justify;
+  margin-top: 20px;
+}
+.job-description{
+  padding: 40px 120px;
+}
+.job-description .cv{
+  color: #000000;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  margin-top: 30px;
+  position: relative;
+  right: 10px;
+}
+.job-description h2{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  position: relative;
+ right: 10px;
+}
+.job-change{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.job-change div{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000000;
+}
+.job-change p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+ margin-left: 10px;
+}
+.work-together{
+  background-color: #FDF3F3;
+  padding: 30px 70px;
+  margin: 0px 35px;
+}
+.work-together h2{
+  color: #000000;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+.work-together form{
+  margin-top: 40px;
+}
+.work-together form input,
+.work-together form select{
+  background: transparent;
+  border-bottom: 1px solid #6C6C6C;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 5px 0px;
+}
+.work-together form .sun{
+  background-color: #E74C3C;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  width: 140px;
+  height: 35px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.work-together form .reset{
+  border: 2px solid #E74C3C;
+  background-color: transparent;
+  color: #E74C3C;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  width: 140px;
+  height: 35px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.upload{
+  background-color: #E74C3C;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  width: 140px;
+  /* padding: 10px 0px; */
+  height: 57px;
+  /* border-radius: 30px; */
+  cursor: pointer;
+}
+.files p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+.work-together input::placeholder{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+.work-together form input[type="file"]{
+  border: 1px solid #6C6C6C ;
+  padding: 10px 0px;
+}
+.dusra-h1{
+  visibility: hidden;
+}
+.work-together form label{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.dusra-h{
+  margin-left: 25px;
+}
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+input[type=date]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
 /* ===================media query css============= */
 @media only screen and (max-width:1070px){
   .about-card{
@@ -1830,6 +2185,15 @@ background-color: #FCEDEC;
   }
   .feed-btn{
     text-align: center;
+  }
+  .career-back{
+    margin: 0 30px;
+  }
+  .hospital-back{
+    margin: 0 30px;
+  }
+  .hospital-section{
+    padding: 50px 30px;
   }
 }
 @media only screen and (max-width:1023px){
@@ -1986,6 +2350,30 @@ background-color: #FCEDEC;
     flex-direction: column;
     align-items: center;
   }
+  .job-description{
+    padding: 40px 30px;
+  }
+  .work-together .work-follow{
+    flex-direction: column;
+  }
+  .work-together .dusra-h{
+    margin-left: 0px;
+  }
+  .work-together .dusra-h1{
+    display: none;
+  }
+  .work-together{
+    padding: 30px 30px;
+  }
+  .job-description .cv{
+    right: 0px;
+  }
+  .job-description h2{
+    right: 0px;
+  }
+  .about-major{
+    padding: 60px 30px;
+  }
   .institute{
     margin-right: 0px;
     width: 90%;
@@ -2111,8 +2499,16 @@ background-color: #FCEDEC;
   .about-card p{
     text-align: center;
   }
+  .hospital-card{
+    flex-direction: column;
+  }
 }
-
+.hospital-box{
+  width: 100%;
+}
+.hospital-box img{
+  width: 100%;
+}
 @media only screen and (max-width:580px){
   .blog-card-secondary{
     flex-direction: column ;
@@ -2298,6 +2694,68 @@ background-color: #FCEDEC;
   .diff-sut .first-suit{
     margin: 15px 0px;
   }
+  .career-back{
+    margin:0px 20px ;
+  }
+  .job-description{
+    padding: 40px 20px;
+  }
+  .job-change{
+    margin: 25px 0px;
+  }
+  .job-change div{
+    display: none;
+  }
+  .job-change p{
+    margin-left: 0px;
+    line-height: 32px;
+  }
+  .job-description .cv{
+    line-height: 32px;
+  }
+  .job-description h2{
+    line-height: 45px;
+  }
+  .work-together{
+    padding: 30px 20px;
+    margin: 0 10px;
+  }
+  .work-together h2{
+    line-height: 42px;
+  }
+  .about-major{
+    padding: 60px 20px;
+  }
+  .about-major p{
+    text-align: justify;
+    letter-spacing: .5px;
+
+  }
+  .about-major h2{
+    line-height: 50px;
+  }
+  .work-together form select,
+  .work-together form input{
+    font-size: 16px;
+  }
+ .work-together  form input::placeholder{
+  font-size: 16px;
+ }
+ .work-together form input[type="file"]{
+   font-size: 16px;
+ }
+ .hospital-back{
+  margin: 0 20px;
+ }
+ .hospital-section{
+  padding: 50px 20px;
+ }
+ .hospital-section h2{
+  line-height: 54px;
+ }
+ .hospital-sect h2{
+  line-height: 50px;
+ }
 }
 
 @media only screen and (max-width:320px){
@@ -2317,4 +2775,5 @@ background-color: #FCEDEC;
   .medicine-sect h2{
     font-size: 30px;
   }
+  
 }

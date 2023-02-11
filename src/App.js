@@ -19,6 +19,10 @@ import Dental from './screens/Dental';
 import Gastroenterology from './screens/Gastroenterology';
 import Physiotherapy from './screens/Physiotherapy';
 import Nutrition from './screens/Nutrition';
+import Hospital from './screens/Hospital';
+import Clinic from './screens/Clinic';
+import JobOpening from './screens/job/JobOpening';
+import JobOpeningDetails from './screens/job/JobOpeningDetails';
 
 function App() {
   const [apointPop,setApointPop] = useState(false);
@@ -42,6 +46,10 @@ function App() {
           <Route path='/gasto' element={<Gastroenterology apointPop={apointPop} setApointPop={setApointPop}/>}/>
           <Route path='/physcio' element={<Physiotherapy apointPop={apointPop} setApointPop={setApointPop}/>}/>
           <Route path='/nutro' element={<Nutrition apointPop={apointPop} setApointPop={setApointPop}/>}/>
+          <Route path='/hospital' element={<Hospital/>}/>
+          <Route path='/clinic' element={<Clinic/>}/>
+          <Route path='/carer' element={<JobOpening/>}/>
+          <Route path='/careerDetails' element={<JobOpeningDetails/>}/>
       </Routes>
       <Footer/>
     </Router>
