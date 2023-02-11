@@ -25,7 +25,7 @@
 }
 .appointment-form{
     width : 100vw;
-    bottom : -200px;
+    bottom : -250px;
 }
 
 .form-details{
@@ -44,12 +44,107 @@
     outline: none;
 }
 
+@media not all and (min-width: 1024px) {
+    .appointment-form{
+    width : 100vw;
+    bottom : -220px;
+    }
 
+    .form-details{
+    padding : 30px 50px;
+    }
+
+    .appointment-form-input input, .appointment-form-input select{
+    max-width : 22vw;
+}
+
+.white-btn{
+    max-width : 30%;
+}
+}
+
+@media not all and (min-width: 768px) {
+    .appointment-form{
+    width : 100vw;
+    bottom : -250px;
+    }
+
+    .form-details{
+    padding : 30px 30px;
+    }
+
+.white-btn{
+    max-width : 40%;
+}
+}
+
+@media not all and (min-width: 640px) {
+    .appointment-form{
+    width : 100vw;
+    bottom : -680px;
+    }
+
+    .yellow-btn, .white-btn{
+    max-width : 100%;
+    width : 100%;
+}
+.white-btn{
+    background-color : #FFF;
+    color : #000;
+    font-family : 'semi bold';
+    text-align : center;
+}
+
+.appointment-form-input input, .appointment-form-input select{
+    max-width : 100%;
+}
+}
+
+@media not all and (min-width: 425px) {
+    .appointment-form{
+    width : 100vw;
+    bottom : -700px;
+    }
+
+    .yellow-btn, .white-btn{
+    max-width : 100%;
+    width : 100%;
+}
+.white-btn{
+    background-color : #FFF;
+    color : #000;
+    font-family : 'semi bold';
+    text-align : center;
+}
+
+.appointment-form-input input, .appointment-form-input select{
+    max-width : 100%;
+}
+}
 .specialist-card{
     box-shadow: 0px 4px 20px rgba(16, 16, 16, 0.05);
     max-width : 23%;
     width : 100%;
     border-radius : 10px;
+    margin-bottom : 30px;
+    min-width : 250px;
+}
+
+@media not all and (min-width: 768px) {
+    .specialist-card{
+        max-width : 100%;
+        width : 100%;
+        margin : 10px 0px;
+        min-width : 0px;
+    }
+}
+
+@media not all and (min-width: 425px) {
+    .specialist-cards{
+        margin : 50px 20px;
+        padding : 0px;
+        
+    }
 }
 
 .specialist-card-img {
@@ -86,6 +181,14 @@
     background-color : #E74C3C;
 }
 
+@media not all and (min-width: 425px) {
+    .swipe-left-btn, .swipe-right-btn{
+    height : 30px;
+    width : 40px;
+    font-size : 14px;
+}
+}
+
 .light-red-btn{
     color : #ffffff;
     background-color : #E74C3C;
@@ -100,6 +203,14 @@
     background-color : #ffffff;
     margin : 20px 10px;
     border-radius : 10px;
+}
+
+@media not all and (min-width: 425px) {
+    .service-cards{
+        margin : 50px 0px;
+        padding : 0px;
+        
+    }
 }
 
 .service-card-img img{
