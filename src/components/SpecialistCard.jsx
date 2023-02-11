@@ -2,8 +2,8 @@ import React from 'react'
 
 export const SpecialistCard = (props) => {
   return (
-    <div className="speciality-card bg-[#ffffff] w-[90%]">
-                   <img className='main-img rounded-t-[10px]' src={props.img} alt="" />
+    <div className="speciality-card bg-[#ffffff] w-[90%] max-md:w-[100%]">
+                   <img className='main-img rounded-t-[10px] max-md:w-[100%]' src={props.img} alt="specialist img" />
                    <div className="igh">
                    <div className="name-card">
                      <div className="text-card">

@@ -5,12 +5,12 @@ export const AppointmentForm = () => {
     <div className='absolute appointment-form flex justify-center'>
         
             <div className='form-details'>
-                <div className='flex text-white mb-5'>
-                    <p className='text-2xl font-bold mr-10'>CHECK SCHEDULES</p>
-                    <p className='text-2xl font-bold mr-10'>BOOK APPOINTMENT</p>
+                <div className='flex text-white mb-5 max-sm:flex-col'>
+                    <p className='text-2xl font-bold mr-10 max-sm:text-xl max-sm:mb-5'>CHECK SCHEDULES</p>
+                    <p className='text-2xl font-bold mr-10 max-sm:text-xl'>BOOK APPOINTMENT</p>
                 </div>
 
-                <div className='flex flex-wrap justify-between appointment-form-input'>
+                <div className='flex flex-wrap justify-between appointment-form-input max-sm:flex-col'>
                     <select>
                         <option disabled selected hidden>Choose a department</option>
                     </select>
@@ -22,10 +22,10 @@ export const AppointmentForm = () => {
                 
                 </div>
 
-                <div className='flex mt-5 items-center'>
-                    <div className='white-btn mr-5'>VIEW SCHEDULE</div>
-                    <div className='yellow-btn yellow-btn5 mr-5'>SUBMIT</div>
-                    <div className='text-sm text-white'>Please fill out all of the fields correctly. your records will be saved in our database securely.</div>
+                <div className='flex mt-5 items-center max-sm:flex-col'>
+                    <div className='white-btn mr-5 mb-5 max-sm:mr-0'>VIEW SCHEDULE</div>
+                    <div className='yellow-btn yellow-btn5 mr-5 mb-5 max-sm:mr-0'>SUBMIT</div>
+                    <div className='text-sm text-white mb-5'>Please fill out all of the fields correctly. your records will be saved in our database securely.</div>
                 </div>
             </div>
         

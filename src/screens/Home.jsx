@@ -85,12 +85,12 @@ export const Home = () => {
         <Navbar/>
         {/** Banner */}
         <div className='relative '>
-            <div className='home-banner flex items-center px-20'>
-                <div className='home-banner-details w-[35%]'>
-                    <p className='text-xl text-gray-800 my-3'>Major Hospital</p>
-                    <p className='text-5xl font-bold'>A Destination for
+            <div className='home-banner flex items-center px-20 max-[425px]:px-10'>
+                <div className='home-banner-details w-[35%] max-lg:w-[50%]  max-md:w-[70%] max-[425px]:w-[100%]'>
+                    <p className='text-xl text-gray-800 my-3 max-sm:text-lg'>Major Hospital</p>
+                    <p className='text-5xl font-bold max-sm:text-4xl'>A Destination for
                     Advanced Care</p>
-                    <p className='text-2xl text-gray-800 my-3'>The hospital you trust to care for those
+                    <p className='text-2xl text-gray-800 my-3 max-sm:text-xl'>The hospital you trust to care for those
                     you love.</p>
 
                     <button className='yellow-btn my-5 '>Book an Appointment</button>
@@ -101,7 +101,7 @@ export const Home = () => {
         </div>
         {/** ./Banner */}
         {/** Specialities */}
-        <div className='relative mt-60'>
+        <div className='relative mt-80 max-lg:mt-[18rem] max-md:mt-[20rem] max-sm:mt-[45rem]'>
           <div className='h-specailities-desc'>
             <div className='text-center my-3 text-4xl font-semibold'>Specialities </div>
             <div className='text-center text-lg mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>        
@@ -117,10 +117,10 @@ export const Home = () => {
           >
 
           <SwiperSlide>
-          <div className='specialist-cards flex mx-20 my-10 justify-between pb-8'>
+          <div className='specialist-cards flex flex-wrap  mx-10 my-10 justify-center pb-8 max-md:flex-col'>
           {specialists.map(specialist => 
-            <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]' : 'specialist-card'} onClick={() => handleSpecialist(specialist.id)}>
-              <div className=' flex justify-center items-center'>
+            <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]  mx-2' : 'specialist-card  mx-2'} onClick={() => handleSpecialist(specialist.id)}>
+              <div className=' flex justify-center items-center '>
                 <div className={selSpecialist === specialist.id ? 'specialist-card-img bg-[#FFF5D7]' : 'specialist-card-img bg-[#FFF5D7]'}>
                   <img src={selSpecialist === specialist.id ? specialist.img_dark : specialist.img_light}/>
                 </div> 
@@ -134,10 +134,10 @@ export const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-          <div className='specialist-cards flex mx-20 my-10 justify-between pb-8 '>
+          <div className='specialist-cards flex flex-wrap  mx-10 my-10 justify-center pb-8 max-md:flex-col'>
           {specialists.map(specialist => 
-            <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]' : 'specialist-card'} onClick={() => handleSpecialist(specialist.id)}>
-              <div className=' flex justify-center items-center'>
+            <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]  mx-2' : 'specialist-card  mx-2'} onClick={() => handleSpecialist(specialist.id)}>
+              <div className=' flex justify-center items-center '>
                 <div className={selSpecialist === specialist.id ? 'specialist-card-img bg-[#FFF5D7]' : 'specialist-card-img bg-[#FFF5D7]'}>
                   <img src={selSpecialist === specialist.id ? specialist.img_dark : specialist.img_light}/>
                 </div> 
@@ -151,10 +151,10 @@ export const Home = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-          <div className='specialist-cards flex mx-20 my-10 justify-between pb-8'>
+          <div className='specialist-cards flex flex-wrap  mx-10 my-10 justify-center pb-8 max-md:flex-col'>
           {specialists.map(specialist => 
-            <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]' : 'specialist-card'} onClick={() => handleSpecialist(specialist.id)}>
-              <div className=' flex justify-center items-center'>
+            <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]  mx-2' : 'specialist-card  mx-2'} onClick={() => handleSpecialist(specialist.id)}>
+              <div className=' flex justify-center items-center '>
                 <div className={selSpecialist === specialist.id ? 'specialist-card-img bg-[#FFF5D7]' : 'specialist-card-img bg-[#FFF5D7]'}>
                   <img src={selSpecialist === specialist.id ? specialist.img_dark : specialist.img_light}/>
                 </div> 
@@ -171,8 +171,8 @@ export const Home = () => {
         {/** ./Specialities */}
         {/** Videos Slider */}
         
-        <div className=' flex items-center justify-center px-10'>
-        <div className='swipe-left-btn' onClick={() => swiperRef.current.slidePrev()}>
+        <div className=' flex items-center justify-center px-10 max-md:px-2'>
+        <div className='swipe-left-btn max-md:mx-[10px]' onClick={() => swiperRef.current.slidePrev()}>
             <FaAngleLeft/>
         </div>
         <Swiper
@@ -225,7 +225,7 @@ export const Home = () => {
         
         
         </Swiper>
-        <div className='swipe-right-btn' onClick={() => swiperRef.current.slideNext()}>
+        <div className='swipe-right-btn max-md:mx-[10px]' onClick={() => swiperRef.current.slideNext()}>
             <FaAngleRight/>
         </div>
         </div>
@@ -240,84 +240,84 @@ export const Home = () => {
         >
         
         <SwiperSlide>
-        <div className='patient-stories-section flex mx-[130px] items-center my-[80px]'>
-            <div className="wo-img relative w-[50%]">
+        <div className='patient-stories-section flex mx-[130px] items-center my-[80px] max-lg:mx-[50px] max-md:flex-col max-md:my-0'>
+            <div className="wo-img relative w-[50%] max-md:w-[95%]">
               <img className='imhk' src={btn} alt="" />
               <img src={patient_w} alt="women" />
-              <div className='swipe-left-btn absolute right-0 bottom-5' onClick={() => swiperRef1.current.slidePrev()}>
+              <div className='swipe-left-btn absolute right-0 bottom-5 ' onClick={() => swiperRef1.current.slidePrev()}>
                 <FaAngleLeft/>
               </div>
-              <div className='swipe-right-btn absolute -right-[50px] bottom-5' onClick={() => swiperRef1.current.slideNext()}>
+              <div className='swipe-right-btn absolute -right-[50px] bottom-5 max-[425px]:-right-[40px]' onClick={() => swiperRef1.current.slideNext()}>
                 <FaAngleRight/>
               </div>
             </div>
-            <div className='w-[40%] ml-20'>
-              <p className='text-2xl font-bold'>Patient's Stories</p>
-              <p className='text-4xl font-bold mt-2'>Where Health Meets Care</p>
-              <p className='text-xl mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div className='w-[40%] ml-20 max-md:w-[95%] max-md:ml-0 max-md:my-[50px]'>
+              <p className='text-2xl font-bold max-sm:text-xl'>Patient's Stories</p>
+              <p className='text-4xl font-bold mt-2 max-sm:text-3xl'>Where Health Meets Care</p>
+              <p className='text-xl mt-2 max-sm:text-lg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
             </div>
         </div>
         </SwiperSlide>
         
         <SwiperSlide>
-        <div className='patient-stories-section flex mx-[130px] items-center my-[80px]'>
-            <div className="wo-img relative w-[50%]">
+        <div className='patient-stories-section flex mx-[130px] items-center my-[80px] max-lg:mx-[50px] max-md:flex-col max-md:my-0'>
+            <div className="wo-img relative w-[50%] max-md:w-[95%]">
               <img className='imhk' src={btn} alt="" />
               <img src={patient_w} alt="women" />
-              <div className='swipe-left-btn absolute right-0 bottom-5' onClick={() => swiperRef1.current.slidePrev()}>
+              <div className='swipe-left-btn absolute right-0 bottom-5 ' onClick={() => swiperRef1.current.slidePrev()}>
                 <FaAngleLeft/>
               </div>
-              <div className='swipe-right-btn absolute -right-[50px] bottom-5' onClick={() => swiperRef1.current.slideNext()}>
+              <div className='swipe-right-btn absolute -right-[50px] bottom-5 max-[425px]:-right-[40px]' onClick={() => swiperRef1.current.slideNext()}>
                 <FaAngleRight/>
               </div>
             </div>
-            <div className='w-[40%] ml-20'>
-              <p className='text-2xl font-bold'>Patient's Stories</p>
-              <p className='text-4xl font-bold mt-2'>Where Health Meets Care</p>
-              <p className='text-xl mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div className='w-[40%] ml-20 max-md:w-[95%] max-md:ml-0 max-md:my-[50px]'>
+              <p className='text-2xl font-bold max-sm:text-xl'>Patient's Stories</p>
+              <p className='text-4xl font-bold mt-2 max-sm:text-3xl'>Where Health Meets Care</p>
+              <p className='text-xl mt-2 max-sm:text-lg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
             </div>
         </div>
         </SwiperSlide>
         
         <SwiperSlide>
-        <div className='patient-stories-section flex mx-[130px] items-center my-[80px]'>
-            <div className="wo-img relative w-[50%]">
+        <div className='patient-stories-section flex mx-[130px] items-center my-[80px] max-lg:mx-[50px] max-md:flex-col max-md:my-0'>
+            <div className="wo-img relative w-[50%] max-md:w-[95%]">
               <img className='imhk' src={btn} alt="" />
               <img src={patient_w} alt="women" />
-              <div className='swipe-left-btn absolute right-0 bottom-5' onClick={() => swiperRef1.current.slidePrev()}>
+              <div className='swipe-left-btn absolute right-0 bottom-5 ' onClick={() => swiperRef1.current.slidePrev()}>
                 <FaAngleLeft/>
               </div>
-              <div className='swipe-right-btn absolute -right-[50px] bottom-5' onClick={() => swiperRef1.current.slideNext()}>
+              <div className='swipe-right-btn absolute -right-[50px] bottom-5 max-[425px]:-right-[40px]' onClick={() => swiperRef1.current.slideNext()}>
                 <FaAngleRight/>
               </div>
             </div>
-            <div className='w-[40%] ml-20'>
-              <p className='text-2xl font-bold'>Patient's Stories</p>
-              <p className='text-4xl font-bold mt-2'>Where Health Meets Care</p>
-              <p className='text-xl mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div className='w-[40%] ml-20 max-md:w-[95%] max-md:ml-0 max-md:my-[50px]'>
+              <p className='text-2xl font-bold max-sm:text-xl'>Patient's Stories</p>
+              <p className='text-4xl font-bold mt-2 max-sm:text-3xl'>Where Health Meets Care</p>
+              <p className='text-xl mt-2 max-sm:text-lg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
             </div>
         </div>
         </SwiperSlide>
         
         <SwiperSlide>
-        <div className='patient-stories-section flex mx-[130px] items-center my-[80px]'>
-            <div className="wo-img relative w-[50%]">
+        <div className='patient-stories-section flex mx-[130px] items-center my-[80px] max-lg:mx-[50px] max-md:flex-col max-md:my-0'>
+            <div className="wo-img relative w-[50%] max-md:w-[95%]">
               <img className='imhk' src={btn} alt="" />
               <img src={patient_w} alt="women" />
-              <div className='swipe-left-btn absolute right-0 bottom-5' onClick={() => swiperRef1.current.slidePrev()}>
+              <div className='swipe-left-btn absolute right-0 bottom-5 ' onClick={() => swiperRef1.current.slidePrev()}>
                 <FaAngleLeft/>
               </div>
-              <div className='swipe-right-btn absolute -right-[50px] bottom-5' onClick={() => swiperRef1.current.slideNext()}>
+              <div className='swipe-right-btn absolute -right-[50px] bottom-5 max-[425px]:-right-[40px]' onClick={() => swiperRef1.current.slideNext()}>
                 <FaAngleRight/>
               </div>
             </div>
-            <div className='w-[40%] ml-20'>
-              <p className='text-2xl font-bold'>Patient's Stories</p>
-              <p className='text-4xl font-bold mt-2'>Where Health Meets Care</p>
-              <p className='text-xl mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div className='w-[40%] ml-20 max-md:w-[95%] max-md:ml-0 max-md:my-[50px]'>
+              <p className='text-2xl font-bold max-sm:text-xl'>Patient's Stories</p>
+              <p className='text-4xl font-bold mt-2 max-sm:text-3xl'>Where Health Meets Care</p>
+              <p className='text-xl mt-2 max-sm:text-lg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
             </div>
         </div>
@@ -342,7 +342,7 @@ export const Home = () => {
             className="mySwiper"
             >
             <SwiperSlide>
-            <div className='flex justify-center mx-20 pb-10'>
+            <div className='flex flex-wrap justify-center mx-20 pb-10 service-cards'>
               {
                 servicesApi.map(service => 
                   <div key={service.id} className='service-card pb-8'>
@@ -359,7 +359,7 @@ export const Home = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-            <div className='flex justify-center mx-20 pb-10'>
+            <div className='flex flex-wrap justify-center mx-20 pb-10 service-cards'>
               {
                 servicesApi.map(service => 
                   <div key={service.id} className='service-card pb-8'>
@@ -376,7 +376,7 @@ export const Home = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-            <div className='flex justify-center mx-20 pb-10'>
+            <div className='flex flex-wrap justify-center mx-20 pb-10 service-cards'>
               {
                 servicesApi.map(service => 
                   <div key={service.id} className='service-card pb-8'>
@@ -393,7 +393,7 @@ export const Home = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-            <div className='flex justify-center mx-20 pb-10'>
+            <div className='flex flex-wrap justify-center mx-20 pb-10 service-cards'>
               {
                 servicesApi.map(service => 
                   <div key={service.id} className='service-card pb-8'>
@@ -413,25 +413,25 @@ export const Home = () => {
         {/** ./Our Services */}
 
         {/** Meet Our Team */}
-        <div className='our-team bg-[#F5F5F5] flex justify-between px-40'>
-              <div className='w-[35%] mt-10 mr-20'>
+        <div className='our-team bg-[#F5F5F5] flex justify-center px-40 max-xl:px-20 max-lg:px-10 max-md:flex-col'>
+              <div className='w-[35%] mt-10 mr-20 max-md:w-[100%]'>
                 <p className='text-[#E74C3C] font-semibold my-1'>Meet Our Team</p>
                 <p className='text-4xl font-bold my-2'>Group of certified &
                 Experienced Doctors.</p>
                 <p className='text-xl leading-7'>Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry.</p>
                 <div className='my-3'>
-                  <button className='ba-red-btn mr-5'>Book Appoinment</button>
+                  <button className='ba-red-btn mr-5 max-md:mb-3'>Book Appoinment</button>
                   <button className='ba-white-btn '>View All Doctors</button>
                 </div>
               </div>
-              <div className='flex w-[65%] justify-start'>
+              <div className='flex w-[65%] justify-start max-md:flex-col max-md:w-[100%]'>
 
-                <div className='my-10'>
+                <div className='my-10 max-md:mt-10 max-md:mb-0'>
                   <SpecialistCard img={dr} name='Dr. Mahi Rawat' vect={vect} untar={untar}/>
                   <SpecialistCard img={dr2} name='Dr. Sakshi Sena' vect={vect} untar={untar}/>
                 </div>
-                <div className='mt-20 mb-10'>
+                <div className='mt-20 mb-10 max-md:mt-0 '>
                   <SpecialistCard img={dr1} name='Dr. Rohan Shrma' vect={vect} untar={untar} />
                   <SpecialistCard img={dr3} name='Dr. Rohan Shrma' vect={vect} untar={untar}/>
                 </div>
@@ -439,15 +439,15 @@ export const Home = () => {
         </div>
         {/** ./Meet Our Team */}
         {/** Our Blogs */}
-        <div className='our-blogs py-10 px-10'>
+        <div className='our-blogs py-10 px-10 max-xl:px-5'>
               
                 <p className='text-center text-3xl font-bold'>Our Blogs</p>
                 <p className='text-lg text-center font-bold mt-2 mb-10'>Stay up to date with our most recent news and updates</p>
 
-                <div className='flex justify-center '>
+                <div className='flex justify-center max-md:flex-col'>
 
-                  <div className='blog-card-main w-[45%] mx-5'>
-                    <img className='h-[250px]' src={blog01}/>
+                  <div className='blog-card-main w-[45%] mx-5 max-md:w-[100%] max-md:mx-0'>
+                    <img className='h-[250px] max-md:w-[100%]' src={blog01}/>
                     <div className='p-5'>
                         <div className='flex justify-between'>
                         <div className='font-semibold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
@@ -459,9 +459,9 @@ export const Home = () => {
                     
                   </div>
 
-                  <div className='blog-cards-secondary w-[45%] mx-5'>
-                    <div className='blog-card-secondary flex mb-6 items-center'>
-                      <img className='w-[300px] h-[200px]' src={blog02} />
+                  <div className='blog-cards-secondary w-[45%] mx-5 max-md:w-[100%] max-md:mx-0'>
+                    <div className='blog-card-secondary flex mb-6 items-center max-md:flex-col '>
+                      <img className='h-[200px] max-md:h-[250px] max-md:w-[100%]' src={blog02} />
                       <div className='text-sm p-5'>
                         <div className='flex justify-between my-2'>
                           <p className='font-bold'>Chronic Kidney Disease – The Silent Killer</p>
@@ -472,8 +472,8 @@ export const Home = () => {
                       </div>
                     </div>
 
-                    <div className='blog-card-secondary flex items-center'>
-                      <img className='w-[300px] h-[200px]' src={blog03}/>
+                    <div className='blog-card-secondary flex items-center max-md:flex-col max-md:w-[100%] max-md:mx-0'>
+                      <img className=' h-[200px] max-md:h-[250px] max-md:w-[100%]' src={blog03}/>
                       <div className='text-sm p-5'>
                         <div className='flex justify-between my-2'>
                           <p className='font-bold'>What to do when you have Stroke?</p>
