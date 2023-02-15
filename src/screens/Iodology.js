@@ -1,10 +1,8 @@
 import React from 'react'
-import { Navbar } from '../components/Navbar'
 import doctor from '../images/doctor.png'
 const Iodology = () => {
   return (
      <>
-        <Navbar/>
         <div className="iodolgy-back">
               <div className="iodo-sect">
                  <h2>Our Ideology</h2>

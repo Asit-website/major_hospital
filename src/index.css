@@ -6,6 +6,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600&family=Montserrat&family=Nunito+Sans&family=Playfair+Display&family=Poppins&family=Roboto&family=Roboto+Slab&display=swap');
 
+
+
 html,
 body {
   overflow-x: hidden;
@@ -88,6 +90,10 @@ body {
   margin: 150px auto;
 
 }
+.popup-container1{
+  max-width: 720px;
+  width: 100%;
+}
 .popup-container h2{
   color: #222F3E;
   font-family: gilroy;
@@ -114,12 +120,13 @@ body {
   border-radius: 10px;
   position: relative;
   font-size: 20px;
-  /* top: 1.5rem; */
   z-index: 90;
-  /* right: 25rem; */
   cursor: pointer;
   left: 68%;
   top: 205px;
+}
+.home-pop1 .intle{
+  left: 69%;
 }
 .popup-container form{
   width: 100%;
@@ -159,6 +166,7 @@ body {
   color: #ffffff;
   font-family: gilroy;
   font-weight: 700;
+  letter-spacing: 1px;
   font-size: 15px;
 }
 .contact-back{
@@ -2078,7 +2086,7 @@ background-color: #FCEDEC;
 .dusra-h{
   margin-left: 25px;
 }
-::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+/* ::-webkit-datetime-edit-year-field:not([aria-valuenow]),
 ::-webkit-datetime-edit-month-field:not([aria-valuenow]),
 ::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
     color: transparent;
@@ -2088,7 +2096,7 @@ input[type=date]:required:invalid::-webkit-datetime-edit {
 }
 input[type=date]:focus::-webkit-datetime-edit {
   color: black !important;
-}
+} */
 
 /* =================hospital near css start================= */
 .hospital-near{
@@ -2273,9 +2281,179 @@ input[type=date]:focus::-webkit-datetime-edit {
 .more-map span{
   margin-left: 10px;
 }
+
+/* =====================patient & visitor css===================== */
+.visitor-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 38vh;
+  background-image: url('./images/visitor.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 5px 80px;
+}
+.visitor-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.visitor-sect h2{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  line-height: 60px;
+}
+.visitor-para{
+  padding: 30px 120px;
+}
+.visitor-para p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17.5px;
+  line-height: 28px;
+}
+.nav-visitor{
+  background-color: #FDF3F3;
+  padding: 40px 150px;
+}
+.nav-patient{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-box{
+  background-color: #DA0402;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding:13px 20px;
+  border-radius: 30px;
+}
+.nav-patient .nav-box2{
+  width: 280px;
+  max-width: 100%;
+}
+.nav-patient .anyh{
+  margin-left: 30px;
+}
+.nav-box p{
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18.5px;
+}
+.nav-box img{
+  width: 28px;
+}
+.nav-box1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  border: 2px solid #E74C3C;
+  padding:13px 20px;
+  border-radius: 30px;
+}
+.nav-box1 P{
+  color: #E74C3C;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18.5px;
+}
+.nav-box1 img{
+  width: 28px;
+}
+.visitor-information{
+  background-color: #FFFFFF;
+  padding: 30px 50px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+.visitor-information p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17.5px;
+  line-height: 30px;
+}
+.visitor-information button{
+   background-color: #DA0402;
+   width: 300px;
+   height: 50px;
+   color: #FFFFFF;
+   font-family: 'Inter', sans-serif;
+   font-weight: 600;
+   font-size: 18.5px;
+   border-radius: 30px;
+   margin-top: 20px;
+}
+/* ========================patient & visitor css end===================== */
+
+/* ===================treatment page css start=========================== */
+.treat-nav{
+  /* height: 200px; */
+  width: 80%;
+  background: rgba(220, 113, 113, 0.15);
+  max-width: 100%;
+  margin: 0px 100px;
+}
+.treat-method{
+  width: 20%;
+}
+.browes-by{
+  background-color: #222F3E;
+  padding: 15px 20px;
+}
+.browes-by p{
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  
+}
+.alit{
+  background-color: #FFC400;
+  padding: 20px 35px;
+  border-bottom: 1px solid white;
+}
+.alit p{
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+  font-weight: 500;
+  font-size: 18px;
+}
+/* =============================treatment page css end======================= */
+
+/* ================registerPopup css start=================== */
+.register-para{
+  font-family: "Medium";
+  font-size: 16px;
+  color: #030303;
+}
+/* =====================registerPopup css end================== */
 /* ===================media query css============= */
 @media only screen and (max-width:1070px){
   .hospital-near{
+    padding: 60px 30px;
+  }
+  .visitor-back{
+     margin: 0px 30px;
+  }
+  .nav-visitor{
+    padding: 40px 30px;
+  }
+  .visitor-para{
+    padding: 30px 30px;
+  }
+  .about-major{
     padding: 60px 30px;
   }
   .about-card{
@@ -2399,19 +2577,29 @@ input[type=date]:focus::-webkit-datetime-edit {
     margin-top: 20px;
   }
   .doctor-det{
-    bottom: -160px;
+    bottom: -290px;
   }
   .details-sect h2{
     line-height: 50px;
   }
   .expert-det{
-    margin-top: 100px;
+    margin-top: 220px;
   }
   .doctor-table{
     width: 800px;
     max-width: 100%;
     display: block;
     overflow: scroll;
+  }
+  .doctor-table::-webkit-scrollbar{
+    height: 4px;
+  }
+  .doctor-table::-webkit-scrollbar-thumb{
+    background-color: #E74C3C;
+    border-radius: 2px;
+  }
+  .treats-back{
+    height: 80vh;
   }
 }
 @media only screen and (max-width:972px){
@@ -2532,6 +2720,22 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
 }
 
+@media only screen and (max-width:1210px){
+  .nav-patient{
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+  }
+  .nav-patient .anyh{
+    margin-left: 0px;
+    margin-top: 20px;
+    width: auto;
+  }
+  .nav-patient a{
+    width: auto;
+  }
+}
+
 @media only screen and (max-width:750px){
   .about-institute{
     flex-direction: column;
@@ -2617,6 +2821,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   .wo-img{
     margin: 10px 0px;
   }
+ 
 }
 
 @media only screen and (max-width:1150px){
@@ -2725,19 +2930,38 @@ input[type=date]:focus::-webkit-datetime-edit {
     margin-top: 15px;
   }
   .doctor-det{
-    bottom: -215px;
+    bottom: -360px;
   }
   .expert-det{
-    margin-top: 140px;
+    margin-top: 290px;
   }
   .card-details{
     margin-left: 0px;
+  }
+  .home-pop .intle{
+    top: 170px;
+    left: 50%;
+  }
+  .home-pop1 .intle{
+    left: 90% !important;
+    top: 205px !important;
   }
 }
 
 @media only screen and (max-width:417px){
   .second-word h2{
     line-height: 35px;
+  }
+  .visitor-information button{
+    max-width: 600px;
+    width: 100%;
+    line-height: 18px;
+  }
+  .visitor-information{
+    padding: 30px 20px;
+  }
+  .home-pop1 .intle{
+    left: 90%;
   }
   .filter{
     padding: 30px 20px;
@@ -2826,11 +3050,12 @@ input[type=date]:focus::-webkit-datetime-edit {
     margin: 0px 20px;
   }
   .expert-ret{
-    padding: 90px 20px;
+    padding: 60px 20px;
   }
   .expert-det{
     flex-direction: column;
     align-items: center;
+    margin-top: 320px;
   }
   .expert-first{
     text-align: center;
@@ -2962,6 +3187,12 @@ input[type=date]:focus::-webkit-datetime-edit {
   max-width: 400px;
   width: 100%;
  }
+ .popup-container form{
+    padding: 30px 20px;
+ }
+ .treats-back{
+  height: 90vh;
+ }
 }
 
 @media only screen and (max-width:375px){
@@ -2977,6 +3208,7 @@ input[type=date]:focus::-webkit-datetime-edit {
     margin-top: 15px;
     transform: rotate(90deg);
   }
+  
 }
 
 @media only screen and (max-width:320px){
@@ -3027,5 +3259,11 @@ input[type=date]:focus::-webkit-datetime-edit {
   .second-map{
     margin-left: 0px;
     margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width:766px){
+  .nameo{
+    margin-top: 20px;
   }
 }

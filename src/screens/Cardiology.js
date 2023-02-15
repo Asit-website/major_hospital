@@ -1,5 +1,4 @@
-import React, { useContext, useState } from "react";
-import { Navbar } from "../components/Navbar";
+import React, { useState } from "react";
 import cardiologyApi from "../api/cardilogiApi";
 import ApointmentPopup from "../popup/ApointmentPopup";
 import { Link } from "react-router-dom";
@@ -91,7 +90,6 @@ const Cardiology = ({ apointPop, setApointPop }) => {
   }
   return (
     <>
-      <Navbar />
       <div className="cardio-back">
         <div className="cardio-sect">
           <h2>Our Cardiology Expert</h2>

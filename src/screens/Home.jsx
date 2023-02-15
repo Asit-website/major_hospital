@@ -14,7 +14,7 @@ import servicesApi from '../api/servicesApi';
 //importing components
 import { SpecialistCard } from '../components/SpecialistCard'
 import { AppointmentForm } from '../components/AppointmentForm'
-import { Navbar } from '../components/Navbar'
+
 
 // importing images
 import dr from '../images/dr.png'
@@ -82,7 +82,6 @@ export const Home = () => {
   }
   return (
     <div>
-        <Navbar/>
         {/** Banner */}
         <div className='relative '>
             <div className='home-banner flex items-center px-20 max-[425px]:px-10'>

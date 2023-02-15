@@ -231,4 +231,16 @@
     .upper-nav{
        padding: 10px 20px;
     }
+    .dropdown-sub-menu{
+        flex-direction: column;
+        justify-content: center;
+        width: 250px;
+        left: -60px;
+    }
+    .y-divider{
+       border-right: none;
+    }
+    .sub-menu-items{
+        margin: -7px 10px;
+    }
 }

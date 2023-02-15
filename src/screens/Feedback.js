@@ -1,10 +1,8 @@
 import React from 'react'
-import { Navbar } from '../components/Navbar'
 import smile from '../images/smile.png';
 const Feedback = () => {
   return (
    <>
-     <Navbar/>
      <div className="feedback-back">
           <div className="sect-fed">
               <h2>Share Feedback</h2>

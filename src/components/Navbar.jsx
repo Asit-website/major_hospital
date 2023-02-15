@@ -3,8 +3,9 @@ import { BsGeoAlt, BsGlobe2, BsChevronDown, BsSearch } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import navLogo from "../images/navigation-logo.png";
+import RegisterPopup from "../popup/RegisterPopup";
 
-export const Navbar = () => {
+export const Navbar = ({registerPop,setRegisterPop}) => {
   const [show, setShow] = useState("none");
   const [show1, setShow1] = useState("none");
 
@@ -34,6 +35,7 @@ export const Navbar = () => {
   };
 
   return (
+    <>
     <div className="Navbar ">
       {/* Upper Navigation */}
       <div className="upper-nav flex justify-end py-2 px-20 text-sm font-medium first-nav ">
@@ -157,19 +159,23 @@ export const Navbar = () => {
                 </div>
               </div>
             </p>
-            <p>Patient & Visitor</p>
-            <p>Treatments</p>
+           <NavLink to="/visitor"><p>Patient & Visitor</p></NavLink>
+           <NavLink to="/treat"><p>Treatments</p></NavLink>
           </div>
 
           <div className="flex items-center">
             <div className="mx-5 main-menu-search">
               <BsSearch />
             </div>
-            <div className="red-btn red-btn1 mx-5">Register</div>
+            <div onClick={()=> setRegisterPop(true)} className="red-btn red-btn1 mx-5">Register</div>
           </div>
         </div>
       </div>
       {/* ./Main Navigation*/}
     </div>
+    {
+      registerPop && <RegisterPopup setRegisterPop={setRegisterPop}/>
+    }
+    </>
   );
 };

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Navbar } from "../components/Navbar";
 import HealthCheckupApi from "../api/HealthCheckupApi";
 import ApointmentPopup from "../popup/ApointmentPopup";
 const HealthCheckup = ({ apointPop, setApointPop }) => {
@@ -43,7 +42,6 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
 
   return (
     <>
-      <Navbar />
       <div className="cardio-back cardio-check">
         <div className="cardio-sect">
           <h2>Book Health Check-Up</h2>

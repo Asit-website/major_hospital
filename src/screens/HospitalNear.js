@@ -1,5 +1,4 @@
 import React from 'react'
-import {Navbar} from "../components/Navbar"
 import locatio from '../images/locatio.png';
 import action from '../images/action.png';
 import dir from '../images/dir.png'
@@ -7,7 +6,6 @@ import vect from '../images/vect.png'
 const HospitalNear = () => {
   return (
      <>
-        <Navbar/>
         <div className="hospital-near">
              <div className="result-for">
                  <div className="first-for">
