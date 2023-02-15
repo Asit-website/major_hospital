@@ -1,10 +1,8 @@
 import React from 'react'
-import {Navbar} from '../../components/Navbar';
 import CareerBack from './common/CareerBack';
 const JobOpeningDetails = () => {
   return (
    <>
-    <Navbar/>
     <CareerBack/>
     <div className="job-description">
     <h2>Job Description</h2>

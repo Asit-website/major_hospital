@@ -1,10 +1,8 @@
 import React from "react";
-import { Navbar } from "../components/Navbar";
 import hospital1 from "../images/hospital1.png";
 const Hospital = () => {
   return (
     <>
-      <Navbar />
       <div className="hospital-back">
         <div className="hospital-sect">
           <h2>Our Hospital</h2>

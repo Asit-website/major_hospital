@@ -1,11 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import {Navbar} from "../../components/Navbar"
 import CareerBack from './common/CareerBack'
 const JobOpening = () => {
   return (
     <>
-     <Navbar/>
     <CareerBack/>
      <div className="carer-section relative">
          <div className="serach-section">

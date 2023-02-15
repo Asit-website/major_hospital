@@ -1,5 +1,4 @@
 import React from 'react'
-import { Navbar } from '../components/Navbar';
 import nurse from '../images/nurse.png';
 import doc from '../images/doc.png'
 import doc1 from '../images/doc1.png'
@@ -10,7 +9,6 @@ import btn from '../images/btn.png'
 const Achievement = () => {
   return (
      <>
-        <Navbar/>
         <div className="achieve-back">
               <div className="achive-sect">
                  <h2>Our Achievements</h2>

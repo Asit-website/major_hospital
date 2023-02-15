@@ -1,6 +1,5 @@
 import React,{useState} from 'react'
 import ApointmentPopup from '../popup/ApointmentPopup'
-import { Navbar } from '../components/Navbar';
 import btn from '../images/btn.png'
 import Frame from '../images/Frame.png'
 import hath from '../images/hath.jpg'
@@ -20,7 +19,6 @@ const Gastroenterology = ({apointPop,setApointPop}) => {
     }
   return (
      <>
-          <Navbar/>
             <div className="medicine-back medicine-back3">
                  <div className="medicine-sect">
                      <h2>Gastroenterology</h2>

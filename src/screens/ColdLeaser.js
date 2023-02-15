@@ -1,7 +1,5 @@
 import React,{useState} from 'react'
 import ApointmentPopup from '../popup/ApointmentPopup'
-import { Navbar } from '../components/Navbar';
-import rec from '../images/rec.png';
 import btn from '../images/btn.png'
 import Frame from '../images/Frame.png'
 import hath from '../images/hath.jpg'
@@ -21,7 +19,6 @@ const ColdLeaser = ({apointPop,setApointPop}) => {
     }
   return (
     <>
-        <Navbar/>
             <div className="medicine-back medicine-back4">
                  <div className="medicine-sect">
                      <h2>Cold Laser Therapy</h2>

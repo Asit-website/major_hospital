@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Navbar } from '../components/Navbar';
 import dotor from '../images/dotor.png';
 import btn from '../images/btn.png'
 import dawa from '../images/dawa.png'
@@ -22,7 +21,6 @@ const InternalMedicine = ({apointPop,setApointPop}) => {
 
   return (
     <>
-        <Navbar/>
             <div className="medicine-back">
                  <div className="medicine-sect">
                      <h2>Internal Medicine</h2>

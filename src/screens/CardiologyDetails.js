@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import cardiologyApi from "../api/cardilogiApi";
-import { Navbar } from "../components/Navbar";
 import appoint from "../images/appoint.png";
 import call1 from "../images/call1.png";
 import rupay from "../images/rupay.png";
@@ -20,7 +19,6 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
 
   return (
     <>
-      <Navbar />
       <div className="details-back">
         <div className="details-sect">
           <h2>Cardiology Expert</h2>

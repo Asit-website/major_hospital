@@ -24,12 +24,18 @@ import Clinic from './screens/Clinic';
 import JobOpening from './screens/job/JobOpening';
 import JobOpeningDetails from './screens/job/JobOpeningDetails';
 import HospitalNear from './screens/HospitalNear';
+import Patients from './screens/visitors/Patients';
+import PatientInfo from './screens/visitors/PatientInfo';
+import InternationalPat from './screens/visitors/InternationalPat';
+import Payment from './screens/visitors/Payment';
+import TreatMent from './screens/treatMent/TreatMent';
 function App() {
   const [apointPop,setApointPop] = useState(false);
+  const [registerPop,setRegisterPop] = useState(false);
   return (
     
     <Router>
-      
+       <Navbar registerPop={registerPop} setRegisterPop={setRegisterPop}/>
       <Routes>
           <Route exact path='/' element={<Home apointPop={apointPop} setApointPop={setApointPop}/>}/>
           <Route exact path='/contact' element={<Contact/>}/>
@@ -52,6 +58,14 @@ function App() {
           <Route path='/careerDetails' element={<JobOpeningDetails/>}/>
 
           <Route path='/near' element={<HospitalNear/>}/>
+
+          <Route path='/visitor' element={<Patients apointPop={apointPop} setApointPop={setApointPop}/>}/>
+          
+          <Route path='/visitor1' element={<PatientInfo apointPop={apointPop} setApointPop={setApointPop}/>}/>
+          <Route path='/visitor2' element={<InternationalPat apointPop={apointPop} setApointPop={setApointPop}/>}/>
+          <Route path='/payment' element={<Payment apointPop={apointPop} setApointPop={setApointPop}/>}/>
+
+          <Route path='/treat' element={<TreatMent/>}/>
       </Routes>
       <Footer/>
     </Router>
