@@ -35,46 +35,73 @@ const JobOpening = () => {
               </div>
          </div>
 
-        <div className=' relative'>
-       <div className="table-opening">
-            <div className="table-sect flex items-center justify-between">
-                 <h2>Job Title</h2>
-                 <h2>Location</h2>
-                 <h2 className='mr-10'>Action</h2>
-            </div>
-            <hr className='my-5' />
-            <div className="table-sect1 flex items-center justify-between">
-                 <p>Job Title</p>
-                 <p className='ml-6'>Delhi</p>
-                <NavLink to="/careerDetails"><button className=' mr-0'>Apply</button></NavLink>
-            </div>
-            <hr className='my-5' />
-            <div className="table-sect1 flex items-center justify-between">
-                 <p>Job Title</p>
-                 <p className='ml-6'>Delhi</p>
-                 <button className=' mr-0'>Apply</button>
-            </div>
+        <div className=' relative'>  
+<div class="relative overflow-x-auto table-opening">
+    <table class="w-full  text-left">
+        <thead class="">
+            <tr className='table-sect border-b '>
+                <th scope="col" class="px-6 py-3">
+                    <h2>Job Title</h2>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                   <h2>Professional Area</h2>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    <h2>Location</h2>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    <h2>Action</h2>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class=" border-b  table-sect1">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <p>Senior Manager - Finance Accounts</p>
+                </th>
+                <td class="px-6 py-4">
+                    <p>Doctors & Sergeon</p>
+                </td>
+                <td class="px-6 py-4">
+                   <p>Gurugram</p>
+                </td>
+                <td class="px-6 py-4">
+                   <button className=' text-center'>Apply</button>
+                </td>
+            </tr>
+        
+            <tr class=" border-b  table-sect1">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <p>Senior Manager - Finance Accounts</p>
+                </th>
+                <td class="px-6 py-4">
+                    <p>Doctors & Sergeon</p>
+                </td>
+                <td class="px-6 py-4">
+                   <p>Gurugram</p>
+                </td>
+              <NavLink to="/careerDetails"><td class="px-6 py-4">
+                   <button className=' text-center'>Apply</button>
+                </td></NavLink>
+            </tr>
+            <tr class=" border-b  table-sect1">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <p>Senior Manager - Finance Accounts</p>
+                </th>
+                <td class="px-6 py-4">
+                    <p>Doctors & Sergeon</p>
+                </td>
+                <td class="px-6 py-4">
+                   <p>Gurugram</p>
+                </td>
+                <td class="px-6 py-4">
+                   <button className=' text-center'>Apply</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-            <hr className='my-5' />
-            <div className="table-sect1 flex items-center justify-between">
-                 <p>Job Title</p>
-                 <p className='ml-6'>Delhi</p>
-                 <button className=' mr-0'>Apply</button>
-            </div>
-            <hr className='my-5' />
-            <div className="table-sect1 flex items-center justify-between">
-                 <p>Job Title</p>
-                 <p className='ml-6'>Delhi</p>
-                 <button className=' mr-0'>Apply</button>
-            </div>
-            <hr className='my-5' />
-            <div className="table-sect1 flex items-center justify-between">
-                 <p>Job Title</p>
-                 <p className='ml-6'>Delhi</p>
-                 <button className=' mr-0'>Apply</button>
-            </div>
-            <hr className='my-5' />
-       </div>
 </div>
       
      </div>

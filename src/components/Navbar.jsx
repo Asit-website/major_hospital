@@ -39,7 +39,7 @@ export const Navbar = () => {
       <div className="upper-nav flex justify-end py-2 px-20 text-sm font-medium first-nav ">
         <div className="flex items-center">
           <BsGeoAlt className="mr-2" />
-          <NavLink to="/iodolgy">
+          <NavLink to="/near">
             <p className="mr-2">Hospital near me</p>
           </NavLink>
           <div className="verticalDivider" />

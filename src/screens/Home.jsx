@@ -87,13 +87,13 @@ export const Home = () => {
         <div className='relative '>
             <div className='home-banner flex items-center px-20 max-[425px]:px-10'>
                 <div className='home-banner-details w-[35%] max-lg:w-[50%]  max-md:w-[70%] max-[425px]:w-[100%]'>
-                    <p className='text-xl text-gray-800 my-3 max-sm:text-lg'>Major Hospital</p>
-                    <p className='text-5xl font-bold max-sm:text-4xl'>A Destination for
+                    <p className='text-xl text-gray-800 my-3 max-sm:text-lg major-h'>Major Hospital</p>
+                    <p className='text-5xl font-bold max-sm:text-4xl destination'>A Destination for
                     Advanced Care</p>
-                    <p className='text-2xl text-gray-800 my-3 max-sm:text-xl'>The hospital you trust to care for those
+                    <p className='text-2xl text-gray-800 my-3 max-sm:text-xl '>The hospital you trust to care for those
                     you love.</p>
 
-                    <button className='yellow-btn my-5 '>Book an Appointment</button>
+                    <button className='yellow-btn my-5 yellow-btn2 '>Book an Appointment</button>
                 </div>
             </div>
 
@@ -103,8 +103,8 @@ export const Home = () => {
         {/** Specialities */}
         <div className='relative mt-80 max-lg:mt-[18rem] max-md:mt-[20rem] max-sm:mt-[45rem]'>
           <div className='h-specailities-desc'>
-            <div className='text-center my-3 text-4xl font-semibold'>Specialities </div>
-            <div className='text-center text-lg mb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>        
+            <div className='text-center my-3 text-4xl font-semibold specilist'>Specialities </div>
+            <div className='text-center text-lg mb-5 lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>        
           </div>
 
           <Swiper
@@ -125,7 +125,7 @@ export const Home = () => {
                   <img src={selSpecialist === specialist.id ? specialist.img_dark : specialist.img_light}/>
                 </div> 
               </div>
-              <div className={selSpecialist === specialist.id ? 'text-center font-semibold text-2xl mb-8 text-white' : 'text-center font-semibold text-2xl mb-8'}>{specialist.title}</div>
+              <div className={selSpecialist === specialist.id ? 'text-center font-semibold text-2xl mb-8 text-white spet-tit' : 'text-center font-semibold text-2xl mb-8 spet-tit'}>{specialist.title}</div>
 
             </div>
             )}
@@ -252,14 +252,13 @@ export const Home = () => {
               </div>
             </div>
             <div className='w-[40%] ml-20 max-md:w-[95%] max-md:ml-0 max-md:my-[50px]'>
-              <p className='text-2xl font-bold max-sm:text-xl'>Patient's Stories</p>
-              <p className='text-4xl font-bold mt-2 max-sm:text-3xl'>Where Health Meets Care</p>
-              <p className='text-xl mt-2 max-sm:text-lg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
+              <p className='text-2xl font-bold max-sm:text-xl stories1'>Patient's Stories</p>
+              <p className='text-4xl  font-bold mt-4 max-sm:text-3xl healths'>Where Health Meets Care</p>
+              <p className='text-xl mt-4 max-sm:text-lg gil '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div className=' mt-8 light-red-btn1'><span className='light-red-btn'>Lorem Ipsum</span></div>
             </div>
         </div>
         </SwiperSlide>
-        
         <SwiperSlide>
         <div className='patient-stories-section flex mx-[130px] items-center my-[80px] max-lg:mx-[50px] max-md:flex-col max-md:my-0'>
             <div className="wo-img relative w-[50%] max-md:w-[95%]">
@@ -273,14 +272,13 @@ export const Home = () => {
               </div>
             </div>
             <div className='w-[40%] ml-20 max-md:w-[95%] max-md:ml-0 max-md:my-[50px]'>
-              <p className='text-2xl font-bold max-sm:text-xl'>Patient's Stories</p>
-              <p className='text-4xl font-bold mt-2 max-sm:text-3xl'>Where Health Meets Care</p>
-              <p className='text-xl mt-2 max-sm:text-lg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
+              <p className='text-2xl font-bold max-sm:text-xl stories1'>Patient's Stories</p>
+              <p className='text-4xl  font-bold mt-4 max-sm:text-3xl healths'>Where Health Meets Care</p>
+              <p className='text-xl mt-4 max-sm:text-lg gil '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div className=' mt-8 light-red-btn1'><span className='light-red-btn'>Lorem Ipsum</span></div>
             </div>
         </div>
         </SwiperSlide>
-        
         <SwiperSlide>
         <div className='patient-stories-section flex mx-[130px] items-center my-[80px] max-lg:mx-[50px] max-md:flex-col max-md:my-0'>
             <div className="wo-img relative w-[50%] max-md:w-[95%]">
@@ -294,14 +292,13 @@ export const Home = () => {
               </div>
             </div>
             <div className='w-[40%] ml-20 max-md:w-[95%] max-md:ml-0 max-md:my-[50px]'>
-              <p className='text-2xl font-bold max-sm:text-xl'>Patient's Stories</p>
-              <p className='text-4xl font-bold mt-2 max-sm:text-3xl'>Where Health Meets Care</p>
-              <p className='text-xl mt-2 max-sm:text-lg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
+              <p className='text-2xl font-bold max-sm:text-xl stories1'>Patient's Stories</p>
+              <p className='text-4xl  font-bold mt-4 max-sm:text-3xl healths'>Where Health Meets Care</p>
+              <p className='text-xl mt-4 max-sm:text-lg gil '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div className=' mt-8 light-red-btn1'><span className='light-red-btn'>Lorem Ipsum</span></div>
             </div>
         </div>
         </SwiperSlide>
-        
         <SwiperSlide>
         <div className='patient-stories-section flex mx-[130px] items-center my-[80px] max-lg:mx-[50px] max-md:flex-col max-md:my-0'>
             <div className="wo-img relative w-[50%] max-md:w-[95%]">
@@ -315,13 +312,14 @@ export const Home = () => {
               </div>
             </div>
             <div className='w-[40%] ml-20 max-md:w-[95%] max-md:ml-0 max-md:my-[50px]'>
-              <p className='text-2xl font-bold max-sm:text-xl'>Patient's Stories</p>
-              <p className='text-4xl font-bold mt-2 max-sm:text-3xl'>Where Health Meets Care</p>
-              <p className='text-xl mt-2 max-sm:text-lg'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <div className=' mt-8'><span className='light-red-btn'>Lorem Ipsum</span></div>
+              <p className='text-2xl font-bold max-sm:text-xl stories1'>Patient's Stories</p>
+              <p className='text-4xl  font-bold mt-4 max-sm:text-3xl healths'>Where Health Meets Care</p>
+              <p className='text-xl mt-4 max-sm:text-lg gil '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+              <div className=' mt-8 light-red-btn1'><span className='light-red-btn'>Lorem Ipsum</span></div>
             </div>
         </div>
         </SwiperSlide>
+       
 
         
        
@@ -330,8 +328,8 @@ export const Home = () => {
         {/** Our Services */}
         <div className='our-services-section bg-[#FEF9F9] py-10'>
         
-            <div className='text-3xl text-center font-bold'>Our Services</div>
-            <div className='text-lg text-center font-bold my-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>
+            <div className='text-3xl text-center font-bold our-sery'>Our Services</div>
+            <div className='text-lg text-center font-bold my-2 our-fery'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>
             
             <Swiper
             spaceBetween={30}
@@ -349,9 +347,9 @@ export const Home = () => {
                     <div className='service-card-img'>
                       <img src={service.service_img} alt='services'/>
                     </div>
-                    <p className='my-5 mx-2 text-xl font-semibold text-[#101010]'>{service.name}</p>
-                    <p className='mb-5 mx-2 text-sm text-[#101010]'>{service.desc}</p>
-                    <div className='flex justify-center '><span className='red-btn red-btn1 '>Know More</span></div>
+                    <p className='my-5 mx-2 text-xl font-semibold text-[#101010] service_nam'>{service.name}</p>
+                    <p className='mb-5 mx-2 text-sm text-[#101010] service_des'>{service.desc}</p>
+                    <div className='flex justify-center  '><span className='red-btn serv-btn red-btn1 '>Know More</span></div>
                   </div>
                   )
               }
@@ -416,13 +414,13 @@ export const Home = () => {
         <div className='our-team bg-[#F5F5F5] flex justify-center px-40 max-xl:px-20 max-lg:px-10 max-md:flex-col'>
               <div className='w-[35%] mt-10 mr-20 max-md:w-[100%]'>
                 <p className='text-[#E74C3C] font-semibold my-1'>Meet Our Team</p>
-                <p className='text-4xl font-bold my-2'>Group of certified &
+                <p className='text-4xl font-bold my-2 certified'>Group of certified &
                 Experienced Doctors.</p>
-                <p className='text-xl leading-7'>Lorem Ipsum is simply dummy text of the
+                <p className='text-xl leading-7 lead-8'>Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry.</p>
                 <div className='my-3'>
-                  <button className='ba-red-btn mr-5 max-md:mb-3'>Book Appoinment</button>
-                  <button className='ba-white-btn '>View All Doctors</button>
+                  <button className='ba-red-btn mr-5 max-md:mb-3 mr-btn'>Book Appoinment</button>
+                  <button className='ba-white-btn mr-btn '>View All Doctors</button>
                 </div>
               </div>
               <div className='flex w-[65%] justify-start max-md:flex-col max-md:w-[100%]'>
@@ -511,13 +509,13 @@ export const Home = () => {
         <div className='patient-reviews flex justify-center py-20'>
         
         <div className=' text-center w-[40%]'>
-          <p className='text-[#E74C3C] font-semibold my-1'>Testimonial</p>
-          <p className='text-3xl font-extrabold text-slate-600'>Satisfied Patients Reviews</p>
+          <p className='text-[#E74C3C] font-semibold my-1 testi'>Testimonial</p>
+          <p className='text-3xl font-extrabold text-slate-600 satisfied'>Satisfied Patients Reviews</p>
           <div className='flex justify-center testimonial-img'>
               <img src={testimonial} alt='testimonial-img'/>
           </div>
           
-          <p className='mb-5 text-slate-500'>
+          <p className='mb-5 text-slate-500 ita'>
             I appreciate your hospital really good environment and excellent patient care. you are
             continuously handle patient treatment wonderfully. Thanks for your great service. Please
             enjoy the chocolates.

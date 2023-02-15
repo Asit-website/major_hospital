@@ -23,7 +23,7 @@ import Hospital from './screens/Hospital';
 import Clinic from './screens/Clinic';
 import JobOpening from './screens/job/JobOpening';
 import JobOpeningDetails from './screens/job/JobOpeningDetails';
-
+import HospitalNear from './screens/HospitalNear';
 function App() {
   const [apointPop,setApointPop] = useState(false);
   return (
@@ -50,6 +50,8 @@ function App() {
           <Route path='/clinic' element={<Clinic/>}/>
           <Route path='/carer' element={<JobOpening/>}/>
           <Route path='/careerDetails' element={<JobOpeningDetails/>}/>
+
+          <Route path='/near' element={<HospitalNear/>}/>
       </Routes>
       <Footer/>
     </Router>
