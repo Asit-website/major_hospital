@@ -2089,8 +2089,195 @@ input[type=date]:required:invalid::-webkit-datetime-edit {
 input[type=date]:focus::-webkit-datetime-edit {
   color: black !important;
 }
+
+/* =================hospital near css start================= */
+.hospital-near{
+  padding: 60px 100px;
+}
+.result-for{
+  display: flex;
+  align-items: center;
+}
+.first-for p{
+  color: #949494;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+.first-for span{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+.second-for{
+  margin-left: 10px;
+}
+.second-for img{
+  width: 230px;
+}
+.places{
+  display: flex;
+  align-items: center;
+}
+.places select{
+  width: 100px;
+  background: transparent;
+  height: 40px;
+  border: 1px solid #949494;
+  outline: none;
+  padding: 5px;
+  border-radius: 7px;
+  color: #000000;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  opacity: 0.7;
+}
+.places h2{
+  color: #000000;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+}
+.places img{
+  width: 4px;
+  margin-left: 25px;
+}
+.select-near-btn {
+  margin-left: 25px;
+}
+
+.second-near-btn{
+  margin-left: 10px;
+}
+.map-hospital{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 25px;
+}
+.first-map{
+  margin-top: 20px;
+}
+.first-map{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 680px;
+  max-width: 100%;
+}
+.direction-ji img{
+  width: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.direction-ji{
+  background-color: #ffffff;
+  border: 1px solid #ebe8e8 ;
+  border-radius: 50%;
+  padding:8px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.map-hr{
+  border-bottom: 1px solid #ebe8e8 ;
+  width: 100%;
+}
+.first-ji{
+  margin-right: 50px;
+}
+.second-map{
+  margin-left: 50px;
+}
+.second-map iframe{
+  width: 750px;
+  max-width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+.care{
+  height: 150px;
+}
+.car1 p{
+  color:#949494 ;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+.car1 img{
+  width: 14px;
+}
+.fgim{
+  margin-left: 4px;
+}
+.durh{
+  color:#949494 ;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 17.5px;
+}
+
+.aoon{
+  color: red;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 17.5px;
+}
+.pm{
+  color:#949494 ;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 17.5px;
+}
+.seng{
+  color: skyblue;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  position: relative;
+  right: 10px;
+  margin-top: 5px;
+}
+.care h3{
+  color: #000000;
+  opacity: .7;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  font-size: 18.5px;
+}
+.more-place{
+  background-color: gainsboro;
+  width: 350px;
+  color: #000000;
+  height: 50px;
+  display: block;
+  margin: auto;
+  border-radius: 30px;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  opacity: .8;
+  position: absolute;
+  bottom: -20px;
+}
+.more-map{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.more-map span{
+  margin-left: 10px;
+}
 /* ===================media query css============= */
 @media only screen and (max-width:1070px){
+  .hospital-near{
+    padding: 60px 30px;
+  }
   .about-card{
     margin: 0 30px;
   }
@@ -2762,6 +2949,34 @@ input[type=date]:focus::-webkit-datetime-edit {
  .hospital-card{
   margin-top: 15px;
  }
+ .places{
+  justify-content: center;
+ }
+ .result-for{
+  justify-content: center;
+ }
+ .hospital-near{
+  padding: 60px 20px;
+ }
+ .more-place{
+  max-width: 400px;
+  width: 100%;
+ }
+}
+
+@media only screen and (max-width:375px){
+  .places{
+    flex-direction: column;
+  }
+  .select-near-btn{
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .places img{
+    margin-left: 0px;
+    margin-top: 15px;
+    transform: rotate(90deg);
+  }
 }
 
 @media only screen and (max-width:320px){
@@ -2781,5 +2996,36 @@ input[type=date]:focus::-webkit-datetime-edit {
   .medicine-sect h2{
     font-size: 30px;
   }
+  .first-map{
+    flex-direction: column;
+  }
+  .more-place{
+    bottom: -60px;
+  }
+  .second-nsp{
+    margin-top: 80px !important;
+  }
   
+}
+
+@media only screen and (max-width:1259px){
+  .first-map{
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width:1067px){
+  .first-map{
+    width: 300px;
+  }
+}
+@media only screen and (max-width:835px){
+  .map-hospital{
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-map{
+    margin-left: 0px;
+    margin-top: 50px;
+  }
 }
