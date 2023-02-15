@@ -1868,6 +1868,13 @@ background-color: #FCEDEC;
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
+  flex-wrap: wrap;
+}
+.search-carer{
+  margin-top: 20px;
+}
+.search-button{
+  margin-top: 20px;
 }
 .search-carer select{
   width: 210px;
@@ -2952,6 +2959,10 @@ input[type=date]:focus::-webkit-datetime-edit {
   .second-word h2{
     line-height: 35px;
   }
+  .carer-section{
+    margin: 30px 20px;
+    padding: 20px 10px;
+  }
   .visitor-information button{
     max-width: 600px;
     width: 100%;
@@ -3193,6 +3204,16 @@ input[type=date]:focus::-webkit-datetime-edit {
  .treats-back{
   height: 90vh;
  }
+}
+
+@media only screen and (max-width:344px){
+  .search-button{
+    flex-direction: column;
+  }
+  .search-button .reset{
+    margin-left: 0px;
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width:375px){
