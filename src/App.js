@@ -29,6 +29,8 @@ import PatientInfo from './screens/visitors/PatientInfo';
 import InternationalPat from './screens/visitors/InternationalPat';
 import Payment from './screens/visitors/Payment';
 import TreatMent from './screens/treatMent/TreatMent';
+import Cornary from './screens/treatMent/Cornary';
+import LabTest from './screens/treatMent/LabTest';
 function App() {
   const [apointPop,setApointPop] = useState(false);
   const [registerPop,setRegisterPop] = useState(false);
@@ -66,6 +68,8 @@ function App() {
           <Route path='/payment' element={<Payment apointPop={apointPop} setApointPop={setApointPop}/>}/>
 
           <Route path='/treat' element={<TreatMent/>}/>
+          <Route path='/treat/cornary' element={<Cornary apointPop={apointPop} setApointPop={setApointPop}/>}/>
+          <Route path='/treat/lab' element={<LabTest apointPop={apointPop} setApointPop={setApointPop}/>}/>
       </Routes>
       <Footer/>
     </Router>

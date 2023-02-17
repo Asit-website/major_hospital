@@ -40,6 +40,7 @@ import btn from '../images/btn.png'
 import blog01 from '../images/blog01.png'
 import blog02 from '../images/blog02.png'
 import blog03 from '../images/blog03.png'
+import ApointmentPopup from '../popup/ApointmentPopup';
 
 const specialists = [
   {
@@ -68,7 +69,7 @@ const specialists = [
   },
 ]
 
-export const Home = () => {
+export const Home = ({apointPop,setApointPop}) => {
   const swiperRef = useRef();
   const swiperRef1 = useRef();
 
@@ -81,6 +82,7 @@ export const Home = () => {
     setSelSpecialist(id);
   }
   return (
+    <>
     <div>
         {/** Banner */}
         <div className='relative '>
@@ -92,7 +94,7 @@ export const Home = () => {
                     <p className='text-2xl text-gray-800 my-3 max-sm:text-xl '>The hospital you trust to care for those
                     you love.</p>
 
-                    <button className='yellow-btn my-5 yellow-btn2 '>Book an Appointment</button>
+                    <button onClick={()=> setApointPop(true)} className='yellow-btn my-5 yellow-btn2 '>Book an Appointment</button>
                 </div>
             </div>
 
@@ -418,7 +420,7 @@ export const Home = () => {
                 <p className='text-xl leading-7 lead-8'>Lorem Ipsum is simply dummy text of the
                 printing and typesetting industry.</p>
                 <div className='my-3'>
-                  <button className='ba-red-btn mr-5 max-md:mb-3 mr-btn'>Book Appoinment</button>
+                  <button onClick={()=> setApointPop(true)} className='ba-red-btn mr-5 max-md:mb-3 mr-btn'>Book Appoinment</button>
                   <button className='ba-white-btn mr-btn '>View All Doctors</button>
                 </div>
               </div>
@@ -620,5 +622,9 @@ export const Home = () => {
 
 
     </div>
+    {
+      apointPop && <ApointmentPopup setApointPop={setApointPop}/>
+    }
+    </>
   )
 }

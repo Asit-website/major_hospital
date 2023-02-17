@@ -113,6 +113,7 @@ const Cardiology = ({ apointPop, setApointPop }) => {
                 placeholder="Name"
                 required
               />
+             
               <div class="absolute inset-y-0 right-0 flex items-center pl-3 pointer-events-none">
                 <svg
                   aria-hidden="true"
