@@ -2405,18 +2405,71 @@ input[type=date]:focus::-webkit-datetime-edit {
 /* ========================patient & visitor css end===================== */
 
 /* ===================treatment page css start=========================== */
-.treat-nav{
-  /* height: 200px; */
-  width: 80%;
+.all-section-disases{
   background: rgba(220, 113, 113, 0.15);
+  margin: 0px 130px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 78%;
   max-width: 100%;
-  margin: 0px 100px;
+}
+.treat-nav{
+ width: 400px;
+ max-width: 100%;
+}
+.aliment-navbar{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 120px;
+  margin-right: 70px;
+  margin-top: 5px;
+}
+.aliment-hr{
+  border-bottom: 1px solid #CCCCCC;
+  opacity: .9;
+  margin: 0 70px;
+  margin-top: 25px;
+}
+.aliment-para{
+  text-align: center;
+  color: #E74C3C;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 17.5px;
+  margin-top: 20px;
+}
+.alit1{
+  height: 130px;
+}
+.hkhk{
+  width: 100%;
 }
 .treat-method{
-  width: 20%;
+  width: 100%;
+}
+.first-aliment-navbar p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17.5px;
+  margin: 8px 0px;
+}
+.alit p{
+  margin-left: 10px;
+}
+.alit .aliment1{
+  width: 20px;
+}
+.alit .aliment2{
+  width: 12px;
+}
+.alit .aliment3{
+  width: 20px;
 }
 .browes-by{
-  background-color: #222F3E;
+  background-color: #DA0402;
   padding: 15px 20px;
 }
 .browes-by p{
@@ -2428,14 +2481,421 @@ input[type=date]:focus::-webkit-datetime-edit {
 }
 .alit{
   background-color: #FFC400;
-  padding: 20px 35px;
+  padding: 20px 20px;
   border-bottom: 1px solid white;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.4s;
 }
 .alit p{
   font-family: 'Inter', sans-serif;
   color: #000000;
   font-weight: 500;
   font-size: 18px;
+}
+.test-dis{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 80px;
+  margin-right: 60px;
+}
+.first-test img{
+  width: 50px;
+}
+.second-test img{
+  width: 60px;
+}
+.test-para{
+  margin-left: 15px;
+}
+.test-para h3{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.test-para p{
+  color: #E74C3C;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14.5px;
+}
+.alit .poly{
+  position: absolute;
+  left: 95%;
+  width: 20px;
+}
+.cornary-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 41vh;
+  background-image: url('./images/cornary.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+  margin-top: 10px;
+}
+.cornary-sect{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.cornary-sect h2{
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  /* line-height: 60px; */
+}
+.coronary-artery{
+  padding: 40px 150px;
+}
+.coronary-artery h3{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+.artery-para{
+  margin-top: 30px;
+}
+.artery-para p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-size: 21px;
+  text-align: justify;
+}
+.symtoms{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background: rgba(231, 76, 60, 0.05);
+  width: 100%;
+}
+.symtoms-navbar{
+  max-width: 100%;
+  width: 488px;
+}
+#one,
+#two,
+#three,
+#four{
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.symtops-topic{
+  margin-left: 55px;
+  margin-right: 55px;
+  width: 100%;
+  margin-top: 30px;
+}
+.symtops-topic h2{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+}
+.symtops-topic p{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20.5px;
+  color: #000000;
+  margin-top: 30px;
+  line-height: 39px;
+}
+.head-symtom{
+  background-color: #F2F2F2;
+  padding: 35px 120px;
+}
+.head-symtom h2{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+}
+.diagonsid{
+  margin-top: 30px;
+}
+.diagonsid img{
+  width: 50px;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+.diagonsid h3{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+}
+.diagonsid p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 21.5px;
+  letter-spacing: .4px;
+}
+.electromagnetic ul{
+  list-style-type:disc;
+}
+.electromagnetic ul li{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+   font-size: 27px;
+   margin: 10px 60px;
+   /* list-style-type: disc; */
+}
+.ytment{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 42vh;
+  background-image: url('./images/dil.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+}
+.ytment-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.ytment-sect img{
+  display: block;
+  margin: auto;
+  width: 50px;
+}
+.ytment-sect h3{
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+}
+.ytment-sect p{
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+}
+.lifestyle{
+  position: relative;
+}
+.lifestyle ul{
+  list-style-type: disc;
+  padding: 0 20px;
+}
+.lifestyle ul li{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 26.5px;
+}
+.lifestyle p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 32px;
+  margin-top:15px;
+}
+.ysu{
+  padding: 30px 0px;
+}
+.changin-lifestyle{
+  background-color: #FFFFFF;
+  margin: 0px 200px;
+  padding: 40px 50px;
+  position: relative;
+  top: -20px;
+}
+.when-contact{
+  background: rgba(231, 76, 60, 0.05);
+  margin: 0 200px;
+  padding: 40px 40px;
+}
+.when-contact h3{
+  color:#000000;
+  font-size: 27px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+.when-contact p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  margin-top: 22px;
+}
+.when-contact button{
+  background-color: #DA0402;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+  width: 280px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  height: 48px;
+  border-radius: 30px;
+  margin-top: 35px;
+}
+.provide-car{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-image: url('./images/ghar.png'), radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+}
+.provide-sect{
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+}
+.provide-sect h2{
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 27px;
+}
+.stereo{
+  padding: 20px 80px;
+}
+.stereo .stereo1{
+  width: 62px;
+  display: block;
+  margin: auto;
+}
+.stereo .clo{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 27px;
+  margin-top: 5px;
+}
+.stereo .stereo-but{
+  background-color: #DA0402;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+  width: 280px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  height: 48px;
+  border-radius: 30px;
+  margin-top: 40px;
+}
+.stereo .fee_more{
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #E74C3C;
+  margin-top: 30px;
+}
+.have-question{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vh;
+  background-image: url('./images/contact.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 20px 0px;
+}
+.question-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.question-sect h3{
+  color: #FFFFFF;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+}
+.lab-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  background-image: url('./images/lab.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 5px 80px;
+}
+.lab-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.lab-sect h2{
+  color: #ffffff;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+.lab-filter{
+  padding: 40px 80px;
+}
+.lab-filter .find{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  text-align: center;
+}
+.lab-filter1 input{
+  background: transparent;
+  border-bottom: 1.5px solid #919191;
+  outline: none;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17.5px;
+}
+.filter-unu{
+  color: #101010;
+}
+.lab-filter1 input::placeholder{
+  opacity: 1 !important;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 17.5px;
+}
+.lab-filter1 .di{
+  width: 900px;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
 }
 /* =============================treatment page css end======================= */
 
@@ -2445,6 +2905,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   font-size: 16px;
   color: #030303;
 }
+
 /* =====================registerPopup css end================== */
 /* ===================media query css============= */
 @media only screen and (max-width:1070px){
