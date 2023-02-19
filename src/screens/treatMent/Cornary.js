@@ -14,6 +14,8 @@ const Cornary = ({apointPop,setApointPop}) => {
       setVisible((prevValue)=> prevValue + 4);
   }
 
+
+
   const tabAnother = (e) => {
     e.preventDefault();
     setTabIndex(1);
@@ -77,8 +79,8 @@ const Cornary = ({apointPop,setApointPop}) => {
           </p>
         </div>
 
-        <div className="symtoms mt-5">
-          <div className="symtoms-navbar">
+        <div  className="symtoms mt-5">
+          <div  className="symtoms-navbar">
             <div id="one" onClick={tabAnother} className="head-symtom">
               <h2>Symptoms</h2>
             </div>

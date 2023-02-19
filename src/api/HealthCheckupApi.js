@@ -3,7 +3,7 @@ const HealthCheckupApi = [
        id:"1",
        percentage:"20%",
        percentage1:"OFF",
-       images:"image/shut3.png",
+       images:"../image/shut3.png",
        advance:"Advanced Health Checkup",
        range:"A range of tests recommended for your",
        willness:"complete wellness.",
@@ -15,7 +15,7 @@ const HealthCheckupApi = [
     {
         id:"2",
         off1:"off1",
-        images:"image/shut1.png",
+        images:"../image/shut1.png",
         advance:"Baby Health Checkup",
         range:"A range of tests recommended for your",
         willness:"complete wellness.",
@@ -27,7 +27,7 @@ const HealthCheckupApi = [
      {
         id:"3",
         off1:"off1",
-        images:"image/shut2.png",
+        images:"../image/shut2.png",
         advance:"Woman Health Checkup",
         range:"A range of tests recommended for your",
         willness:"complete wellness.",
@@ -40,7 +40,7 @@ const HealthCheckupApi = [
         id:"4",
         percentage:"20%",
         percentage1:"OFF",
-        images:"image/shut3.png",
+        images:"../image/shut3.png",
         advance:"Advanced Health Checkup",
         range:"A range of tests recommended for your",
         willness:"complete wellness.",
@@ -52,7 +52,7 @@ const HealthCheckupApi = [
      {
         id:"5",
         off1:"off1",
-        images:"image/shut1.png",
+        images:"../image/shut1.png",
         advance:"Baby Health Checkup",
         range:"A range of tests recommended for your",
         willness:"complete wellness.",
@@ -64,7 +64,7 @@ const HealthCheckupApi = [
      {
         id:"6",
         off1:"off1",
-        images:"image/shut2.png",
+        images:"../image/shut2.png",
         advance:"Woman Health Checkup",
         range:"A range of tests recommended for your",
         willness:"complete wellness.",

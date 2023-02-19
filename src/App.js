@@ -71,7 +71,7 @@ function App() {
           <Route path='/treat/cornary' element={<Cornary apointPop={apointPop} setApointPop={setApointPop}/>}/>
           <Route path='/treat/lab' element={<LabTest apointPop={apointPop} setApointPop={setApointPop}/>}/>
       </Routes>
-      <Footer/>
+      <Footer apointPop={apointPop} setApointPop={setApointPop}/>
     </Router>
   
   );
