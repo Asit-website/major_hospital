@@ -5,7 +5,8 @@ import fb from '../images/fb.png'
 import insta from '../images/insta.png'
 import twit from '../images/twit.png'
 import youtube from '../images/youtube.png'
-const Footer = () => {
+import ApointmentPopup from '../popup/ApointmentPopup';
+const Footer = ({apointPop,setApointPop}) => {
   return (
     <>
       <div className="footer">
@@ -68,7 +69,7 @@ const Footer = () => {
             </div>
 
             <div className="appoint-req">
-                <button>Request an Appointment</button>
+                <button onClick={()=> setApointPop(true)}>Request an Appointment</button>
             </div>
          </div>
       </footer>
@@ -77,6 +78,10 @@ const Footer = () => {
           <img src={navigation} alt="navigation" />
       </div>
       </div>  
+
+      {
+        apointPop && <ApointmentPopup setApointPop={setApointPop}/>
+      }
     </>
   )
 }

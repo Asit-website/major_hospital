@@ -54,7 +54,7 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
             <label for="underline_select" class="sr-only">
               Underline select
             </label>
-            <select onClick={(e)=> filterItem1(e.target.value)} id="underline_select" class="block py-2  pyo">
+            <select onChange={(e)=> filterItem1(e.target.value)} id="underline_select" class="block py-2  pyo">
               <option value="all">Select Location</option>
                {
                 locationItem.map((val,index)=>{
@@ -69,7 +69,7 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
           <label for="underline_select" class="sr-only">
             Underline select
           </label>
-          <select onClick={(event)=> filterItem(event.target.value)} id="underline_select" class="block py-2  pyo">
+          <select onChange={(event)=> filterItem(event.target.value)} id="underline_select" class="block py-2  pyo">
             <option value="all1">Select Gender</option>
             {
               genItem.map((val,index)=>{

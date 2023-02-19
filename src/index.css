@@ -1927,6 +1927,7 @@ background-color: #FCEDEC;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 26px;
+  white-space: nowrap;
 }
 .table-sect1 p{
   color: #000000;
@@ -2580,6 +2581,7 @@ input[type=date]:focus::-webkit-datetime-edit {
 .symtoms-navbar{
   max-width: 100%;
   width: 488px;
+  display: block;
 }
 #one,
 #two,
@@ -2679,6 +2681,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 27px;
+  margin-top: 12px;
 }
 .ytment-sect p{
   color: #FFFFFF;
@@ -2686,6 +2689,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 21px;
+  margin-top: 12px;
 }
 .lifestyle{
   position: relative;
@@ -2892,10 +2896,44 @@ input[type=date]:focus::-webkit-datetime-edit {
   font-size: 17.5px;
 }
 .lab-filter1 .di{
-  width: 900px;
+  width: 960px;
   display: block;
   margin: auto;
   margin-top: 60px;
+  max-width: 100%;
+}
+.orji{
+  width: 80px;
+  height: 80px;
+  border: 2px solid #000000;
+  display: block;
+  margin: auto;
+  position: relative;
+  border-radius: 50%;
+  margin-top: 60px;
+}
+.orji p{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ font-family: 'Inter', sans-serif;
+ font-weight: 700;
+ font-size: 27px;
+}
+.health-card1 .health-box{
+  width: 26% ;
+}
+.health-card1 .health-box .health-btn .know_more{
+  margin: 0 3px;
+}
+.health-card1 .health-box .health-btn .book_more{
+  margin: 0 3px;
+}
+.health-card1 h3{
+  font-family: 'Inter', sans-serif !important;
+ font-weight: 700;
+ font-size: 27px;
 }
 /* =============================treatment page css end======================= */
 
@@ -2911,6 +2949,25 @@ input[type=date]:focus::-webkit-datetime-edit {
 @media only screen and (max-width:1070px){
   .hospital-near{
     padding: 60px 30px;
+  }
+  .test-dis{
+    padding: 30px 30px;
+    margin-right: 0px;
+  }
+  .provide-car{
+    margin: 0 30px;
+  }
+  .stereo{
+    padding: 20px 30px;
+  }
+  .cornary-back{
+    margin: 0px 30px;
+  }
+  .coronary-artery{
+    padding: 40px 30px;
+  }
+  .ytment{
+    margin: 0px 30px;
   }
   .visitor-back{
      margin: 0px 30px;
@@ -3027,6 +3084,12 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .hospital-section{
     padding: 50px 30px;
+  }
+  .lab-back{
+    margin: 5px 30px;
+  }
+  .lab-filter{
+    padding: 40px 30px;
   }
 }
 @media only screen and (max-width:1023px){
@@ -3185,6 +3248,14 @@ input[type=date]:focus::-webkit-datetime-edit {
   .nav-logo img{
     width: 100%;
     max-width: 100%;
+  }
+  .lab-sect h2{
+    line-height: 60px;
+  }
+  .symtops-topic{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
   }
 }
 
@@ -3362,7 +3433,34 @@ input[type=date]:focus::-webkit-datetime-edit {
   .hospital-card{
     flex-direction: column;
   }
+  .symtoms-navbar{
+    width: 100%;
+    max-width: 100%;
+  }
+  .symtoms{
+    flex-direction: column;
+  }
+  .symtops-topic{
+    padding: 15px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .head-symtom{
+    padding: 35px 30px;
+  }
+  .artery-para p{
+    text-align: initial;
+  }
+  .changin-lifestyle{
+    margin: 0 40px;
+  }
+  .when-contact{
+    margin: 0px 40px;
+    padding: 40px 30px;
+  }
 }
+
+
 .hospital-box{
   width: 100%;
 }
@@ -3419,6 +3517,12 @@ input[type=date]:focus::-webkit-datetime-edit {
 @media only screen and (max-width:417px){
   .second-word h2{
     line-height: 35px;
+  }
+  .all-section-disases{
+    margin: 0px 20px !important;
+  }
+  .test-dis{
+    padding: 30px 20px;
   }
   .carer-section{
     margin: 30px 20px;
@@ -3485,9 +3589,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   .text-card p{
     line-height: 16px;
   }
-  .health-card .health-box{
-    width: 100%;
-  }
+  
   .health-card{
     padding: 40px 20px;
   }
@@ -3665,6 +3767,29 @@ input[type=date]:focus::-webkit-datetime-edit {
  .treats-back{
   height: 90vh;
  }
+ .health-card{
+  padding: 40px 20px;
+ }
+ .lab-back{
+  margin: 5px 20px;
+ }
+ .visitor-back{
+  margin: 0 20px;
+ }
+ .coronary-artery{
+  padding: 40px 20px;
+ }
+ .cornary-back{
+  margin: 0 20px;
+ }
+ .symtops-topic{
+  padding: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+ }
+ .question-sect h3{
+  font-size: 22px;
+ }
 }
 
 @media only screen and (max-width:344px){
@@ -3681,6 +3806,18 @@ input[type=date]:focus::-webkit-datetime-edit {
   .places{
     flex-direction: column;
   }
+  .electromagnetic ul li{
+    font-size: 22px;
+  }
+  .when-contact h3{
+    line-height: 32px;
+  }
+  .when-contact p{
+    text-align: center;
+  }
+  .artery-para p{
+    text-align: center;
+  }
   .select-near-btn{
     margin-left: 0px;
     margin-top: 15px;
@@ -3690,7 +3827,65 @@ input[type=date]:focus::-webkit-datetime-edit {
     margin-top: 15px;
     transform: rotate(90deg);
   }
-  
+  .health-card .health-box{
+    width: 100%;
+  }
+  .health-card1{
+    padding: 40px 0px !important;
+  }
+  .lab-filter{
+    padding: 40px 20px;
+  }
+  .lab-sect h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .cardio-sect h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .hospital-sect h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .visitor-sect h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .iodo-sect h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .achive-sect h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .carer-sect h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .sect-fed h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .sect h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .cornary-sect h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .changin-lifestyle{
+    padding: 40px 10px;
+  }
+  .when-contact{
+    padding: 40px 10px;
+  }
+  .when-contact button{
+    width: 500px;
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width:320px){
@@ -3709,6 +3904,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .medicine-sect h2{
     font-size: 30px;
+    line-height: 35px;
   }
   .first-map{
     flex-direction: column;
@@ -3719,7 +3915,19 @@ input[type=date]:focus::-webkit-datetime-edit {
   .second-nsp{
     margin-top: 80px !important;
   }
-  
+  .health-card1{
+    padding: 40px 0px !important;
+  }
+  .when-contact button{
+    font-size: 15px;
+  }
+  .when-contact p{
+    text-align: center;
+  }
+  .stereo .stereo-but{
+    width: 500px;
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width:1259px){
@@ -3732,6 +3940,24 @@ input[type=date]:focus::-webkit-datetime-edit {
   .first-map{
     width: 300px;
   }
+  .all-section-disases{
+    flex-direction: column;
+  }
+  .treat-nav{
+    width: 100%;
+  }
+  .aliment-navbar{
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-wrap: wrap;
+  }
+  .first-aliment-navbar{
+    margin: 5px 10px;
+  }
+  .hkhk{
+    width: 100%;
+    padding: 20px;
+  }
 }
 @media only screen and (max-width:835px){
   .map-hospital{
@@ -3742,10 +3968,50 @@ input[type=date]:focus::-webkit-datetime-edit {
     margin-left: 0px;
     margin-top: 50px;
   }
+  .electromagnetic{
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .electromagnetic ul li{
+    margin: 10px 30px;
+  }
 }
 
 @media only screen and (max-width:766px){
   .nameo{
     margin-top: 20px;
   }
+  .ytment{
+    height: 80vh;
+  }
+  .ytment-sect{
+    position: initial;
+    transform: translate(0px,0px);
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+  }
+  .test-dis{
+    flex-direction: column;
+  }
+  .second-test{
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width:1260px){
+  .all-section-disases{
+    margin: 0 30px;
+    width: auto;
+  }
+}
+
+
+.no-data{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #000000;
+  text-align: center;
 }

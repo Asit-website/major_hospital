@@ -139,7 +139,7 @@ const Cardiology = ({ apointPop, setApointPop }) => {
             <label for="underline_select" class="sr-only">
               Underline select
             </label>
-            <select onClick={(e)=> filterItem(e.target.value)} id="underline_select" class="block py-2  pyo">
+            <select onChange={(e)=> filterItem(e.target.value)} id="underline_select" class="block py-2  pyo">
             <option value="all">Location</option>
             {
               catItems.map((CurrElem,index)=>{
@@ -153,6 +153,9 @@ const Cardiology = ({ apointPop, setApointPop }) => {
         </div>
         <div className="sard">
           {displayDoctors}
+          {
+            item.length === 0 && <h2 className="no-data">No Data to display</h2>
+          }
           <ReactPaginate
             previousLabel={"Previous"}
             nextLabel={"Next"}
