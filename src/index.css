@@ -3518,6 +3518,9 @@ input[type=date]:focus::-webkit-datetime-edit {
   .second-word h2{
     line-height: 35px;
   }
+  .ytment{
+    margin: 0 20px;
+  }
   .all-section-disases{
     margin: 0px 20px !important;
   }
@@ -3783,9 +3786,12 @@ input[type=date]:focus::-webkit-datetime-edit {
   margin: 0 20px;
  }
  .symtops-topic{
-  padding: 10px;
+  padding: 15px;
   margin-right: 0px;
   margin-left: 0px;
+ }
+ .head-symtom{
+  padding: 35px 15px;
  }
  .question-sect h3{
   font-size: 22px;

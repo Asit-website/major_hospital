@@ -101,7 +101,7 @@ export const Navbar = ({registerPop,setRegisterPop}) => {
       {/* Main Navigation*/}
       <div className="ki flex items-center justify-between">
         <i onClick={funcMenu} id="men" className="fa-solid fa-bars solji"></i>
-        <img src={navLogo} alt="" />
+       <NavLink to="/"><img src={navLogo} alt="" /></NavLink>
       </div>
       <div className="main-navigation">
         <div

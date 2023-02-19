@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/pagination";
 
 
 import { Pagination, Navigation } from "swiper";
@@ -41,6 +42,7 @@ import blog01 from '../images/blog01.png'
 import blog02 from '../images/blog02.png'
 import blog03 from '../images/blog03.png'
 import ApointmentPopup from '../popup/ApointmentPopup';
+import card from '../images/cardiology-light.png';
 
 const specialists = [
   {
@@ -169,6 +171,30 @@ export const Home = ({apointPop,setApointPop}) => {
           </SwiperSlide>
           </Swiper>
         </div>
+
+        {/* <Swiper pagination={true} modules={[Pagination]} className="mySwiper3">
+        <SwiperSlide>
+        <div className='specialist-card  mx-2'>
+              <div className=' flex justify-center items-center '>
+                <div className='specialist-card-img bg-[#FFF5D7]'>
+                  <img src={card}/>
+                </div> 
+              </div>
+              <div className='text-center font-semibold text-2xl mb-8 spet-tit'>title</div>
+
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper> */}
+
+    
         {/** ./Specialities */}
         {/** Videos Slider */}
         
@@ -176,6 +202,8 @@ export const Home = ({apointPop,setApointPop}) => {
         <div className='swipe-left-btn max-md:mx-[10px]' onClick={() => swiperRef.current.slidePrev()}>
             <FaAngleLeft/>
         </div>
+
+       
         <Swiper
         modules={[ Navigation]}
         onBeforeInit={(swiper) => {
