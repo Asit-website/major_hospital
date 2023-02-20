@@ -91,7 +91,7 @@ export const Navbar = ({registerPop,setRegisterPop}) => {
           <div className="mr-2 alt-phn-circle">
             <FaPhoneAlt className="" />
           </div>
-          <p className="mr-2 contact-number-red">+91 8800401411</p>
+          <p className="mr-2 contact-number-red">1800 8333 238</p>
           <NavLink to="/feedback">
             <div className="red-btn mx-2">Share your feedback</div>
           </NavLink>
