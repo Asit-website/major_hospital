@@ -1,9 +1,9 @@
 const cardiologyApi = [
     {
         id:"1",
-        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283442/asit/dr3_rj35lo.png",
-        name:"Dr. Mahi Rawat",
-        content:"Senior Cardiology Expert at Major",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1677269801/pin_shap5j.png",
+        name:"Dr. Arun Kar",
+        content:"Senior Ophthalmology Expert at Major",
         content1:"Hospital Haryana",
         view:"View Profile",
         information:"Associate Director Ophthalmology",

@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import cardiologyApi from "../api/cardilogiApi";
-import appoint from "../images/appoint.png";
-import call1 from "../images/call1.png";
-import rupay from "../images/rupay.png";
-import cert from "../images/cert.png";
-import location from '../images/location.png';
-import ApointmentPopup from "../popup/ApointmentPopup";
+import broucher from '../images/broucher.png';
+import phone from '../images/phone.png';
+import twitbhai from '../images/twitbhai.png';
+import phonebhai from '../images/phonebhai.png';
+import locbhai from '../images/locbhai.png';
+import linkbhai from '../images/linkbhai.png';
+import insbhai from '../images/insbhai.png';
+import fbbhai from '../images/fbbhai.png';
+import emailbhai from '../images/emailbhai.png';
 const CardiologyDetails = ({apointPop,setApointPop}) => {
   const { id } = useParams();
 
@@ -19,181 +22,101 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
 
   return (
     <>
-      <div className="details-back">
-        <div className="details-sect">
-          <h2>Cardiology Expert</h2>
-        </div>
-      </div>
-
-      <div className="doctor-set relative">
-        <div className="doctor-det w-full">
-          {details.map((val, index) => {
-            return (
-              <React.Fragment key={index}>
-                <div className="img-mah">
-                  <img src={val.images} alt="" />
-                </div>
-
-                <div className="card-details">
-                  <div  onClick={()=> setApointPop(true)} className="appoint-desc cursor-pointer">
-                    <img src={appoint} alt="appoint" />
-                    <div  className="appo-para">
-                      <h3>Book an Appointment</h3>
-                      <p>We’re here for you.</p>
-                    </div>
-                  </div>
-
-                  <div className="call-det">
-                    <img src={call1} alt="call1" />
-                    <p>Call us at +91 8800401411</p>
-                  </div>
-
-                  <div className="or">
-                    <hr />
-                    <div className="or1">
-                      <p>OR</p>
-                    </div>
-                    <hr className="sd" />
-                  </div>
-                  <div className="buttpn-group">
-                    <button onClick={()=> setApointPop(true)} className="bookst">Book an appointment</button>
-                    <button className="mes">Message</button>
-                  </div>
-                </div>
-              </React.Fragment>
-            );
-          })}
-        </div>
-      </div>
-      <div className="expert-ret">
-        <div className="expert-det">
-          <div className="expert-first">
-            <h2>Cardiology</h2>
-            <p className="asoc">Associate Director Cardiology</p>
-            <p className="asoc1">
-              MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI (VIETNAM),
-              FESC.
-            </p>
-
-            <div className="rupay flex items-center">
-              <img src={rupay} alt="rupay" />
-              <p>1599</p>
-            </div>
-          </div>
-          <div className="expert-second">
-            <h2>Certificates</h2>
-            <div className="flex crtw items-center">
-              <div className="ghj"></div>
-              <div className="certificate flex mt-6">
-                <img src={cert} alt="cert" />
-                <img className="ml-6" src={cert} alt="cert" />
-                <img className="ml-6" src={cert} alt="cert" />
-                <img className="ml-6" src={cert} alt="cert" />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="aviability-section">
-          <h3>Availability</h3>
-
-          <table className="doctor-table">
-            <tr className="doctor_name">
-              <td>
-                <h4>Doctor name</h4>
-              </td>
-              <td>
-                <h4>Sunday</h4>
-              </td>
-              <td>
-                {" "}
-                <h4>Monday</h4>
-              </td>
-              <td>
-                <h4>Tuesday</h4>
-              </td>
-              <td>
-                <h4>Wednesday</h4>
-              </td>
-              <td>
-                <h4>Thursday</h4>
-              </td>
-              <td>
-                <h4>Friday</h4>
-              </td>
-              <td>
-                <h4>Saturday</h4>
-              </td>
-            </tr>
-            {details.map((val, index) => {
-              return (
-                <tr key={index} className="doctor_name1">
-                  <td className="ds1">
-                    <p className="name-doc">{val.name}</p>
-                  </td>
-                  <td className="tds1"><hr /></td>
-                  <td className="tds"><p className="name-doc1">09.00 Am - 5.00 Pm</p></td>
-                  <td className="tds1"><hr /></td>
-                  <td className="tds"><p className="name-doc1">09.00 Am - 5.00 Pm</p></td>
-                  <td className="tds1"><hr /></td>
-                  <td className="tds"><p className="name-doc1">09.00 Am - 5.00 Pm</p></td>
-                  <td className="tds1"><hr /></td>
-                </tr>
-              );
-            })}
-          </table>
-        </div>
-
-      
-      </div>
-      <div className="about-rent">
-      {
-        details.map((val,index)=>{
-            return(
-                <div className="about-card" key={index}>
-                 <h3>About Us</h3>
-                 <p className="about-na">{val.name}</p>
-               <div className="hr"></div>
-
-               <div className="about-foot">
-                  <div className="first-foot1">
-                     <h2>INSTITUTE / DEPARTMENT</h2>
-                     <div className="para-qualify">
-                     <p>Major Department of Integrative Medicine</p>
-                     </div>
-                     <div className="location-ab">
-                        <img src={location} alt="location" />
-                        <p>Delhi</p>
-                     </div>
-                  </div>
-                   <div className="abg"></div>
-                  <div className="first-foot1">
-                     <h2>QUALIFICATIONS</h2>
-                     <div className="para-qualify">
-                          <p>Master of Surgery (M.S)-</p>
-                          <p>Prasoothi Tantra and Stree Roga</p>
-                          <p>Bachelor of Ayurvedic</p>
-                     </div>
-                  </div>
-                  <div className="abg"></div>
-                  <div className="second-foot1">
-                      <h2>SPECIALIZATIONS</h2>
-                      <div className="para-qualify">
-                          <p>Gynaecology</p>
-                          <p>Life style disorders (Diabetes, BP, <br /> Cholesterol, Obesity)</p>
-                          <p>Bachelor of Ayurvedic</p>
-                      </div>
-                  </div>
+    {
+      details.map((val,index)=>{
+        return(
+          <div className="aruniti" key={index}>
+          <div className="profile-doctor">
+               <div className="profile-doctor1">
+                   <h1>Dr. Arun Kar</h1>
+                   <p>Director & HOD - Opthalmology</p>
+                   <div className="hod"></div>
+                   <div className=" text-right">
+                   <img src={val.images} alt="" />
+                   </div>
+                   <div className="group-detail-btn">
+                       <button className="qualiy">Qualifications</button>
+                       <button className="ml-3">Clinical Experience</button>
+                       <button className="ml-3">Research & Papers</button>
+                       <button className="ml-3">Awards & Achievements</button>
+                   </div>
                </div>
-            </div>  
-            )
-        })
-      }
-       </div>
+               <div className="profile-doctor2">
+                     <div className="broucher">
+                         <img src={broucher} alt="broucher" />
+                          <h3>Hospital Brochure</h3>
+                     </div>
+                     <div className="get-in-touch">
+                         <h3>Get in touch with us</h3>
+                         <p className="fhi">Consult our Experts to get best of the care. To book an appointment, please call:</p>
+                         <div className=" flex justify-center mt-7">
+                         <div className="contact-kar">
+                             <img src={phone} alt="phone" />
+                             <p>1800 8333 238</p>
+                         </div>
+                         </div>
+                     </div>
+               </div>
+          </div>
 
-       {
-         apointPop && <ApointmentPopup setApointPop={setApointPop}/>
-       }
+          <div className="profil-information">
+              <div className="profile-information1">
+                      <h3>MBBS Degree</h3>
+                      <ul>
+                      <li>Completed MBBS Degree (1990-1995) with one year Rotating Internship (1995- 1996) from MKCG Medical College and Hospital, a 700 Bedded hospital in Berhampur, Orissa</li>
+                      </ul>
+                   <div className="ul">
+                     <h3>Post MBBS Courses and Training</h3>
+                      <ul>
+                         <li>Comprehensive hands-on training in the Department of Pathology in All India Institute of Medical Sciences, New Delhi (2600 Bedded Apex Tertiary care institute) from 1997 to 1998</li>
+                         <li>Intensive clinical training including OT (operation theatre) and ICU exposure in the Department of Anaesthesiology in All India Institute of Medical Sciences, New Delhi (2600 Bedded Apex Tertiary care institute) in 1998</li>
+                         <li>Clinical and surgical training in the Department of Surgery in Lady Hardinge Medical College & Sucheta Kripalani Hospital, New Delhi (600 Bedded Apex Tertiary care institute) from 1998 to 1999</li>
+                         <li>Comprehensive training leading to independent patient handling and participation in clinical trials in Department of Psychiatry in Vidyasagar Institute of Mental Health and Neurosciences, New Delhi (250 Bedded Tertiary care institute) from 1999 to 2001</li>
+                         <li>Comprehensive Surgical and Clinical Training (DNB) in Ophthalmology in Venu Eye Institute arid Research Centre, New Delhi (200 Bedded Tertiary care institute with 5 secondary care satellite hospitals and 13 primary vision centers) from 2002 to 2005</li>
+                         <li>Fellowship course in Low Vision Assessment and Prescription in Venu Eye Institute in 2005</li>
+                         <li>Extensive training in Eye Bank procedures from 2003 to 2006 that involved sensitization of people to Eye Donation, collection of eyeballs from deceased donors, cold-chain transport to eye bank, harvesting, processing and grading of tissue</li>
+                         <li>Comprehensive Surgical and Administrative work experience as Second in charge Ophthalmic surgeon in Dhankot Hospital, a secondary level satellite hospital of Venu Eye Institute and Research Centre in 2006</li>
+                         <li>Experience in setting up Eye clinic and Daycare Operative unit as Consultant Ophthalmologist and Surgeon in Lifeline Healthcare Hospital, Gurgaon in 2006</li>
+                      </ul>
+                   </div>
+              </div>
+              <div className="profile-information2">
+                   <p>I had gall bladder problem & also borderline sugar issues. I consulted few doctors in Gwalior, had undergone various treatments but was not satisfied. A friend told me about Dr. Patro and I thought of second opinion. Hence, I came to Delhi to consult Dr. Patro at CDAS. Dr. Patro is very compassionate & he heard all my daily struggles. I am impressed with the way CDAS team handled my problem, help me in getting better & changing my approach towards my lifestyle. CDAS Hospital provides the Best Treatment For Diabetes In India. All staff at CDAS are very helpful & dedicated to their work. I never felt that I am a patient here, but always felt like friend, or like a member of family.</p>
+              </div>
+          </div>
+
+          <div className="doctor-contact">
+               <div className="doctor-contact1">
+                 <h2>Contact Details</h2>
+                 <div className="doctor-number flex items-start justify-between">
+                     <div className="number">
+                         <img src={phonebhai} alt="" />
+                         <p>+91 8800401411</p>
+                     </div>
+                     <div className="locat">
+                        <img src={locbhai} alt="" />
+                        <p>Plot # 1Malibu TowneSector - 47, Gurugram</p>
+                     </div>
+                     <div className="social-p">
+                       <h4>Social Profiles</h4>
+                       <div className="img-flex">
+                          <img src={fbbhai} alt="" />
+                          <img src={insbhai} alt="" />
+                          <img src={twitbhai} alt="" />
+                          <img src={linkbhai} alt="" />
+                       </div>
+                     </div>
+                 </div>
+               </div>
+               <div className="doctor-contact2">
+                  <p>CDAS has helped me in dealing with my diabetes & the kind of attention they have shown, I am amazed. Now I know how to deal with my diabetes & this has changed my life completely.</p>
+               </div>
+          </div>
+      </div>
+        )
+      })
+    }
+  
     </>
   );
 };

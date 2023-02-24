@@ -6,6 +6,7 @@ import insta from '../images/insta.png'
 import twit from '../images/twit.png'
 import youtube from '../images/youtube.png'
 import ApointmentPopup from '../popup/ApointmentPopup';
+import { NavLink } from 'react-router-dom';
 const Footer = ({apointPop,setApointPop}) => {
   return (
     <>
@@ -33,13 +34,13 @@ const Footer = ({apointPop,setApointPop}) => {
          <div className='second-foot'>
          <h3>Departments</h3>
             <div className="foot-para ">
-                <p>Ophthalmology</p>
-                <p>Gastroenterology</p>
-                <p>Internal Medicine</p>
-                <p>Physiotherapy</p>
-                <p>Cold Laser Therapy</p>
-                <p>Nutrition Services</p>
-                <p>Dental</p>
+               <NavLink to="/cardio"><p>Cardiology</p></NavLink>
+               <NavLink to="/dental"><p>Dental Care</p></NavLink>
+               <NavLink to="/gasto"><p>Gastroenterology</p></NavLink>
+               <NavLink to="/opthomology"><p>Ophthalmology</p></NavLink>
+               <NavLink to="/medicine"><p>Internal Medicine</p></NavLink>
+               <NavLink to="/physcio"><p>Physiotherapy</p></NavLink>
+               <NavLink to="/nutro"><p>Nutrition Services</p></NavLink>
             </div>
          </div>
          <div className='third-foot'>
@@ -64,7 +65,7 @@ const Footer = ({apointPop,setApointPop}) => {
                      <img src={call} alt="call" />
                 </div>
                 <div className="hours-text">
-                    <p>24 hours service  <br /> <span>+91 8800401411</span></p>
+                    <p>24 hours service  <br /> <span>1800 8333 238</span></p>
                 </div>
             </div>
 

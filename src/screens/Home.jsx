@@ -43,31 +43,59 @@ import blog02 from '../images/blog02.png'
 import blog03 from '../images/blog03.png'
 import ApointmentPopup from '../popup/ApointmentPopup';
 import card from '../images/cardiology-light.png';
+import { NavLink } from 'react-router-dom';
 
 const specialists = [
   {
     id : 1,
     img_light : require('../images/cardiology-light.png'),
     img_dark : require('../images/cardiology-dark.png'),
-    title : 'Cardiology'
+    title : 'Cardiology',
+    path:"cardio"
+
   },
   {
     id : 2,
     img_light : require('../images/diabates-light.png'),
     img_dark : require('../images/diabates-dark.png'),
-    title : 'Diabates'
+    title : 'Dental Care',
+    path:"dental"
+
   },
   {
     id : 3,
     img_light : require('../images/gastroenterology-light.png'),
     img_dark : require('../images/gastroenterology-dark.png'),
-    title : 'Gastroenterology'
+    title : 'Gastroenterology',
+    path:"gasto"
   },
   {
     id : 4,
     img_light : require('../images/ophthalmology-light.png'),
     img_dark : require('../images/ophthalmology-dark.png'),
-    title : 'Ophthalmology'
+    title : 'Ophthalmology',
+    path:"opthomology"
+  },
+  {
+    id : 5,
+    img_light : require('../images/img5.png'),
+    img_dark : require('../images/img5.png'),
+    title : 'Internal Medicine',
+    path:"medicine"
+  },
+  {
+    id : 6,
+    img_light : require('../images/img6.png'),
+    img_dark : require('../images/img6.png'),
+    title : 'Physiotherapy',
+    path:"physcio"
+  },
+  {
+    id : 7,
+    img_light : require('../images/img7.png'),
+    img_dark : require('../images/img7.png'),
+    title : 'Nutrition Services',
+    path:"nutro"
   },
 ]
 
@@ -121,13 +149,13 @@ export const Home = ({apointPop,setApointPop}) => {
 
           <SwiperSlide>
           <div className='specialist-cards flex flex-wrap  mx-10 my-10 justify-center pb-8 max-md:flex-col'>
-          {specialists.map(specialist => 
+          {specialists.slice(0,4).map(specialist => 
             <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]  mx-2' : 'specialist-card  mx-2'} onClick={() => handleSpecialist(specialist.id)}>
-              <div className=' flex justify-center items-center '>
+            <NavLink to={`/${specialist.path}`}><div className=' flex justify-center items-center '>
                 <div className={selSpecialist === specialist.id ? 'specialist-card-img bg-[#FFF5D7]' : 'specialist-card-img bg-[#FFF5D7]'}>
                   <img src={selSpecialist === specialist.id ? specialist.img_dark : specialist.img_light}/>
                 </div> 
-              </div>
+              </div></NavLink>
               <div className={selSpecialist === specialist.id ? 'text-center font-semibold text-2xl mb-8 text-white spet-tit' : 'text-center font-semibold text-2xl mb-8 spet-tit'}>{specialist.title}</div>
 
             </div>
@@ -138,13 +166,13 @@ export const Home = ({apointPop,setApointPop}) => {
 
           <SwiperSlide>
           <div className='specialist-cards flex flex-wrap  mx-10 my-10 justify-center pb-8 max-md:flex-col'>
-          {specialists.map(specialist => 
+          {specialists.slice(4,7).map(specialist => 
             <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]  mx-2' : 'specialist-card  mx-2'} onClick={() => handleSpecialist(specialist.id)}>
-              <div className=' flex justify-center items-center '>
+             <NavLink to={`/${specialist.path}`}> <div className=' flex justify-center items-center '>
                 <div className={selSpecialist === specialist.id ? 'specialist-card-img bg-[#FFF5D7]' : 'specialist-card-img bg-[#FFF5D7]'}>
                   <img src={selSpecialist === specialist.id ? specialist.img_dark : specialist.img_light}/>
                 </div> 
-              </div>
+              </div></NavLink>
               <div className={selSpecialist === specialist.id ? 'text-center font-semibold text-2xl mb-8 text-white' : 'text-center font-semibold text-2xl mb-8'}>{specialist.title}</div>
 
             </div>
@@ -153,7 +181,7 @@ export const Home = ({apointPop,setApointPop}) => {
           </div>
           </SwiperSlide>
 
-          <SwiperSlide>
+          {/* <SwiperSlide>
           <div className='specialist-cards flex flex-wrap  mx-10 my-10 justify-center pb-8 max-md:flex-col'>
           {specialists.map(specialist => 
             <div key={specialist.id} className={selSpecialist === specialist.id ? 'specialist-card bg-[#E74C3C]  mx-2' : 'specialist-card  mx-2'} onClick={() => handleSpecialist(specialist.id)}>
@@ -168,7 +196,7 @@ export const Home = ({apointPop,setApointPop}) => {
             )}
             
           </div>
-          </SwiperSlide>
+          </SwiperSlide> */}
           </Swiper>
         </div>
 

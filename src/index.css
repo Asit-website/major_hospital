@@ -179,6 +179,7 @@ body {
   background-image: url('./images/group.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: darken;
   margin: 0px 80px;
+  margin-top: 160px;
 }
 .contact-back .sect{
   position: absolute;
@@ -429,6 +430,7 @@ footer{
   background-image: url('./images/feedback1.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: darken;
   margin: 0px 80px;
+  margin-top: 160px;
 }
 .feedback-back .sect-fed{
   position: absolute;
@@ -547,6 +549,7 @@ max-width: 100%;
   background-image: url('./images/womanapp.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: darken;
   margin: 0px 80px;
+  margin-top: 160px;
 }
 .cardio-sect{
   position: absolute;
@@ -849,6 +852,7 @@ max-width: 100%;
   background-image: url('./images/iodology.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: darken;
   margin: 0px 80px;
+  margin-top: 160px;
 }
 .iodo-sect{
   position: absolute;
@@ -943,6 +947,7 @@ max-width: 100%;
   background-image: url('./images/feedback1.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: darken;
   margin: 0px 80px;
+  margin-top: 160px;
 }
 .achive-sect{
   position: absolute;
@@ -1373,22 +1378,36 @@ background-color: #FCEDEC;
   background-image: url('./images/medicine.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-blend-mode: darken;
   margin: 0px 80px;
+  margin-top: 160px;
 }
 .medicine-back1{
   background-image: url('./images/nutration.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  margin-top: 160px;
 }
 
 .medicine-back2{
   background-image: url('./images/phys.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  margin-top: 160px;
 }
 .medicine-back3{
   background-image: url('./images/gasto.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  margin-top: 160px;
 }
 .medicine-back4{
   background-image: url('./images/cold.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  margin-top: 160px;
 }
 .medicine-back5{
   background-image: url('./images/ratina.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  margin-top: 160px;
+}
+.medicine-back6{
+  background-image: url('./images/cardio.png'), radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  margin-top: 160px;
+}
+.medicine-back8{
+  background-image: url('./images/dentu.png'), radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  margin-top: 160px;
 }
 .medicine-sect{
   position: absolute;
@@ -1409,6 +1428,38 @@ background-color: #FCEDEC;
   justify-content: center;
   padding: 50px 100px;
   /* position: relative; */
+}
+.institute .bh{
+  color: #222F3E;
+  font-family: "Medium";
+  margin-top: 15px;
+  font-size: 17px;
+  text-decoration: underline;
+}
+.institute .sond{
+  color: #CF0C03;
+  font-family: "Semi Bold";
+  margin-top: 15px;
+  font-size: 17px;
+}
+.about-some .fens{
+  color: #222F3E;
+  font-family: "Semi Bold";
+  margin-top: 15px;
+  font-size: 18px;
+}
+.about-some .hital{
+  padding: 0 100px;
+  position: relative;
+  top: -40px;
+  color: #222F3E;
+  font-family: "Medium";
+  margin-top: 15px;
+  font-size: 18px;
+}
+.about-some img{
+  height: 580px;
+  max-height: 100%;
 }
 .institute{
   /* width: 40em; */
@@ -1432,10 +1483,9 @@ background-color: #FCEDEC;
 }
 .institute p{
   color: #222F3E;
-  font-family: gilroy;
-  font-weight: 700;
+  font-family: "Medium";
   margin-top: 15px;
-  font-size: 15px;
+  font-size: 18px;
 }
 .institute-img{
   margin-left: 100px;
@@ -1443,10 +1493,8 @@ background-color: #FCEDEC;
   margin-top: 30px;
 }
 .institute-img .dov-img{
-  /* width: 36em; */
  max-width: 600px;
  width: 100%;
- filter: brightness(.5);
 }
 .institute-img .sov-img{
   position: absolute;
@@ -1456,6 +1504,9 @@ background-color: #FCEDEC;
   filter: brightness(100%);
   z-index: 100;
   width: 60px;
+}
+.about-int{
+   font-size: 17px;
 }
 .word-leader{
   display: flex;
@@ -1501,12 +1552,18 @@ background-color: #FCEDEC;
 .first-word img {
   max-width: 370px;
   width: 100%;
-  filter: brightness(.6);
 }
 
 .second-word{
-  width: 35em;
+  width: 37em;
   margin-left: 40px;
+}
+.second-word .dens{
+  font-size: 22px;
+}
+.second-word .dens1{
+  font-size: 22px;
+  font-family: "Semi Bold";
 }
 .second-word h2{
   color: #222F3E;
@@ -1516,9 +1573,8 @@ background-color: #FCEDEC;
 }
 .second-word p{
   color: #222F3E;
-  font-family: "Semi Bold"; 
-  font-size: 15px;
-  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Medium" !important;
 }
 .second-word h4{
   color: #FF2020;
@@ -1529,7 +1585,7 @@ background-color: #FCEDEC;
   margin-top: 15px;
 }
 .treats{
-  padding: 40px 100px;
+  padding: 80px 100px;
 }
 .treats .hath,
 .consult .hath{
@@ -1607,11 +1663,10 @@ background-color: #FCEDEC;
 }
 .consult{
   background-color: #FDF3F3;
-  margin: 0px 70px;
+  margin: 0px 10px;
   position: relative;
-  top: -100px;
   z-index: 100;
-  padding: 40px 15px;
+  padding: 40px 60px;
 }
 .consult .exy{
   text-align: center;
@@ -1714,7 +1769,7 @@ background-color: #FCEDEC;
 }
 .our-blogs2{
   position: relative;
-  top: -70px;
+  padding: 80px 30px;
 }
 .our-blogs2 .gast{
   font-size: 34px;
@@ -1815,6 +1870,7 @@ background-color: #FCEDEC;
   background-image: url('./images/special.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: darken;
   margin: 0px 80px;
+  margin-top: 160px;
 }
 .clinic-sect{
   position: absolute;
@@ -1842,6 +1898,7 @@ background-color: #FCEDEC;
   background-image: url('./images/carer.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: darken;
   margin: 0px 80px;
+  margin-top: 160px;
 }
 .carer-sect{
   position: absolute;
@@ -2109,6 +2166,7 @@ input[type=date]:focus::-webkit-datetime-edit {
 /* =================hospital near css start================= */
 .hospital-near{
   padding: 60px 100px;
+  margin-top: 160px;
 }
 .result-for{
   display: flex;
@@ -2301,6 +2359,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   background-image: url('./images/visitor.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: darken;
   margin: 5px 80px;
+  margin-top: 160px;
 }
 .visitor-sect{
   position: absolute;
@@ -2414,6 +2473,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   justify-content: space-between;
   width: 78%;
   max-width: 100%;
+  margin-top: 160px;
 }
 .treat-nav{
  width: 400px;
@@ -2537,7 +2597,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   background-image: url('./images/cornary.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: darken;
   margin: 0px 80px;
-  margin-top: 10px;
+  margin-top: 160px;
 }
 .cornary-sect{
   position: absolute;
@@ -2852,6 +2912,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   background-image: url('./images/lab.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: darken;
   margin: 5px 80px;
+  margin-top: 160px;
 }
 .lab-sect{
   position: absolute;
@@ -2943,12 +3004,55 @@ input[type=date]:focus::-webkit-datetime-edit {
   font-size: 16px;
   color: #030303;
 }
+/* ===========navbar fixed============== */
+.Navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+ right: 0;
+ background-color: white;
+ height: 160px;
+
+}
+.home-banner{
+  margin-top: 160px;
+}
+.cardio-check{
+  margin-top: 160px;
+}
+.hospital-back{
+  margin-top: 160px;
+}
+/* =================navbar fixed end================= */
 
 /* =====================registerPopup css end================== */
 /* ===================media query css============= */
 @media only screen and (max-width:1070px){
   .hospital-near{
     padding: 60px 30px;
+    margin-top: 160px;
+  }
+  .stress-over{
+    padding: 40px 30px !important;
+  }
+  .about-some .hital{
+    padding: 0px 30px ;
+  }
+  .faq{
+    padding: 80px 30px !important;
+  }
+  .faq-header h2{
+    line-height: 28px;
+  }
+  .step-follow{
+    padding: 30px 30px !important;
+  }
+  .step-follow p{
+    padding: 0 0px !important;
+  }
+  .home-banner{
+    margin-top: 160px;
   }
   .test-dis{
     padding: 30px 30px;
@@ -2962,6 +3066,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .cornary-back{
     margin: 0px 30px;
+    margin-top: 160px;
   }
   .coronary-artery{
     padding: 40px 30px;
@@ -2971,12 +3076,17 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .visitor-back{
      margin: 0px 30px;
+     margin-top: 160px;
   }
   .nav-visitor{
     padding: 40px 30px;
   }
   .visitor-para{
     padding: 30px 30px;
+  }
+  .clinic-back{
+    margin: 0 30px;
+    margin-top: 160px;
   }
   .about-major{
     padding: 60px 30px;
@@ -2986,6 +3096,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .medicine-back{
      margin: 0px 30px;
+     margin-top: 160px;
   }
   .about-institute{
     padding: 50px 30px;
@@ -2997,7 +3108,10 @@ input[type=date]:focus::-webkit-datetime-edit {
     padding: 40px 30px;
   }
   .our-blogs2{
-    padding: 10px 10px;
+    padding: 60px 10px;
+  }
+  .step-follow h2{
+    line-height: 30px;
   }
   .blog-meta{
     flex-direction: column;
@@ -3010,6 +3124,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .iodolgy-back{
     margin: 0 30px;
+    margin-top: 160px;
   }
   .iodology-section{
     padding: 70px 30px;
@@ -3019,6 +3134,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .achieve-back{
     margin: 0px 30px;
+    margin-top: 160px;
   }
   .img-section{
     padding: 10px 30px;
@@ -3028,6 +3144,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .cardio-back{
     margin: 0 30px;
+    margin-top: 160px;
   }
   .filter{
     padding: 30px 30px;
@@ -3040,6 +3157,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .contact-back{
     margin: 0 30px;
+    margin-top: 160px !important;
   }
   .any-question{
     padding: 60px 30px;
@@ -3063,6 +3181,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .feedback-back{
     margin: 0 30px;
+    margin-top: 160px;
   }
   .share-feed{
     padding: 40px 30px;
@@ -3078,15 +3197,18 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .career-back{
     margin: 0 30px;
+    margin-top: 160px;
   }
   .hospital-back{
     margin: 0 30px;
+    margin-top: 160px;
   }
   .hospital-section{
     padding: 50px 30px;
   }
   .lab-back{
     margin: 5px 30px;
+    margin-top: 160px;
   }
   .lab-filter{
     padding: 40px 30px;
@@ -3136,6 +3258,69 @@ input[type=date]:focus::-webkit-datetime-edit {
 @media only screen and (max-width:972px){
   .first-word img{
     height: 400px;
+  }
+  .home-banner{
+    margin-top: 224px;
+  }
+  .clinic-back{
+    margin-top: 224px;
+  }
+  .cardio-back{
+    margin-top: 224px;
+  }
+  .hospital-back{
+    margin-top: 224px;
+  }
+  .visitor-back{
+    margin-top: 224px;
+  }
+  .ki{
+    background-color: #FFFFFF;
+  }
+  .all-section-disases{
+    margin-top: 224px !important;
+  }
+  .cornary-back{
+    margin-top: 224px;
+  }
+  .lab-back{
+    margin-top: 224px;
+  }
+  .hospital-near{
+    margin-top: 224px;
+  }
+  .feedback-back{
+    margin-top: 224px;
+  }
+  .contact-back{
+    margin-top: 224px !important;
+  }
+  .iodolgy-back{
+    margin-top: 224px;
+  }
+  .achieve-back{
+    margin-top: 224px;
+  }
+  .career-back{
+    margin-top: 224px;
+  }
+  .medicine-back{
+    margin-top: 224px;
+  }
+  .medicine-back1{
+    margin-top: 224px;
+  }
+  .medicine-back2{
+    margin-top: 224px;
+  }
+  .medicine-back3{
+    margin-top: 224px;
+  }
+  .medicine-back4{
+    margin-top: 224px;
+  }
+  .medicine-back5{
+    margin-top: 224px;
   }
 }
 
@@ -3518,11 +3703,36 @@ input[type=date]:focus::-webkit-datetime-edit {
   .second-word h2{
     line-height: 35px;
   }
+  .stress-over{
+    padding: 40px 20px !important;
+  }
+  .about-some .hital{
+    padding: 0px 20px;
+  }
+  .faq{
+    padding: 60px 20px !important;
+  }
+  .faq-header{
+    width: 100% !important;
+  }
+  /* ==========changes============== */
+  .home-banner{
+    margin-top: 224px;
+  }
+  .contact-back{
+    margin-top: 224px !important;
+    margin: 0 20px;
+  }
+  .clinic-back{
+    margin-top: 224px;
+  }
+  /* ==============changes=============== */
   .ytment{
     margin: 0 20px;
   }
   .all-section-disases{
     margin: 0px 20px !important;
+    margin-top: 224px !important;
   }
   .test-dis{
     padding: 30px 20px;
@@ -3561,6 +3771,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .medicine-back{
     margin: 0 20px;
+    margin-top: 224px;
   }
   .about-institute{
     padding: 50px 20px;
@@ -3598,6 +3809,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .iodolgy-back{
     margin: 0 20px;
+    margin-top: 224px;
   }
   .iodology-section{
     padding: 70px 20px;
@@ -3607,6 +3819,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .achieve-back{
     margin: 0 20px;
+    margin-top: 224px;
   }
   .img-section{
     padding: 10px 20px;
@@ -3625,6 +3838,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .cardio-back{
     margin: 0px 20px;
+    margin-top: 224px;
   }
   .expert-ret{
     padding: 60px 20px;
@@ -3666,6 +3880,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .feedback-back{
     margin: 0 20px;
+    margin-top: 224px;
   }
   .share-feed{
     padding: 40px 20px;
@@ -3685,6 +3900,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .career-back{
     margin:0px 20px ;
+    margin-top: 224px;
   }
   .job-description{
     padding: 40px 20px;
@@ -3735,6 +3951,7 @@ input[type=date]:focus::-webkit-datetime-edit {
  }
  .hospital-back{
   margin: 0 20px;
+  margin-top: 224px;
  }
  .hospital-section{
   padding: 50px 20px;
@@ -3759,6 +3976,7 @@ input[type=date]:focus::-webkit-datetime-edit {
  }
  .hospital-near{
   padding: 60px 20px;
+  margin-top: 224px;
  }
  .more-place{
   max-width: 400px;
@@ -3775,15 +3993,18 @@ input[type=date]:focus::-webkit-datetime-edit {
  }
  .lab-back{
   margin: 5px 20px;
+  margin-top: 224px;
  }
  .visitor-back{
   margin: 0 20px;
+  margin-top: 224px;
  }
  .coronary-artery{
   padding: 40px 20px;
  }
  .cornary-back{
   margin: 0 20px;
+  margin-top: 224px;
  }
  .symtops-topic{
   padding: 15px;
@@ -4010,9 +4231,16 @@ input[type=date]:focus::-webkit-datetime-edit {
   .all-section-disases{
     margin: 0 30px;
     width: auto;
+    margin-top: 160px;
   }
 }
 
+@media only screen and (max-width:617px){
+  .consult{
+    margin: 0 10px;
+    padding: 40px 0px;
+  }
+}
 
 .no-data{
   font-family: 'Inter', sans-serif;
@@ -4020,4 +4248,309 @@ input[type=date]:focus::-webkit-datetime-edit {
   font-size: 22px;
   color: #000000;
   text-align: center;
+}
+
+/* ============changes================ */
+.step-follow{
+  padding: 20px 100px;
+}
+.step-follow h2{
+  color: #D60606;
+  font-family: gilroy;
+  font-size: 22.5px;
+  font-weight: 700 !important;
+}
+.step-follow ul{
+  list-style-type: disc;
+  margin-top: 20px;
+  margin-left: 18px;
+}
+.step-follow h5{
+  color: #222F3E;
+  font-family: "Medium";
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 22px;
+}
+.step-follow p{
+  color: #000000;
+  text-align: center;
+  padding: 0px 60px;
+  font-family: "Medium";
+  font-size: 18px;
+  margin-top: 40px;
+  line-height: 25px;
+}
+.step-follow ul li{
+  font-family: "Medium";
+  color: #222F3E;
+  font-size: 18px;
+}
+.step-color{
+  width: 65px;
+  height: 5px;
+  background-color: #D60606;
+  border-radius: 20px;
+}
+.faq{
+  padding: 80px 90px;
+}
+.faq h2{
+  font-family: gilroy;
+  font-size: 22.5px;
+  font-weight: 700 !important;
+  color: #222F3E;
+}
+.faq-div{
+  width: 27px;
+  height: 4px;
+  background-color: #D60606;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.faq-header{
+  width: 96%;
+}
+.faq-header h2{
+  font-family: "Semi Bold";
+  font-size: 22.5px;
+  color: #222F3E;
+}
+.faq-header p{
+  color: #222F3E;
+  font-family: "Medium";
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+.faq-header h4{
+  font-family: "Semi Bold";
+  font-size: 18px;
+  color: #222F3E;
+}
+.faq-header ul{
+  list-style-type: disc;
+  margin-left: 15px;
+}
+.faq-header ul li{
+  color: #222F3E;
+  font-family: "Medium";
+  font-size: 18px;
+  line-height: 24px;
+  margin: 5px 0px;
+}
+.faq-details{
+  margin-top: 25px;
+}
+.stress-over{
+  padding: 40px 100px;
+  background-color: #FDF3F3;
+  
+}
+.boxv{
+  text-align: center;
+  font-family: "Medium";
+  font-size: 18px;
+  color: #222F3E;
+  margin-top: 30px;
+}
+.sidek{
+  padding: 40px 0px;
+}
+.boxing2{
+  flex-wrap: wrap;
+  /* justify-content: initial; */
+  text-align: center;
+}
+.stress-over h2{
+  text-align: center;
+  font-family: gilroy;
+  font-size: 22.5px;
+  font-weight: 700 !important;
+  color: #222F3E;
+  line-height: 30px;
+
+}
+.stress-over h4{
+  text-align: center;
+  font-family: "Medium";
+  font-size: 22px;
+  color: #222F3E;
+  margin-top: 8px;
+}
+.boxing2 p{
+  color: #000000;
+  font-size: 20.5px;
+  font-family: "Semi Bold";
+  margin: 10px 35px;
+  text-align: center;
+}
+.aruniti{
+  margin-top: 160px;
+  padding: 30px 80px;
+  /* margin: 40px 0px; */
+}
+.profile-doctor1 h1{
+  color: #000000;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 49px;
+}
+.profile-doctor1 p{
+  color: #000000;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 16.5px;
+}
+.hod{
+  width: 70px;
+  height: 7px;
+  background-color: #E74C3C;
+  border-radius: 20px;
+  margin-top: 25px;
+}
+.profile-doctor{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.profile-doctor1 img{
+  width: 200px;
+  display: block;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.group-detail-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.group-detail-btn .qualiy{
+  background-color: #E74C3C;
+ 
+}
+.group-detail-btn button{
+  background-color: #D30806;
+  padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  color: #FFFFFF;
+}
+.broucher{
+  background-color: #DA0402;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+  height: 65px;
+}
+.broucher h3{
+  color: #ffffff;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+}
+.broucher img{
+  width: 36px;
+}
+.get-in-touch{
+  background-color: #FDC91E;
+  width: 350px;
+  padding: 30px;
+  margin-top: 35px;
+}
+.get-in-touch h3{
+  color: #000000;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+  text-align: center;
+}
+.get-in-touch .fhi{
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  text-align: center;
+}
+.contact-kar{
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 60px;
+}
+.contact-kar p{
+  color: #D30806;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+}
+.contact-kar img{
+  width: 30px;
+}
+.profil-information{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.profile-information1{
+  background: rgba(231, 76, 60, 0.05);
+  width: 1175px;
+  max-width: 100%;
+  padding: 20px 30px;
+}
+.profile-information1 ul{
+  list-style-type: disc;
+  margin-left: 25px;
+}
+.profile-information1 ul li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 21.5px;
+  margin: 20px 0px;
+}
+.profile-information2{
+  width: 350px;
+  max-width:100% ;
+  /* height: 60vh; */
+  background: rgba(231, 76, 60, 0.05);
+  margin-left: 20px;
+  padding: 20px;
+}
+.profile-information1 h3{
+  color: #000000;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+}
+.profile-information2 p{
+  color: #000000;
+  font-size: 23px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+.doctor-contact{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.doctor-contact1{
+  width:1175px ;
+  max-width: 100%;
+  background-color: #DA0402;
+  padding: 30px 60px;
+}
+.doctor-contact2{
+  width: 350px;
+  margin-left: 20px;
+ 
+}
+.doctor-number{
+  
 }
