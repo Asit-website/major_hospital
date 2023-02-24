@@ -1,15 +1,13 @@
 import React,{useState} from 'react'
 import ApointmentPopup from '../popup/ApointmentPopup'
-import rec from '../images/rec.png';
-import btn from '../images/btn.png'
 import Frame from '../images/Frame.png'
-import hath from '../images/hath.jpg'
 import { Link } from 'react-router-dom';
-import doc4 from '../images/doc4.png';
+import dental from '../images/dental.png';
+import dental1 from '../images/dental1.png';
+import dental2 from '../images/dental2.png';
+import dental3 from '../images/dental3.png';
+import dental4 from '../images/dental4.png';
 import cardiologyApi from '../api/cardilogiApi';
-import ty from '../images/ty.png';
-import ty1 from '../images/ty1.png';
-import ty2 from '../images/ty2.png';
 const Dental = ({apointPop,setApointPop}) => {
     const [item,setItem] = useState(cardiologyApi);
     const [visible,setVisible] = useState(3);
@@ -19,42 +17,40 @@ const Dental = ({apointPop,setApointPop}) => {
     }
   return (
      <>
-            <div className="medicine-back medicine-back1">
+           <div className="medicine-back medicine-back8">
                  <div className="medicine-sect">
-                     <h2>Dental</h2>
+                     <h2>Dental Care</h2>
                  </div>
             </div>
 
             <div className="about-institute">
                 <div className="institute">
-                    <h4>About the Institute</h4>
-                    <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h2>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <h4>About the Dental Care   </h4>
+                    <p>At Center of Diabetes and Allied Sciences (Major), the department of Dentistry has every discipline offering quality care. We provide a wide range of services from cosmetic dentistry, maxillofacial surgery, implant surgery, periodontology, orthodontics, dental hygiene therapy to complex reconstructive surgery.</p>
+                    <p>Dental procedures performed by our doctors follow National guidelines and employ strict infection control measures to render a high quality, satisfactory outcome for our patients.</p>
                 </div>
                 <div className="institute-img">
-                <img className='sov-img'  src={btn} alt="" />
-                     <img className='dov-img' src={doc4} alt="dotor" />
+                     <img className='dov-img' src={dental} alt="dotor" />
                 </div>
             </div>
 
             <div className="word-leader">
                  <div className="first-word">
-                   <div className="rohan">
-                      <h3>Dr. Rohan Shrma</h3>
-                      <small>Chairman</small>
-                      <p>Institute of Ophthalmology</p>
-                   </div>
-                    <img src={rec} alt="dawa" />
+                    <img src={dental1} alt="dawa" />
                  </div>
-                 <div className="second-word">
-                    <h2>A word from our leaders</h2>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <h4>See all doctors from this division</h4>
+                 <div className="second-word second-word1">
+                    <p className='dens'>
+                   <span className='dens1'>Preventive Dentistry</span> • Oral Prophylaxis (Scaling and polishing) •Fillings <br />
+•Flouride treatment •Pit and fissure sealants •Night guard
+ <span className='dens1'> SURGICAL PROCEDURES</span> • All types of tooth removal• Corrective surgeries for jaws• Fracture correction• Surgical removal of growths, cysts or tumours• Apicoectomy <br />
+<span className='dens1'>Restorative Dentistry</span> • Bridges • Implants • Dentures • Full mouth rehabilitation • Partial dentures-acrylic and cast partial • Implant supported Cosmetic   Dentistry   <br />
+          <span className='dens1'>Veneers</span>  • Composite • Porcelain • Tooth alignment with braces 
+                    </p>
                  </div>
             </div>
 
             <div className="treats">
-                <img  className='hath' src={hath} alt="hath" />
+                {/* <img  className='hath' src={hath} alt="hath" />
                 <h2>What we treat</h2>
                 <p className='treats-p'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an <br /> unknown printer took a galley of type and scrambled it to make a type.</p>
 
@@ -71,7 +67,7 @@ const Dental = ({apointPop,setApointPop}) => {
                           <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
                      </div>
                    
-                </div>
+                </div> */}
                  <div className=" relative">
                 <div className='consult'>
                           <img className='hath' src={Frame} alt="" />
@@ -123,15 +119,17 @@ const Dental = ({apointPop,setApointPop}) => {
                       
             </div>
 
+       
+
             <div className='our-blogs our-blogs2 py-2  px-10'>
               
-              <h2 className='text-center text-3xl font-bold gast'>Physiotherapy Blogs</h2>
+              <h2 className='text-center text-3xl font-bold gast'>Dental Care Blogs</h2>
               <p className='stays text-center'>Stay up to date with our most recent news and updates</p>
 
               <div className='flex justify-center mt-10 blog-meta1'>
 
                 <div className='blog-card-main w-[45%] mx-5'>
-                  <img className='h-[250px]' src={ty}/>
+                  <img className='h-[250px]' src={dental2}/>
                   <div className='p-5'>
                       <div className='flex justify-between'>
                       <div className='font-semibold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
@@ -145,7 +143,7 @@ const Dental = ({apointPop,setApointPop}) => {
 
                 <div className='blog-cards-secondary w-[45%] mx-5 blog-card-mar'>
                   <div className='blog-card-secondary flex mb-6 items-center'>
-                    <img className='w-[300px] h-[200px]' src={ty1} />
+                    <img className='w-[300px] h-[200px]' src={dental3} />
                     <div className='text-sm p-5'>
                       <div className='flex justify-between my-2 blog-meta'>
                         <p className='font-bold'>Chronic Kidney Disease – The Silent Killer</p>
@@ -157,7 +155,7 @@ const Dental = ({apointPop,setApointPop}) => {
                   </div>
 
                   <div className='blog-card-secondary flex items-center'>
-                    <img className='w-[300px] h-[200px]' src={ty2}/>
+                    <img className='w-[300px] h-[200px]' src={dental4}/>
                     <div className='text-sm p-5'>
                       <div className='flex justify-between my-2'>
                         <p className='font-bold'>What to do when you have Stroke?</p>

@@ -115,7 +115,7 @@ export const Navbar = ({registerPop,setRegisterPop}) => {
             </div>
           </NavLink>
           <div className="main-menu-items flex justify-between second-nav">
-            <p>Find a Doctor</p>
+           <NavLink to="/doctors"><p>Find a Doctor</p></NavLink>
             <NavLink to="/health">
               <p>Book Health Check-Up</p>
             </NavLink>
@@ -129,23 +129,23 @@ export const Navbar = ({registerPop,setRegisterPop}) => {
               Specialistes <BsChevronDown className="ml-2" />
               <div className="flex dropdown-sub-menu p-1" id="dropdown-item">
                 <div className="y-divider w-1/2 sub-menu-items">
+                  <NavLink to="/cardio">
+                    <p>Cardiology</p>
+                  </NavLink>
+                  <NavLink to="/dental">
+                    <p>Dental Care</p>
+                  </NavLink>
+                  <NavLink to="/gasto">
+                    <p>Gastroenterology</p>
+                  </NavLink>
                   <NavLink to="/opthomology">
                     <p>Ophthalmology</p>
                   </NavLink>
-                  <NavLink to="/medicine">
-                    <p>Internal Medicine</p>
-                  </NavLink>
-                  <NavLink to="/coldLeaser">
-                    <p>Cold Laser Therapy</p>
-                  </NavLink>
-                  <NavLink to="/dental">
-                    <p>Dental</p>
-                  </NavLink>
                 </div>
 
-                <div className="sub-menu-items w-1/2">
-                  <NavLink to="/gasto">
-                    <p>Gastroenterology</p>
+                <div className="sub-menu-items sub-mai w-1/2">
+                  <NavLink to="/medicine">
+                    <p>Internal Medicine</p>
                   </NavLink>
                   <NavLink to="/physcio">
                     <p>Physiotherapy</p>
@@ -153,9 +153,9 @@ export const Navbar = ({registerPop,setRegisterPop}) => {
                   <NavLink to="/nutro">
                     <p>Nutrition Services</p>
                   </NavLink>
-                  <NavLink to="/cardio">
+                  {/* <NavLink to="/cardio">
                     <p>Cardiology</p>
-                  </NavLink>
+                  </NavLink> */}
                 </div>
               </div>
             </p>

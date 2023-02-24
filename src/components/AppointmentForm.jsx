@@ -12,7 +12,14 @@ export const AppointmentForm = () => {
 
                 <div className='flex flex-wrap justify-between appointment-form-input max-sm:flex-col aplit-form'>
                     <select>
-                        <option disabled selected hidden>Choose a department</option>
+                        <option>Choose a department</option>
+                        <option >Cardiology</option>
+                        <option >Dental Care</option>
+                        <option>Gastroenterology</option>
+                        <option>Ophthalmology</option>
+                        <option>Internal Medicine</option>
+                        <option>Physiotherapy</option>
+                        <option>Nutrition Services</option>
                     </select>
                     <input placeholder='Patient Name'/>
                     <input placeholder='Phone Number'/>
