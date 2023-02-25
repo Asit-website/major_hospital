@@ -354,8 +354,8 @@
 .ita{
     color: #000000;
     font-family: "Medium Italic";
-    font-size: 16.5px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 27px;
 }
 @media not all and (min-width: 425px) {
     .service-cards{

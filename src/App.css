@@ -168,7 +168,8 @@
 .sub-menu-items p {
     margin : 7px 0px;
 }
-@media only screen and (max-width:1150px){
+/* ===========1150px=============== */
+@media only screen and (max-width:1308px){
     .main-navigation1{
         flex-direction: column;
         position: absolute;

@@ -32,6 +32,7 @@ import TreatMent from './screens/treatMent/TreatMent';
 import Cornary from './screens/treatMent/Cornary';
 import LabTest from './screens/treatMent/LabTest';
 import Doctors from './screens/Doctors';
+import Query from './components/Query';
 function App() {
   const [apointPop,setApointPop] = useState(false);
   const [registerPop,setRegisterPop] = useState(false);
@@ -73,6 +74,8 @@ function App() {
           <Route path='/treat/lab' element={<LabTest apointPop={apointPop} setApointPop={setApointPop}/>}/>
 
           <Route path='/doctors' element={<Doctors apointPop={apointPop} setApointPop={setApointPop}/>}/>
+
+          <Route path='/query/:q'  element={<Query apointPop={apointPop} setApointPop={setApointPop} />} />
       </Routes>
       <Footer apointPop={apointPop} setApointPop={setApointPop}/>
     </Router>

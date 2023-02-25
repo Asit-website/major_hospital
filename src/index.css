@@ -88,7 +88,14 @@ body {
   padding: 0px 0px;
   border-radius: 10px;
   margin: 150px auto;
-
+}
+.searchSir{
+  border: 1px solid gray;
+  width: 150px;
+  border-radius: 30px;
+  height: 40px;
+  outline: none;
+  padding: 1px 10px;
 }
 .popup-container1{
   max-width: 720px;
@@ -1071,6 +1078,15 @@ max-width: 100%;
   border: 3px solid #AFBCC0;
   /* object-position: right; */
 }
+.our-blogs3{
+  padding: 20px 0px !important;
+}
+.our-blogs3 .stays{
+  color: #222F3E;
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 20px;
+}
 .card-details{
   border: 1px solid #EDF1F2;
   display: flex;
@@ -1625,6 +1641,14 @@ background-color: #FCEDEC;
   text-align: center;
   margin: 0px 24px;
   margin-top: 30px;
+
+}
+.loremdas{
+   width: 60%;
+   display: block;
+   margin: auto;
+  line-height: 24px;
+  text-align: center;
 }
 .treats-back{
   margin-top: 40px;
@@ -3033,6 +3057,10 @@ input[type=date]:focus::-webkit-datetime-edit {
     padding: 60px 30px;
     margin-top: 160px;
   }
+ 
+  .aruniti{
+    padding: 30px 30px !important;
+  }
   .stress-over{
     padding: 40px 30px !important;
   }
@@ -3259,6 +3287,9 @@ input[type=date]:focus::-webkit-datetime-edit {
   .first-word img{
     height: 400px;
   }
+  .margin-top{
+    margin-top: 224px !important;
+  }
   .home-banner{
     margin-top: 224px;
   }
@@ -3321,6 +3352,9 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .medicine-back5{
     margin-top: 224px;
+  }
+  .aruniti{
+    margin-top: 224px !important;
   }
 }
 
@@ -3698,10 +3732,29 @@ input[type=date]:focus::-webkit-datetime-edit {
     top: 205px !important;
   }
 }
-
+.sis{
+  visibility: hidden;
+}
 @media only screen and (max-width:417px){
   .second-word h2{
     line-height: 35px;
+  }
+  .our-blogs3{
+    padding: 20px 20px !important;
+  }
+ .margin-top{
+  margin-top: 224px !important;
+ }
+  .aruniti{
+    margin: 30px 20px !important;
+    margin-top: 224px !important;
+  }
+  .profile-information1{
+    padding: 20px 10px !important;
+  }
+  .loremdas{
+    width: 100%;
+    padding: 0 20px;
   }
   .stress-over{
     padding: 40px 20px !important;
@@ -4019,6 +4072,35 @@ input[type=date]:focus::-webkit-datetime-edit {
  }
 }
 
+@media only screen and (max-width:1385px){
+  .doctor-number{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .doctor-contact1 h2{
+    text-align: center;
+  }
+  .social-p{
+    margin-top: 30px;
+  }
+  .locat{
+    margin-top: 30px;
+  }
+  .profil-information{
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-information1{
+    width: 100% !important;
+  }
+  .profile-information2{
+    width: 100% !important;
+    margin-top: 20px;
+    margin-left: 0px !important;
+  }
+}
+
 @media only screen and (max-width:344px){
   .search-button{
     flex-direction: column;
@@ -4242,6 +4324,8 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
 }
 
+
+
 .no-data{
   font-family: 'Inter', sans-serif;
   font-weight: 700;
@@ -4425,6 +4509,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 .group-detail-btn .qualiy{
   background-color: #E74C3C;
@@ -4437,6 +4522,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   font-weight: 500;
   font-size: 21px;
   color: #FFFFFF;
+  margin-top: 15px;
 }
 .broucher{
   background-color: #DA0402;
@@ -4539,18 +4625,144 @@ input[type=date]:focus::-webkit-datetime-edit {
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
+  padding: 30px 0px;
 }
 .doctor-contact1{
   width:1175px ;
   max-width: 100%;
   background-color: #DA0402;
-  padding: 30px 60px;
+  padding: 40px 60px;
 }
 .doctor-contact2{
   width: 350px;
   margin-left: 20px;
- 
+  background: rgba(231, 76, 60, 0.05);
+  padding: 20px;
 }
-.doctor-number{
-  
+.doctor-contact1 h2{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  color: #FFFFFF;
+}
+.number p{
+  color: #FFFFFF;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin-left: 20px;
+}
+.number img{
+  width: 40px;
+}
+.locat p{
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin-left: 20px;
+  color: #ffffff;
+  width: 8em;
+  line-height: 32px;
+}
+.locat img{
+  width: 38px;
+}
+.social-p h4{
+  color: #ffffff;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+}
+.social-p .ins{
+  margin-left: 6px;
+}
+.social-p img{
+  width: 32px;
+}
+.doctor-contact2 p{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+}
+.deepak{
+  margin-left: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 21px;
+  font-size: 17px;
+}
+.kota {
+  width: 40px;
+}
+
+@media only screen and (max-width:850px){
+  .profile-doctor{
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-doctor2{
+    margin-top: 50px;
+  }
+  .doctor-contact{
+    flex-direction: column;
+    align-items: center;
+  }
+  .doctor-contact1{
+    width: 100% !important;
+  }
+  .doctor-contact2{
+    width: 100% !important;
+    margin-top: 20px;
+    margin-left: 0px !important;
+  }
+  .profile-doctor1{
+    text-align: center;
+  }
+  .hod{
+    display: block;
+    margin:10px auto;
+  }
+  .profile-doctor1 img{
+    display: block;
+    margin: 30px auto;
+  }
+}
+.margin-top{
+  margin-top: 160px;
+}
+
+@media only screen and (max-width:620px) {
+   .profile-doctor1 h1{
+      line-height: 58px;
+   }
+}
+
+@media only screen and (max-width:408px){
+  .uuuu{
+     flex-direction: column;
+  }
+  .main-navigation1{
+    width: 240px;
+  }
+  .sop{
+    margin-top: 15px;
+  }
+  .rdf{
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width:769px){
+  .card9{
+    width: auto !important;
+  }
+  .card9 .main-img{
+    width: 100% !important;
+  }
+}
+.card9{
+  background-color: #FFFFFF;
+  width: auto;
+  border-radius: 25px;
 }

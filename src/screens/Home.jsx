@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
+import cardiologyApi from '../api/cardilogiApi';
 import { Pagination, Navigation } from "swiper";
 
 //importing icons
@@ -42,8 +42,10 @@ import blog01 from '../images/blog01.png'
 import blog02 from '../images/blog02.png'
 import blog03 from '../images/blog03.png'
 import ApointmentPopup from '../popup/ApointmentPopup';
-import card from '../images/cardiology-light.png';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import cardio3 from '../images/cardio3.png'
+import cardio4 from '../images/cardio4.png'
+import cardio5 from '../images/cardio5.png'
 
 const specialists = [
   {
@@ -135,7 +137,9 @@ export const Home = ({apointPop,setApointPop}) => {
         <div className='relative mt-80 max-lg:mt-[18rem] max-md:mt-[20rem] max-sm:mt-[45rem]'>
           <div className='h-specailities-desc'>
             <div className='text-center my-3 text-4xl font-semibold specilist'>Specialities </div>
-            <div className='text-center text-lg mb-5 lorem'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, </div>        
+            <div className='text-center text-lg mb-5 lorem loremdas'>A Multi-Speciality Diabetes Hospital. Major is spread across 30,000 sq ft area & is equipped with advanced technology & state-of-the-art infrastructure to provide personalized and committed 
+            treatment services with focus on diabates & its co-morbidities
+            </div>        
           </div>
 
           <Swiper
@@ -399,14 +403,14 @@ export const Home = ({apointPop,setApointPop}) => {
             <SwiperSlide>
             <div className='flex flex-wrap justify-center mx-20 pb-10 service-cards'>
               {
-                servicesApi.map(service => 
+                servicesApi.slice(0,4).map(service => 
                   <div key={service.id} className='service-card pb-8'>
                     <div className='service-card-img'>
                       <img src={service.service_img} alt='services'/>
                     </div>
                     <p className='my-5 mx-2 text-xl font-semibold text-[#101010] service_nam'>{service.name}</p>
                     <p className='mb-5 mx-2 text-sm text-[#101010] service_des'>{service.desc}</p>
-                    <div className='flex justify-center  '><span className='red-btn serv-btn red-btn1 '>Know More</span></div>
+                   <NavLink to={`/${service.path}`}><div className='flex justify-center  '><span className='red-btn serv-btn red-btn1 '>Know More</span></div></NavLink>
                   </div>
                   )
               }
@@ -414,6 +418,23 @@ export const Home = ({apointPop,setApointPop}) => {
             </SwiperSlide>
 
             <SwiperSlide>
+            <div className='flex flex-wrap justify-center mx-20 pb-10 service-cards'>
+              {
+                servicesApi.slice(4,7).map(service => 
+                  <div key={service.id} className='service-card pb-8'>
+                    <div className='service-card-img'>
+                      <img src={service.service_img} alt='services'/>
+                    </div>
+                    <p className='my-5 mx-2 text-xl font-semibold text-[#101010]'>{service.name}</p>
+                    <p className='mb-5 mx-2 text-sm text-[#101010]'>{service.desc}</p>
+                   <NavLink to={`/${service.path}`}><div className='flex justify-center '><span className='red-btn red-btn1 '>Know More</span></div></NavLink>
+                  </div>
+                  )
+              }
+            </div>
+            </SwiperSlide>
+
+            {/* <SwiperSlide>
             <div className='flex flex-wrap justify-center mx-20 pb-10 service-cards'>
               {
                 servicesApi.map(service => 
@@ -445,24 +466,7 @@ export const Home = ({apointPop,setApointPop}) => {
                   )
               }
             </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-            <div className='flex flex-wrap justify-center mx-20 pb-10 service-cards'>
-              {
-                servicesApi.map(service => 
-                  <div key={service.id} className='service-card pb-8'>
-                    <div className='service-card-img'>
-                      <img src={service.service_img} alt='services'/>
-                    </div>
-                    <p className='my-5 mx-2 text-xl font-semibold text-[#101010]'>{service.name}</p>
-                    <p className='mb-5 mx-2 text-sm text-[#101010]'>{service.desc}</p>
-                    <div className='flex justify-center '><span className='red-btn red-btn1 '>Know More</span></div>
-                  </div>
-                  )
-              }
-            </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
             </Swiper>
         </div>
         {/** ./Our Services */}
@@ -477,80 +481,153 @@ export const Home = ({apointPop,setApointPop}) => {
                 printing and typesetting industry.</p>
                 <div className='my-3'>
                   <button onClick={()=> setApointPop(true)} className='ba-red-btn mr-5 max-md:mb-3 mr-btn'>Book Appoinment</button>
-                  <button className='ba-white-btn mr-btn '>View All Doctors</button>
+                 <NavLink to="/doctors"><button className='ba-white-btn mr-btn '>View All Doctors</button></NavLink>
                 </div>
               </div>
               <div className='flex w-[65%] justify-start max-md:flex-col max-md:w-[100%]'>
+              <div>
+                 {
 
-                <div className='my-10 max-md:mt-10 max-md:mb-0'>
-                  <SpecialistCard img={dr} name='Dr. Mahi Rawat' vect={vect} untar={untar}/>
-                  <SpecialistCard img={dr2} name='Dr. Sakshi Sena' vect={vect} untar={untar}/>
+                  cardiologyApi.slice(0,2).map((val,index)=>{
+                    return(
+                      <div key={index} className='my-10 max-md:mt-10 max-md:mb-0'>
+                      <div className="card card9">
+            <img className="main-img" src={val.images} alt="" />
+            <div className="igh">
+              <div className="name-card">
+                <div className="text-card">
+                  <h3>{val.name}</h3>
+                  <p>{val.content}</p>
+                  <p>{val.content1}</p>
+                  <div className="tara flex ">
+                  <img src={val.image1[0]} alt="" />
+                  <img className="ml-1" src={val.image1[1]} alt="" />
+                  <img className="ml-1" src={val.image1[2]} alt="" />
+                  <img className="ml-1" src={val.image1[3]} alt="" />
+                  <img className="ml-1" src={val.image1[4]} alt="" />
                 </div>
-                <div className='mt-20 mb-10 max-md:mt-0 '>
-                  <SpecialistCard img={dr1} name='Dr. Rohan Shrma' vect={vect} untar={untar} />
-                  <SpecialistCard img={dr3} name='Dr. Rohan Shrma' vect={vect} untar={untar}/>
                 </div>
+                <div className="viwe-profile">
+                  <Link to={`/cardio/${val.id}`}>
+                    <p>{val.view}</p>
+                  </Link>
+                </div>
+              </div>
+              <hr />
+              <div className="information-doc">
+                <h3>{val.information}</h3>
+                <p>{val.informationCont}</p>
+                <p>{val.informationCont1}</p>
+             
+               
+              </div>
+            </div>
+          </div>
+
+                </div>
+                    )
+                  })
+                 }
+                 </div>
+                 <div>
+                 {
+                  cardiologyApi.slice(5,7).map((val,index)=>{
+                      return(
+                        <div key={index} className='mt-20 mb-10 max-md:mt-0 '>
+                        <div className="card card9">
+            <img className="main-img" src={val.images} alt="" />
+            <div className="igh">
+              <div className="name-card">
+                <div className="text-card">
+                  <h3>{val.name}</h3>
+                  <p>{val.content}</p>
+                  <p>{val.content1}</p>
+                  <div className="tara flex ">
+                  <img src={val.image1[0]} alt="" />
+                  <img className="ml-1" src={val.image1[1]} alt="" />
+                  <img className="ml-1" src={val.image1[2]} alt="" />
+                  <img className="ml-1" src={val.image1[3]} alt="" />
+                  <img className="ml-1" src={val.image1[4]} alt="" />
+                </div>
+                </div>
+                <div className="viwe-profile">
+                  <Link to={`/cardio/${val.id}`}>
+                    <p>{val.view}</p>
+                  </Link>
+                </div>
+              </div>
+              <hr />
+              <div className="information-doc">
+                <h3>{val.information}</h3>
+                <p>{val.informationCont}</p>
+                <p>{val.informationCont1}</p>
+               
+              </div>
+            </div>
+          </div>
+                </div>
+                      )
+                  })
+                 }
+                 </div>
               </div>
         </div>
         {/** ./Meet Our Team */}
         {/** Our Blogs */}
-        <div className='our-blogs py-10 px-10 max-xl:px-5'>
+          
+        <div className='our-blogs our-blogs2 our-blogs3 py-2  px-10'>
               
-                <p className='text-center text-3xl font-bold'>Our Blogs</p>
-                <p className='text-lg text-center font-bold mt-2 mb-10'>Stay up to date with our most recent news and updates</p>
+              <h2 className='text-center text-3xl font-bold gast'>Cardiology Blogs</h2>
+              <p className='stays text-center'>Stay up to date with our most recent news and updates</p>
 
-                <div className='flex justify-center max-md:flex-col'>
+              <div className='flex justify-center mt-10 blog-meta1'>
 
-                  <div className='blog-card-main w-[45%] mx-5 max-md:w-[100%] max-md:mx-0'>
-                    <img className='h-[250px] max-md:w-[100%]' src={blog01}/>
-                    <div className='p-5'>
-                        <div className='flex justify-between'>
-                        <div className='font-semibold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
-                        <div className='text-sm font-semibold text-gray-600'>2 January 2023</div>
-                      </div>
-                      <div className='my-2 text-md text-[#222F3E]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</div>
-                      <div className='text-[#E74C3C] font-bold underline underline-offset-4 cursor-pointer'>Know More</div>
+                <div className='blog-card-main w-[45%] mx-5'>
+                  <img className='h-[250px]' src={blog01}/>
+                  <div className='p-5'>
+                      <div className='flex justify-between'>
+                      <div className='font-semibold'>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</div>
+                      <div className='text-sm font-semibold text-gray-600'>2 January 2023</div>
                     </div>
-                    
+                    <div className='my-2 text-md text-[#222F3E]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen.</div>
+                    <div className='text-[#E74C3C] font-bold underline underline-offset-4 cursor-pointer'>Know More</div>
                   </div>
-
-                  <div className='blog-cards-secondary w-[45%] mx-5 max-md:w-[100%] max-md:mx-0'>
-                    <div className='blog-card-secondary flex mb-6 items-center max-md:flex-col '>
-                      <img className='h-[200px] max-md:h-[250px] max-md:w-[100%]' src={blog02} />
-                      <div className='text-sm p-5'>
-                        <div className='flex justify-between my-2'>
-                          <p className='font-bold'>Chronic Kidney Disease – The Silent Killer</p>
-                          <p className='text-xs font-bold'>05 January</p>
-                        </div>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <div className='text-[#E74C3C] font-bold underline underline-offset-4 cursor-pointer mt-1'>Know More</div>
-                      </div>
-                    </div>
-
-                    <div className='blog-card-secondary flex items-center max-md:flex-col max-md:w-[100%] max-md:mx-0'>
-                      <img className=' h-[200px] max-md:h-[250px] max-md:w-[100%]' src={blog03}/>
-                      <div className='text-sm p-5'>
-                        <div className='flex justify-between my-2'>
-                          <p className='font-bold'>What to do when you have Stroke?</p>
-                          <p className='text-xs font-bold'>13 January</p>
-                        </div>
-                        <p>Stroke is also called as Brain Attack. It is a paralysis attack in which person loses power of any body part. It is caused by blockage in the arteries supplying blood to the brain</p>
-                        <div className='text-[#E74C3C] font-bold underline underline-offset-4 cursor-pointer mt-1'>Know More</div>
-                      </div>
-                    </div>
-
-                    
-                    
-
-                  </div>
-                
+                  
                 </div>
 
-                <div className='mt-10 flex justify-center'>
-                  <button className=' bg-[#E74C3C] font-bold px-[50px] py-[10px] text-[#ffffff] rounded-[5px] text-sm'>View All Blog</button>
+                <div className='blog-cards-secondary w-[45%] mx-5 blog-card-mar'>
+                  <div className='blog-card-secondary flex mb-6 items-center'>
+                    <img className='w-[300px] h-[200px]' src={blog02} />
+                    <div className='text-sm p-5'>
+                      <div className='flex justify-between my-2 blog-meta'>
+                        <p className='font-bold'>Chronic Kidney Disease – The Silent Killer</p>
+                        <p className='text-xs font-bold'>05 January</p>
+                      </div>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                      <div className='text-[#E74C3C] font-bold underline underline-offset-4 cursor-pointer mt-1'>Know More</div>
+                    </div>
+                  </div>
+
+                  <div className='blog-card-secondary flex items-center'>
+                    <img className='w-[300px] h-[200px]' src={blog03}/>
+                    <div className='text-sm p-5'>
+                      <div className='flex justify-between my-2'>
+                        <p className='font-bold'>What to do when you have Stroke?</p>
+                        <p className='text-xs font-bold'>13 January</p>
+                      </div>
+                      <p>Stroke is also called as Brain Attack. It is a paralysis attack in which person loses power of any body part. It is caused by blockage in the arteries supplying blood to the brain</p>
+                      <div className='text-[#E74C3C] font-bold underline underline-offset-4 cursor-pointer mt-1'>Know More</div>
+                    </div>
+                  </div>
                 </div>
               
-        </div>
+              </div>
+
+              <div className='mt-10 flex justify-center'>
+                <button className='blog-btn1'>View All Blog</button>
+              </div>
+            
+      </div>
         {/** ./Our Blogs */}
         {/** Patient Reviews */}
         <div >
@@ -602,13 +679,13 @@ export const Home = ({apointPop,setApointPop}) => {
         <div className='patient-reviews flex justify-center py-20'>
         
         <div className=' text-center w-[40%]'>
-          <p className='text-[#E74C3C] font-semibold my-1'>Testimonial</p>
-          <p className='text-3xl font-extrabold text-slate-600'>Satisfied Patients Reviews</p>
+          <p className='text-[#E74C3C] font-semibold my-1 testi'>Testimonial</p>
+          <p className='text-3xl font-extrabold text-slate-600 satisfied'>Satisfied Patients Reviews</p>
           <div className='flex justify-center testimonial-img'>
               <img src={testimonial} alt='testimonial-img'/>
           </div>
           
-          <p className='mb-5 text-slate-500'>
+          <p className='mb-5 text-slate-500 ita'>
             I appreciate your hospital really good environment and excellent patient care. you are
             continuously handle patient treatment wonderfully. Thanks for your great service. Please
             enjoy the chocolates.
@@ -638,13 +715,13 @@ export const Home = ({apointPop,setApointPop}) => {
         <div className='patient-reviews flex justify-center py-20'>
         
         <div className=' text-center w-[40%]'>
-          <p className='text-[#E74C3C] font-semibold my-1'>Testimonial</p>
-          <p className='text-3xl font-extrabold text-slate-600'>Satisfied Patients Reviews</p>
+          <p className='text-[#E74C3C] font-semibold my-1 testi'>Testimonial</p>
+          <p className='text-3xl font-extrabold text-slate-600 satisfied'>Satisfied Patients Reviews</p>
           <div className='flex justify-center testimonial-img'>
               <img src={testimonial} alt='testimonial-img'/>
           </div>
           
-          <p className='mb-5 text-slate-500'>
+          <p className='mb-5 text-slate-500 ita'>
             I appreciate your hospital really good environment and excellent patient care. you are
             continuously handle patient treatment wonderfully. Thanks for your great service. Please
             enjoy the chocolates.
