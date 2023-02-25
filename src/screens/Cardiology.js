@@ -5,9 +5,6 @@ import hath from '../images/hath.jpg'
 import { Link } from 'react-router-dom';
 import doctorji from '../images/doctorji.png';
 import cardiologyApi from '../api/cardilogiApi';
-import ty from '../images/ty.png';
-import ty1 from '../images/ty1.png';
-import ty2 from '../images/ty2.png';
 import cardio1 from '../images/cardio1.png';
 import cardio3 from '../images/cardio3.png'
 import cardio4 from '../images/cardio4.png'

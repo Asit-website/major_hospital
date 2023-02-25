@@ -10,6 +10,7 @@ import linkbhai from '../images/linkbhai.png';
 import insbhai from '../images/insbhai.png';
 import fbbhai from '../images/fbbhai.png';
 import emailbhai from '../images/emailbhai.png';
+import kota from '../images/kota.png';
 const CardiologyDetails = ({apointPop,setApointPop}) => {
   const { id } = useParams();
 
@@ -18,7 +19,42 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
     return it.id === id;
   });
 
-  
+  const [tabIndex, setTabIndex] = useState(1);
+
+  const tabAnother = (e) =>{
+        e.preventDefault();
+        setTabIndex(1);
+        document.getElementById("abc").style.backgroundColor="#E74C3C";
+        document.getElementById("def").style.backgroundColor="#D30806";
+        document.getElementById("ghi").style.backgroundColor="#D30806";
+        document.getElementById("jkl").style.backgroundColor="#D30806";
+  }
+  const tabAnother1 = (e) =>{
+    e.preventDefault();
+    setTabIndex(2);
+        document.getElementById("abc").style.backgroundColor="#D30806";
+        document.getElementById("def").style.backgroundColor="#E74C3C";
+        document.getElementById("ghi").style.backgroundColor="#D30806";
+        document.getElementById("jkl").style.backgroundColor="#D30806";
+  }
+
+  const tabAnother2 = (e) =>{
+    e.preventDefault();
+    setTabIndex(3);
+    document.getElementById("abc").style.backgroundColor="#D30806";
+    document.getElementById("def").style.backgroundColor="#D30806";
+    document.getElementById("ghi").style.backgroundColor="#E74C3C";
+    document.getElementById("jkl").style.backgroundColor="#D30806";
+  }
+
+  const tabAnother3 = (e) =>{
+    e.preventDefault();
+    setTabIndex(4);
+    document.getElementById("abc").style.backgroundColor="#D30806";
+    document.getElementById("def").style.backgroundColor="#D30806";
+    document.getElementById("ghi").style.backgroundColor="#D30806";
+    document.getElementById("jkl").style.backgroundColor="#E74C3C";
+  }
 
   return (
     <>
@@ -28,17 +64,17 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
           <div className="aruniti" key={index}>
           <div className="profile-doctor">
                <div className="profile-doctor1">
-                   <h1>Dr. Arun Kar</h1>
-                   <p>Director & HOD - Opthalmology</p>
+                   <h1>{val.name}</h1>
+                   <p>{val.content}</p>
                    <div className="hod"></div>
                    <div className=" text-right">
                    <img src={val.images} alt="" />
                    </div>
                    <div className="group-detail-btn">
-                       <button className="qualiy">Qualifications</button>
-                       <button className="ml-3">Clinical Experience</button>
-                       <button className="ml-3">Research & Papers</button>
-                       <button className="ml-3">Awards & Achievements</button>
+                       <button id="abc" onClick={tabAnother} className="qualiy">Qualifications</button>
+                       <button id="def" onClick={tabAnother1} className="ml-3">Clinical Experience</button>
+                       <button id="ghi" onClick={tabAnother2} className="ml-3">Research & Papers</button>
+                       <button id="jkl" onClick={tabAnother3} className="ml-3">Awards & Achievements</button>
                    </div>
                </div>
                <div className="profile-doctor2">
@@ -80,8 +116,15 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
                       </ul>
                    </div>
               </div>
+              <div>
               <div className="profile-information2">
-                   <p>I had gall bladder problem & also borderline sugar issues. I consulted few doctors in Gwalior, had undergone various treatments but was not satisfied. A friend told me about Dr. Patro and I thought of second opinion. Hence, I came to Delhi to consult Dr. Patro at CDAS. Dr. Patro is very compassionate & he heard all my daily struggles. I am impressed with the way CDAS team handled my problem, help me in getting better & changing my approach towards my lifestyle. CDAS Hospital provides the Best Treatment For Diabetes In India. All staff at CDAS are very helpful & dedicated to their work. I never felt that I am a patient here, but always felt like friend, or like a member of family.</p>
+                   <p>I had gall bladder problem & also borderline sugar issues. I consulted few doctors in Gwalior, had undergone various treatments but was not satisfied. A friend told me about Dr. Patro and I thought of second opinion. Hence, I came to Delhi to consult Dr. Patro at Major. Dr. Patro is very compassionate & he heard all my daily struggles. I am impressed with the way Major team handled my problem, help me in getting better & changing my approach towards my lifestyle. Major Hospital provides the Best Treatment For Diabetes In India. All staff at Major are very helpful & dedicated to their work. I never felt that I am a patient here, but always felt like friend, or like a member of family.</p>
+                   <img className=" float-right kota" src={kota} alt="" />
+              </div>
+                 <div className="deepak1 mt-4">
+                 <p className="deepak">Mr. Deepak Jain</p>
+                 <p className="deepak">LIC Agent, Gwalior</p>
+                 </div>
               </div>
           </div>
 
@@ -89,27 +132,41 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
                <div className="doctor-contact1">
                  <h2>Contact Details</h2>
                  <div className="doctor-number flex items-start justify-between">
-                     <div className="number">
+                    <div className="numberji mt-4">
+                     <div className="number flex items-center">
                          <img src={phonebhai} alt="" />
-                         <p>+91 8800401411</p>
+                         <p>1800 8333 238</p>
                      </div>
-                     <div className="locat">
+                     <div className="number flex items-center mt-2">
+                         <img src={emailbhai} alt="" />
+                         <p>info@localhost</p>
+                     </div>
+                     </div>
+                     <div className="locat flex items-start">
                         <img src={locbhai} alt="" />
                         <p>Plot # 1Malibu TowneSector - 47, Gurugram</p>
                      </div>
                      <div className="social-p">
                        <h4>Social Profiles</h4>
-                       <div className="img-flex">
+                       <div className="img-flex mt-4 flex items-center justify-center">
                           <img src={fbbhai} alt="" />
-                          <img src={insbhai} alt="" />
-                          <img src={twitbhai} alt="" />
-                          <img src={linkbhai} alt="" />
+                          <img className="ins" src={insbhai} alt="" />
+                          <img className="ins" src={twitbhai} alt="" />
+                          <img className="ins" src={linkbhai} alt="" />
                        </div>
                      </div>
                  </div>
                </div>
+               <div className="doctor-contact3">
                <div className="doctor-contact2">
-                  <p>CDAS has helped me in dealing with my diabetes & the kind of attention they have shown, I am amazed. Now I know how to deal with my diabetes & this has changed my life completely.</p>
+                  <p>Major has helped me in dealing with my diabetes & the kind of attention they have shown, I am amazed. Now I know how to deal with my diabetes & this has changed my life completely.</p>
+               </div>
+
+               <div className="deepak1 mt-4">
+                 <p className="deepak">Bindu Gupta</p>
+                 <p className="deepak">House Wife,, Gurugram</p>
+                 </div>
+
                </div>
           </div>
       </div>

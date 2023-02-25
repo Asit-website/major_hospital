@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import { BsGeoAlt, BsGlobe2, BsChevronDown, BsSearch } from "react-icons/bs";
 import { FaPhoneAlt } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import navLogo from "../images/navigation-logo.png";
 import RegisterPopup from "../popup/RegisterPopup";
 
 export const Navbar = ({registerPop,setRegisterPop}) => {
   const [show, setShow] = useState("none");
   const [show1, setShow1] = useState("none");
-
+  const [visit,setVisit] = useState(false);
   const [open, setOpen] = useState(false);
   const [showAbout, setShowAbout] = useState("none");
+
+  const navigate=useNavigate();
+  
   const handleDropdown = () => {
     setShow(show === "none" ? "flex" : "none");
     document.getElementById("dropdown-item").style.display = show;
@@ -19,6 +22,11 @@ export const Navbar = ({registerPop,setRegisterPop}) => {
   const styleMenu = {
     left: open ? 0 : "-100%",
   };
+
+  const stylepar = {
+    display: visit ? "block" : "none"
+  }
+ 
 
   const funcMenu = () => {
     setOpen(!open);
@@ -99,7 +107,7 @@ export const Navbar = ({registerPop,setRegisterPop}) => {
       </div>
       {/* ./Upper Navigation */}
       {/* Main Navigation*/}
-      <div className="ki flex items-center justify-between">
+      <div  className="ki flex items-center justify-between">
         <i onClick={funcMenu} id="men" className="fa-solid fa-bars solji"></i>
        <NavLink to="/"><img src={navLogo} alt="" /></NavLink>
       </div>
@@ -114,7 +122,7 @@ export const Navbar = ({registerPop,setRegisterPop}) => {
               <img src={navLogo} />
             </div>
           </NavLink>
-          <div className="main-menu-items flex justify-between second-nav">
+          <div  className="main-menu-items flex justify-between second-nav">
            <NavLink to="/doctors"><p>Find a Doctor</p></NavLink>
             <NavLink to="/health">
               <p>Book Health Check-Up</p>
@@ -163,11 +171,16 @@ export const Navbar = ({registerPop,setRegisterPop}) => {
            <NavLink to="/treat"><p>Treatments</p></NavLink>
           </div>
 
-          <div className="flex items-center">
-            <div className="mx-5 main-menu-search">
+          <div className="flex items-center uuuu">
+          <input style={stylepar} onKeyUp={(e)=>{
+            navigate(`query/${e.target.value}`);
+          }} className="searchSir" placeholder="search" type="search" name="" id="" />
+            <div onClick={()=>{
+                setVisit(!visit)
+            }} className="mx-5 main-menu-search cursor-pointer sop">
               <BsSearch />
             </div>
-            <div onClick={()=> setRegisterPop(true)} className="red-btn red-btn1 mx-5">Register</div>
+            <div onClick={()=> setRegisterPop(true)} className="red-btn red-btn1 mx-5 rdf">Register</div>
           </div>
         </div>
       </div>
