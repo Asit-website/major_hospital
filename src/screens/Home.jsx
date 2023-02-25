@@ -137,7 +137,7 @@ export const Home = ({apointPop,setApointPop}) => {
         <div className='relative mt-80 max-lg:mt-[18rem] max-md:mt-[20rem] max-sm:mt-[45rem]'>
           <div className='h-specailities-desc'>
             <div className='text-center my-3 text-4xl font-semibold specilist'>Specialities </div>
-            <div className='text-center text-lg mb-5 lorem loremdas'>A Multi-Speciality Diabetes Hospital. Major is spread across 30,000 sq ft area & is equipped with advanced technology & state-of-the-art infrastructure to provide personalized and committed 
+            <div className='text-center text-lg mb-5 lorem loremdas'>A Multi-Speciality Major Hospital. Major hospital is spread across 30,000 sq ft area & is equipped with advanced technology & state-of-the-art infrastructure to provide personalized and committed 
             treatment services with focus on diabates & its co-morbidities
             </div>        
           </div>
