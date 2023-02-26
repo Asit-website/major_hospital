@@ -13,7 +13,7 @@ const Query = ({appointPop,setApointPop}) => {
             <div className='margin-top'>
                 <h1 className='text-3xl text-center py-3'>Search results for - {q}</h1>
                 <div>
-                    <div className="filter">
+                    <div className="filter filter1">
                     <div className='flex flex-wrap items-center justify-center sard'>
                         {cardilogiApi.map((val, index) => {
                             if (val.name.toLocaleLowerCase().includes(q.toLocaleLowerCase()) || val.content.toLocaleLowerCase().includes(q.toLocaleLowerCase()))
