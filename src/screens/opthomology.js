@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import ApointmentPopup from "../popup/ApointmentPopup";
-import rec from "../images/rec.png";
-import btn from "../images/btn.png";
 import Frame from "../images/Frame.png";
-import hath from "../images/hath.jpg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import doc4 from "../images/doc4.png";
 import cardiologyApi from "../api/cardilogiApi";
 import opto from "../images/opto.png";
@@ -12,11 +9,11 @@ import opto1 from "../images/opto1.png";
 import opto2 from "../images/opto2.png";
 const Opthomology = ({ apointPop, setApointPop }) => {
   const [item, setItem] = useState(cardiologyApi);
-  const [visible, setVisible] = useState(3);
+  // const [visible, setVisible] = useState(3);
 
-  const showMoreDoctore = () => {
-    setVisible((prevValue) => prevValue + 3);
-  };
+  // const showMoreDoctore = () => {
+  //   setVisible((prevValue) => prevValue + 3);
+  // };
   return (
     <>
       <div className="medicine-back medicine-back5">
@@ -29,14 +26,13 @@ const Opthomology = ({ apointPop, setApointPop }) => {
         <div className="institute">
           <h4>About the Ophthalmology  </h4>
           <p>
-            Ophthalmology Department at the Center of Diabetes and Allied
-            Sciences (Major) has a team of experienced doctors and surgeons
+            Ophthalmology Department at the  Major Hospital has a team of experienced doctors and surgeons
             passionate to provide eye care services including medical, surgical,
             and reconstructive services. With highly sophisticated technology
             and state-of-the-art instruments at our center, we offer the best
             services in the field of ophthalmology to patients from kids to the
             Elderly. Major Hospital Is The <span className="bh">Best Eye Hospital In Gurgaon</span>  <br /> While we
-            boast about our expert hands in performing numerous <span>cataract
+            boast about our expert hands in performing numerous <span className="bh">cataract
             surgeries</span> , our approach to diabetic patients begin as soon as they
             start treatment with us. We screen our patients routinely, offer
             precise guidance and prevent diabetic eye complications altogether
@@ -89,30 +85,12 @@ const Opthomology = ({ apointPop, setApointPop }) => {
       </div>
 
       <div className="treats">
-        {/* <img  className='hath' src={hath} alt="hath" />
-                <h2>What we treat</h2>
-                <p className='treats-p'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an <br /> unknown printer took a galley of type and scrambled it to make a type.</p>
-
-                <div className="lorem">
-                    <p>Lorem Ipsum</p>
-                    <p>Lorem Ipsum</p>
-                    <p>Lorem Ipsum</p>
-                    <p>Lorem Ipsum</p>
-                </div>
-
-                <div className="treats-back">
-                     <div className="treats-sect">
-                          <h2>Our approach to treat you</h2>
-                          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                     </div>
-                   
-                </div> */}
         <div className=" relative">
           <div className="consult">
             <img className="hath" src={Frame} alt="" />
             <h3 className="exy mt-2">Consult with experienced doctors</h3>
             <div className="sard">
-              {item.slice(0, visible).map((val) => {
+              {item.slice(10,13).map((val) => {
                 return (
                   <>
                     <div key={val.id} className="card card1">
@@ -121,8 +99,8 @@ const Opthomology = ({ apointPop, setApointPop }) => {
                         <div className="name-card">
                           <div className="text-card">
                             <h3>{val.name}</h3>
-                            <p>Senior Dental Expert at Major</p>
-                            <p>Hospital Haryana</p>
+                            <p>{val.content}</p>
+                            <p>{val.content1}</p>
                           </div>
                           <div className="viwe-profile">
                             <Link to={`/cardio/${val.id}`}>
@@ -152,9 +130,9 @@ const Opthomology = ({ apointPop, setApointPop }) => {
                 );
               })}
             </div>
-            <p onClick={showMoreDoctore} className="see_more cursor-pointer">
+           <NavLink to="/doctors"><p  className="see_more cursor-pointer">
               See More Doctors
-            </p>
+            </p></NavLink>
           </div>
         </div>
       </div>

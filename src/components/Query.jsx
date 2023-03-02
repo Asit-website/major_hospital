@@ -75,12 +75,12 @@ const Query = ({appointPop,setApointPop}) => {
                                             </div>
                                             <div className="health-btn">
                                                 <button className="know_more">{val.know}</button>
-                                                {/* <button
+                                                <button
                                                     onClick={() => setApointPop(true)}
                                                     className="book_more"
                                                 >
                                                     {val.book}
-                                                </button> */}
+                                                </button>
                                             </div>
                                         </div>
                                     </div>

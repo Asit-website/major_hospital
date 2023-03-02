@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ApointmentPopup from "../popup/ApointmentPopup";
 import Frame from "../images/Frame.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import cardiologyApi from "../api/cardilogiApi";
 import gaston from "../images/gaston.png";
 import gaston1 from "../images/gaston1.png";
@@ -9,11 +9,11 @@ import gaston2 from "../images/gaston2.png";
 import gaston3 from "../images/gaston3.png";
 const Gastroenterology = ({ apointPop, setApointPop }) => {
   const [item, setItem] = useState(cardiologyApi);
-  const [visible, setVisible] = useState(3);
+  // const [visible, setVisible] = useState(3);
 
-  const showMoreDoctore = () => {
-    setVisible((prevValue) => prevValue + 3);
-  };
+  // const showMoreDoctore = () => {
+  //   setVisible((prevValue) => prevValue + 3);
+  // };
   return (
     <>
       <div className="medicine-back medicine-back3">
@@ -87,30 +87,12 @@ const Gastroenterology = ({ apointPop, setApointPop }) => {
       </div>
 
       <div className="treats">
-        {/* <img  className='hath' src={hath} alt="hath" />
-                <h2>What we treat</h2>
-                <p className='treats-p'>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an <br /> unknown printer took a galley of type and scrambled it to make a type.</p>
-
-                <div className="lorem">
-                    <p>Lorem Ipsum</p>
-                    <p>Lorem Ipsum</p>
-                    <p>Lorem Ipsum</p>
-                    <p>Lorem Ipsum</p>
-                </div>
-
-                <div className="treats-back">
-                     <div className="treats-sect">
-                          <h2>Our approach to treat you</h2>
-                          <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
-                     </div>
-                   
-                </div> */}
         <div className=" relative">
           <div className="consult">
             <img className="hath" src={Frame} alt="" />
             <h3 className="exy mt-2">Consult with experienced doctors</h3>
             <div className="sard">
-              {item.slice(0, visible).map((val) => {
+              {item.slice(7,10).map((val) => {
                 return (
                   <>
                     <div key={val.id} className="card card1">
@@ -119,8 +101,8 @@ const Gastroenterology = ({ apointPop, setApointPop }) => {
                         <div className="name-card">
                           <div className="text-card">
                             <h3>{val.name}</h3>
-                            <p>Senior Dental Expert at Major</p>
-                            <p>Hospital Haryana</p>
+                            <p>{val.content}</p>
+                            <p>{val.content1}</p>
                           </div>
                           <div className="viwe-profile">
                             <Link to={`/cardio/${val.id}`}>
@@ -150,9 +132,9 @@ const Gastroenterology = ({ apointPop, setApointPop }) => {
                 );
               })}
             </div>
-            <p onClick={showMoreDoctore} className="see_more cursor-pointer">
+            <NavLink to="/doctors"><p  className="see_more cursor-pointer">
               See More Doctors
-            </p>
+            </p></NavLink>
           </div>
         </div>
       </div>

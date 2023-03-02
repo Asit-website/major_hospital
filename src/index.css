@@ -3748,6 +3748,18 @@ input[type=date]:focus::-webkit-datetime-edit {
   .second-word h2{
     line-height: 35px;
   }
+  .first-tanji{
+    text-align: center;
+  }
+  .expertise{
+    width: 100%;
+  }
+  .locat p{
+    margin-left: 5px !important;
+  }
+  .doctor-contact1{
+    padding: 40px 0px !important;
+  }
   .health-card1{
     padding: 0px 20px !important;
   }
@@ -4277,6 +4289,9 @@ input[type=date]:focus::-webkit-datetime-edit {
     width: 500px;
     max-width: 100%;
   }
+  .doctor-contact1{
+    padding: 40px 10px !important;
+  }
 }
 
 @media only screen and (max-width:1259px){
@@ -4306,6 +4321,12 @@ input[type=date]:focus::-webkit-datetime-edit {
   .hkhk{
     width: 100%;
     padding: 20px;
+  }
+  .group-detail-btn{
+    justify-content: center !important;
+  }
+  .group-details-btn #mno{
+    margin-top: 30px !important;
   }
 }
 @media only screen and (max-width:835px){
@@ -4514,13 +4535,13 @@ input[type=date]:focus::-webkit-datetime-edit {
   padding: 30px 80px;
   /* margin: 40px 0px; */
 }
-.profile-doctor1 h1{
+.first-tanji h1{
   color: #000000;
   font-family: 'Lexend', sans-serif;
   font-weight: 600;
   font-size: 49px;
 }
-.profile-doctor1 p{
+.first-tanji p{
   color: #000000;
   font-family: 'Lexend', sans-serif;
   font-weight: 600;
@@ -4537,27 +4558,89 @@ input[type=date]:focus::-webkit-datetime-edit {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .profile-doctor1 img{
-  width: 200px;
+  width: 250px;
   display: block;
-  margin-left: 100px;
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-left: 40px;
   margin-top: 30px;
+}
+#abc{
+  padding: 12px 48px;
+}
+#def{
+  padding: 12px 50px;
+}
+#ghi{
+  padding: 12px 35px;
+}
+#mno{
+  padding: 12px 35px;
+}
+#pqr{
+  padding: 12px 32px;
+}
+.group-details-btn{
+  margin-top: -14px;
+}
+.educarion{
+  width: 21em;
+  max-width: 100%;
+}
+.educarion h2{
+  color: #000000;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+}
+.educarion ul{
+  list-style-type: disc;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.educarion ul li{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 21.5px;
+  color: #000000;
+  line-height: 25px;
+}
+.expertise h2{
+  color: #000000;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+}
+.expertise ul{
+  list-style-type: disc;
+  margin-top: 10px;
+  margin-left: 25px;
+}
+.expertise ul li{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 21.5px;
+  color: #000000;
+  line-height: 25px;
 }
 .group-detail-btn{
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 30px;
+  justify-content: flex-start;
+  /* margin-top: 30px; */
   flex-wrap: wrap;
 }
 .group-detail-btn .qualiy{
-  background-color: #E74C3C;
- 
+  background-color: #FDC91E;
+  color: #000000;
 }
 .group-detail-btn button{
   background-color: #D30806;
-  padding: 10px 20px;
+  padding: 12px 20px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 21px;
@@ -4585,7 +4668,6 @@ input[type=date]:focus::-webkit-datetime-edit {
   background-color: #FDC91E;
   width: 350px;
   padding: 30px;
-  margin-top: 35px;
 }
 .get-in-touch h3{
   color: #000000;
@@ -4626,8 +4708,8 @@ input[type=date]:focus::-webkit-datetime-edit {
 }
 .profile-information1{
   background: rgba(231, 76, 60, 0.05);
-  width: 1175px;
-  max-width: 100%;
+  /* width: 1175px; */
+  /* max-width: 100%; */
   padding: 20px 30px;
 }
 .profile-information1 ul{
@@ -4637,8 +4719,9 @@ input[type=date]:focus::-webkit-datetime-edit {
 .profile-information1 ul li {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 21.5px;
-  margin: 20px 0px;
+  font-size: 19px;
+  line-height: 26px;
+  /* margin: 20px 0px; */
 }
 .profile-information2{
   width: 350px;
@@ -4656,9 +4739,10 @@ input[type=date]:focus::-webkit-datetime-edit {
 }
 .profile-information2 p{
   color: #000000;
-  font-size: 23px;
+  font-size: 20px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
+  line-height: 26px;
 }
 .doctor-contact{
   display: flex;
@@ -4668,8 +4752,8 @@ input[type=date]:focus::-webkit-datetime-edit {
   padding: 30px 0px;
 }
 .doctor-contact1{
-  width:1175px ;
-  max-width: 100%;
+  /* width:1175px ;
+  max-width: 100%; */
   background-color: #DA0402;
   padding: 40px 60px;
 }
@@ -4678,6 +4762,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   margin-left: 20px;
   background: rgba(231, 76, 60, 0.05);
   padding: 20px;
+  margin-top: 50px;
 }
 .doctor-contact1 h2{
   font-family: 'Inter', sans-serif;
@@ -4722,7 +4807,8 @@ input[type=date]:focus::-webkit-datetime-edit {
 .doctor-contact2 p{
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 20px;
+  line-height: 26px;
 }
 .deepak{
   margin-left: 20px;
@@ -4767,7 +4853,12 @@ input[type=date]:focus::-webkit-datetime-edit {
     display: block;
     margin: 30px auto;
   }
+  .first-tanji h1{
+    line-height: 50px;
+  }
 }
+
+
 .margin-top{
   margin-top: 160px;
 }
@@ -4776,6 +4867,26 @@ input[type=date]:focus::-webkit-datetime-edit {
    .profile-doctor1 h1{
       line-height: 58px;
    }
+   .tangiji{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .first-tanji p{
+    text-align: center;
+   }
+}
+
+@media only screen and (max-width:1421px){
+  .educarion{
+    margin-top: 20px;
+  }
+  .expertise{
+    margin-top: 20px;
+  }
+  .profile-doctor2{
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width:408px){
@@ -4790,6 +4901,16 @@ input[type=date]:focus::-webkit-datetime-edit {
   }
   .rdf{
     margin-top: 15px;
+  }
+  .broucher{
+    max-width: 500px;
+    width: 100% !important;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .broucher h3{
+    margin-left: 8px;
   }
 }
 
@@ -4809,6 +4930,10 @@ input[type=date]:focus::-webkit-datetime-edit {
   .broucher h3{
     font-size: 22px;
   }
+}
+
+@media only screen and (max-width:280px){
+
 }
 .card9{
   background-color: #FFFFFF;

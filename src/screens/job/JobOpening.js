@@ -1,34 +1,65 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import CareerBack from './common/CareerBack'
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import CareerBack from './common/CareerBack';
+import jobApi from '../../api/JobApi';
+import { useState } from 'react';
 const JobOpening = () => {
+    const [item,setItem] = useState(jobApi)
+    const handleSearch = () =>{
+        console.log("yes");
+        const items = jobApi.filter((val)=>{
+            if (val.id === item.id){
+                return val;
+            }
+
+        })
+        setItem(items);
+        console.log(items);
+    }
   return (
     <>
     <CareerBack/>
      <div className="carer-section relative">
          <div className="serach-section">
               <div className="search-carer">
-                  <select name="" id="">
+                  <select onChange={(e)=>e.target.value} name="" id="">
                       <option value="">Job Location</option>
+                      {
+                        jobApi.map((val,index)=>{
+                            return  <option key={index} value={val.location}>{val.location}</option>
+                        })
+                      }
                   </select>
               </div>
               <div className="search-carer">
-                  <select name="" id="">
+                  <select onChange={(e)=> e.target.value} name="" id="">
                       <option value="">Professional Areas</option>
+                      {
+                        jobApi.map((val,index)=>{
+                            return <option key={index} value={val.proffessional}>{val.proffessional}</option>
+                        })
+                      }
                   </select>
               </div>
-              <div className="search-carer">
+              {/* <div className="search-carer">
                   <select name="" id="">
                       <option value="">Sub Category</option>
                   </select>
-              </div>
+              </div> */}
               <div className="search-carer">
-                  <select name="" id="">
+                  <select onChange={(e)=> e.target.value} name="" id="">
                       <option value="">Job Title</option>
+                      {
+                        jobApi.map((val,index)=>{
+                            return (
+                                <option key={index} value={val.title}>{val.title}</option>
+                            )
+                        })
+                      }
                   </select>
               </div>
               <div className="search-button">
-                    <button className='sea'>Search</button>
+                    <button onClick={handleSearch} className='sea'>Search</button>
                     <button className='reset'>Reset</button>
               </div>
          </div>
@@ -53,22 +84,29 @@ const JobOpening = () => {
             </tr>
         </thead>
         <tbody>
-            <tr class=" border-b  table-sect1">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    <p>Senior Manager - Finance Accounts</p>
+        {
+            item.map((val,index)=>{
+                return (
+                    <tr key={index} className=" border-b  table-sect1">
+                <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <p>{val.title}</p>
                 </th>
-                <td class="px-6 py-4">
-                    <p>Doctors & Sergeon</p>
+                <td className="px-6 py-4">
+                    <p>{val.proffessional}</p>
                 </td>
-                <td class="px-6 py-4">
-                   <p>Gurugram</p>
+                <td className="px-6 py-4">
+                   <p>{val.location}</p>
                 </td>
-                <td class="px-6 py-4">
-                   <button className=' text-center'>Apply</button>
+                <td className="px-6 py-4">
+                  <NavLink to={`/carer/${val.id}`}> <button className=' text-center'>{val.apply}</button></NavLink>
                 </td>
             </tr>
+                )
+            })
+        }
+           
         
-            <tr class=" border-b  table-sect1">
+            {/* <tr className=" border-b  table-sect1">
                 <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                     <p>Senior Manager - Finance Accounts</p>
                 </th>
@@ -95,7 +133,7 @@ const JobOpening = () => {
                 <td class="px-6 py-4">
                    <button className=' text-center'>Apply</button>
                 </td>
-            </tr>
+            </tr> */}
         </tbody>
     </table>
 </div>
