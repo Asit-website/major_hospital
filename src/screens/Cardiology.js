@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import ApointmentPopup from '../popup/ApointmentPopup'
 import Frame from '../images/Frame.png'
-import hath from '../images/hath.jpg'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import doctorji from '../images/doctorji.png';
 import cardiologyApi from '../api/cardilogiApi';
 import cardio1 from '../images/cardio1.png';
@@ -11,11 +10,11 @@ import cardio4 from '../images/cardio4.png'
 import cardio5 from '../images/cardio5.png'
 const Cardiology = ({ apointPop, setApointPop }) => {
   const [item,setItem] = useState(cardiologyApi);
-  const [visible,setVisible] = useState(3);
+  // const [visible,setVisible] = useState(3);
 
-  const showMoreDoctore = () =>{
-      setVisible((prevValue)=> prevValue + 3);
-  }
+  // const showMoreDoctore = () =>{
+  //     setVisible((prevValue)=> prevValue + 3);
+  // }
   return (
     <>
         <div className="medicine-back medicine-back6">
@@ -27,7 +26,7 @@ const Cardiology = ({ apointPop, setApointPop }) => {
             <div className="about-institute about-int">
                 <div className="institute">
                     <h4>About the Cardiology</h4>
-                    <p>Cardiovascular disease management requires the expertise and experience of an excellent team who harness the knowledge and technology for the best patient outcome. At Center of Diabetes and Allied Sciences (Major), we provide such advanced heart treatment through our experienced team of Cardiologists cardiac surgeons, Technologists, Perfusionists, Physiotherapists and dedicated Cardiac Nurses. Major Hospital Has The Best Cardiologist In Gurgaon. Standard heart surgery is considered as one of the Best Heart Specialist In Gurgaon.</p>
+                    <p>Cardiovascular disease management requires the expertise and experience of an excellent team who harness the knowledge and technology for the best patient outcome. At  Major Hospital, we provide such advanced heart treatment through our experienced team of Cardiologists cardiac surgeons, Technologists, Perfusionists, Physiotherapists and dedicated Cardiac Nurses. Major Hospital Has The Best Cardiologist In Gurgaon. Standard heart surgery is considered as one of the Best Heart Specialist In Gurgaon.</p>
                 </div>
                 <div className="institute-img">
                      <img className='dov-img' src={doctorji} alt="dotor" />
@@ -70,7 +69,7 @@ const Cardiology = ({ apointPop, setApointPop }) => {
                           <h3 className='exy mt-2'>Consult with experienced doctors</h3>
                           <div className="sard">
             {
-              item.slice(0,visible).map(val=>{
+              item.slice(1,4).map(val=>{
                 return(
                   <>
                   <div key={val.id} className="card card1">
@@ -79,8 +78,8 @@ const Cardiology = ({ apointPop, setApointPop }) => {
                    <div className="name-card">
                      <div className="text-card">
                        <h3>{val.name}</h3>
-                       <p>Senior Dental Expert at Major</p>
-                       <p>Hospital Haryana</p>
+                       <p>{val.content}</p>
+                       <p>{val.content1}</p>
                      </div>
                     <div className="viwe-profile">
                         <Link to={`/cardio/${val.id}`}><p>{val.view}</p></Link>
@@ -109,7 +108,7 @@ const Cardiology = ({ apointPop, setApointPop }) => {
               })
             }
             </div> 
-                <p   onClick={showMoreDoctore} className='see_more cursor-pointer'>See More Doctors</p>
+               <NavLink to="/doctors"><p className='see_more cursor-pointer'>See More Doctors</p></NavLink>
                      </div>
                      </div>
                       

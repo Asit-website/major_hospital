@@ -47,7 +47,7 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
           <h2>Book Health Check-Up</h2>
         </div>
       </div>
-
+      
       <div className="filter-group flex items-center py-6">
         <div className="inps-group">
           <div className="second-nsp second-nsp1 flex items-center">
@@ -64,7 +64,7 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
             </select>
           </div>
         </div>
-
+       
         <div className="second-nsp second-nsp1 flex items-center">
           <label for="underline_select" class="sr-only">
             Underline select

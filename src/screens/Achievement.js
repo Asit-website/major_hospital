@@ -6,6 +6,7 @@ import doc2 from '../images/doc2.png'
 import women from '../images/women.png'
 import women1 from '../images/women1.png'
 import btn from '../images/btn.png'
+import { NavLink } from 'react-router-dom';
 const Achievement = () => {
   return (
      <>
@@ -20,10 +21,10 @@ const Achievement = () => {
                 <img src={nurse} alt="" />
             </div>
             <div className="first-iodo first-iodo1">
-                <h2>Our Ideology</h2>
+                <h2>Our Achievements</h2>
                 <h3>Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry</h3>
                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <button>Contact us</button>
+               <NavLink to="/contact"><button>Contact us</button></NavLink>
             </div>
         </div>
 

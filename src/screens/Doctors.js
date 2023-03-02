@@ -4,7 +4,7 @@ import ApointmentPopup from "../popup/ApointmentPopup";
 import { Link } from "react-router-dom";
 import ReactPaginate from "react-paginate";
 const Doctors = ({apointPop,setApointPop}) => {
-    const [item, setItem] = useState(cardiologyApi.slice(0, 16));
+    const [item, setItem] = useState(cardiologyApi.slice(0, 19));
 
   // ===================pagination functionality====================
   const [pageNumber, setPageNumber] = useState(0);
@@ -61,7 +61,7 @@ const Doctors = ({apointPop,setApointPop}) => {
   // ======================serach functionality=================
   const filterBySearch = (event) => {
     const query = event.target.value;
-    var updateList = [...cardiologyApi.slice(0,16)];
+    var updateList = [...cardiologyApi.slice(0,19)];
     updateList = updateList.filter((it) => {
       return it.name.toLowerCase().indexOf(query.toLowerCase()) !== -1;
     });
@@ -72,7 +72,7 @@ const Doctors = ({apointPop,setApointPop}) => {
 
 
   //  ==================sorting by location===============
-  const allCatValues = [...new Set(cardiologyApi.slice(0,16).map((CurrElem) => CurrElem.location))];
+  const allCatValues = [...new Set(cardiologyApi.slice(0,19).map((CurrElem) => CurrElem.location))];
 
   const [catItems , setCatItems] = useState(allCatValues);
 
