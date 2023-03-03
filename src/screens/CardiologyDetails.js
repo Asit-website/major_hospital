@@ -21,110 +21,169 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
 
   const [tabIndex, setTabIndex] = useState(1);
 
+  const [tab,setTab] = useState(1);
+
+  const aruntTab = (e) =>{
+     e.preventDefault();
+     setTab(1);
+     document.querySelector(".www").style.backgroundColor="#FDC91E";
+        document.querySelector(".xxx").style.backgroundColor="#D30806";
+        document.querySelector(".yyy").style.backgroundColor="#D30806";
+        document.querySelector(".zzz").style.backgroundColor="#D30806";
+
+        document.querySelector(".www").style.color="#000000";
+        document.querySelector(".xxx").style.color="#ffffff";
+        document.querySelector(".yyy").style.color="#ffffff";
+        document.querySelector(".zzz").style.color="#ffffff";
+  }
+
+  const aruntTab1 = (e) =>{
+    e.preventDefault();
+    setTab(2);
+     document.querySelector(".www").style.backgroundColor="#D30806";
+    document.querySelector(".xxx").style.backgroundColor="#FDC91E";
+    document.querySelector(".yyy").style.backgroundColor="#D30806";
+    document.querySelector(".zzz").style.backgroundColor="#D30806";
+
+     document.querySelector(".www").style.color="#ffffff";
+        document.querySelector(".xxx").style.color="#000000";
+        document.querySelector(".yyy").style.color="#ffffff";
+        document.querySelector(".zzz").style.color="#ffffff";
+  }
+
+  const aruntTab2 = (e) =>{
+    e.preventDefault();
+    setTab(3);
+     document.querySelector(".www").style.backgroundColor="#D30806";
+    document.querySelector(".xxx").style.backgroundColor="#D30806";
+    document.querySelector(".yyy").style.backgroundColor="#FDC91E";
+    document.querySelector(".zzz").style.backgroundColor="#D30806";
+
+     document.querySelector(".www").style.color="#ffffff";
+        document.querySelector(".xxx").style.color="#ffffff";
+        document.querySelector(".yyy").style.color="#000000";
+        document.querySelector(".zzz").style.color="#ffffff";
+  }
+
+  const aruntTab3 = (e) =>{
+    e.preventDefault();
+    setTab(4);
+    document.querySelector(".www").style.backgroundColor="#D30806";
+    document.querySelector(".xxx").style.backgroundColor="#D30806";
+    document.querySelector(".yyy").style.backgroundColor="#D30806";
+    document.querySelector(".zzz").style.backgroundColor="#FDC91E";
+
+    document.querySelector(".www").style.color="#ffffff";
+        document.querySelector(".xxx").style.color="#ffffff";
+        document.querySelector(".yyy").style.color="#ffffff";
+        document.querySelector(".zzz").style.color="#000000";
+  }
+
+  // =============another==================
   const tabAnother = (e) =>{
         e.preventDefault();
         setTabIndex(1);
-        document.getElementById("abc").style.backgroundColor="#FDC91E";
-        document.getElementById("def").style.backgroundColor="#D30806";
-        document.getElementById("ghi").style.backgroundColor="#D30806";
-        document.getElementById("jkl").style.backgroundColor="#D30806";
-        document.getElementById("mno").style.backgroundColor="#D30806";
-        document.getElementById("pqr").style.backgroundColor="#D30806";
-        document.getElementById("abc").style.color="#000000";
-        document.getElementById("def").style.color="#ffffff";
-        document.getElementById("ghi").style.color="#ffffff";
-        document.getElementById("jkl").style.color="#ffffff";
-        document.getElementById("mno").style.color="#ffffff";
-        document.getElementById("pqr").style.color="#ffffff";
+        document.querySelector(".abc").style.backgroundColor="#FDC91E";
+        document.querySelector(".def").style.backgroundColor="#D30806";
+        document.querySelector(".ghi").style.backgroundColor="#D30806";
+        document.querySelector(".jkl").style.backgroundColor="#D30806";
+        document.querySelector(".mno").style.backgroundColor="#D30806";
+        document.querySelector(".pqr").style.backgroundColor="#D30806";
+        document.querySelector(".abc").style.color="#000000";
+        document.querySelector(".def").style.color="#ffffff";
+        document.querySelector(".ghi").style.color="#ffffff";
+        document.querySelector(".jkl").style.color="#ffffff";
+        document.querySelector(".mno").style.color="#ffffff";
+        document.querySelector(".pqr").style.color="#ffffff";
   }
   const tabAnother1 = (e) =>{
     e.preventDefault();
     setTabIndex(2);
-    document.getElementById("abc").style.backgroundColor="#D30806";
-    document.getElementById("def").style.backgroundColor="#FDC91E";
-    document.getElementById("ghi").style.backgroundColor="#D30806";
-    document.getElementById("jkl").style.backgroundColor="#D30806";
-    document.getElementById("mno").style.backgroundColor="#D30806";
-    document.getElementById("pqr").style.backgroundColor="#D30806";
+    document.querySelector(".abc").style.backgroundColor="#D30806";
+    document.querySelector(".def").style.backgroundColor="#FDC91E";
+    document.querySelector(".ghi").style.backgroundColor="#D30806";
+    document.querySelector(".jkl").style.backgroundColor="#D30806";
+    document.querySelector(".mno").style.backgroundColor="#D30806";
+    document.querySelector(".pqr").style.backgroundColor="#D30806";
 
-    document.getElementById("abc").style.color="#ffffff";
-    document.getElementById("def").style.color="#000000";
-    document.getElementById("ghi").style.color="#ffffff";
-    document.getElementById("jkl").style.color="#ffffff";
-    document.getElementById("mno").style.color="#ffffff";
-    document.getElementById("pqr").style.color="#ffffff";
+    document.querySelector(".abc").style.color="#ffffff";
+    document.querySelector(".def").style.color="#000000";
+    document.querySelector(".ghi").style.color="#ffffff";
+    document.querySelector(".jkl").style.color="#ffffff";
+    document.querySelector(".mno").style.color="#ffffff";
+    document.querySelector(".pqr").style.color="#ffffff";
   }
 
   const tabAnother2 = (e) =>{
     e.preventDefault();
     setTabIndex(3);
-    document.getElementById("abc").style.backgroundColor="#D30806";
-    document.getElementById("def").style.backgroundColor="#D30806";
-    document.getElementById("ghi").style.backgroundColor="#FDC91E";
-    document.getElementById("jkl").style.backgroundColor="#D30806";
-    document.getElementById("mno").style.backgroundColor="#D30806";
-    document.getElementById("pqr").style.backgroundColor="#D30806";
+    document.querySelector(".abc").style.backgroundColor="#D30806";
+    document.querySelector(".def").style.backgroundColor="#D30806";
+    document.querySelector(".ghi").style.backgroundColor="#FDC91E";
+    document.querySelector(".jkl").style.backgroundColor="#D30806";
+    document.querySelector(".mno").style.backgroundColor="#D30806";
+    document.querySelector(".pqr").style.backgroundColor="#D30806";
 
-    document.getElementById("abc").style.color="#ffffff";
-    document.getElementById("def").style.color="#ffffff";
-    document.getElementById("ghi").style.color="#000000";
-    document.getElementById("jkl").style.color="#ffffff";
-    document.getElementById("mno").style.color="#ffffff";
-    document.getElementById("pqr").style.color="#ffffff";
+    document.querySelector(".abc").style.color="#ffffff";
+    document.querySelector(".def").style.color="#ffffff";
+    document.querySelector(".ghi").style.color="#000000";
+    document.querySelector(".jkl").style.color="#ffffff";
+    document.querySelector(".mno").style.color="#ffffff";
+    document.querySelector(".pqr").style.color="#ffffff";
   }
 
   const tabAnother3 = (e) =>{
     e.preventDefault();
     setTabIndex(4);
-    document.getElementById("abc").style.backgroundColor="#D30806";
-    document.getElementById("def").style.backgroundColor="#D30806";
-    document.getElementById("ghi").style.backgroundColor="#D30806";
-    document.getElementById("jkl").style.backgroundColor="#FDC91E";
-    document.getElementById("mno").style.backgroundColor="#D30806";
-    document.getElementById("pqr").style.backgroundColor="#D30806";
+    document.querySelector(".abc").style.backgroundColor="#D30806";
+    document.querySelector(".def").style.backgroundColor="#D30806";
+    document.querySelector(".ghi").style.backgroundColor="#D30806";
+    document.querySelector(".jkl").style.backgroundColor="#FDC91E";
+    document.querySelector(".mno").style.backgroundColor="#D30806";
+    document.querySelector(".pqr").style.backgroundColor="#D30806";
 
-    document.getElementById("abc").style.color="#ffffff";
-    document.getElementById("def").style.color="#ffffff";
-    document.getElementById("ghi").style.color="#ffffff";
-    document.getElementById("jkl").style.color="#000000";
-    document.getElementById("mno").style.color="#ffffff";
-    document.getElementById("pqr").style.color="#ffffff";
+    document.querySelector(".abc").style.color="#ffffff";
+    document.querySelector(".def").style.color="#ffffff";
+    document.querySelector(".ghi").style.color="#ffffff";
+    document.querySelector(".jkl").style.color="#000000";
+    document.querySelector(".mno").style.color="#ffffff";
+    document.querySelector(".pqr").style.color="#ffffff";
   }
 
   const tabAnother4 = (e) =>{
     e.preventDefault();
     setTabIndex(5);
-    document.getElementById("abc").style.backgroundColor="#D30806";
-    document.getElementById("def").style.backgroundColor="#D30806";
-    document.getElementById("ghi").style.backgroundColor="#D30806";
-    document.getElementById("jkl").style.backgroundColor="#D30806";
-    document.getElementById("mno").style.backgroundColor="#FDC91E";
-    document.getElementById("pqr").style.backgroundColor="#D30806";
+    document.querySelector(".abc").style.backgroundColor="#D30806";
+    document.querySelector(".def").style.backgroundColor="#D30806";
+    document.querySelector(".ghi").style.backgroundColor="#D30806";
+    document.querySelector(".jkl").style.backgroundColor="#D30806";
+    document.querySelector(".mno").style.backgroundColor="#FDC91E";
+    document.querySelector(".pqr").style.backgroundColor="#D30806";
 
-    document.getElementById("abc").style.color="#ffffff";
-    document.getElementById("def").style.color="#ffffff";
-    document.getElementById("ghi").style.color="#ffffff";
-    document.getElementById("jkl").style.color="#ffffff";
-    document.getElementById("mno").style.color="#000000";
-    document.getElementById("pqr").style.color="#ffffff";
+    document.querySelector(".abc").style.color="#ffffff";
+    document.querySelector(".def").style.color="#ffffff";
+    document.querySelector(".ghi").style.color="#ffffff";
+    document.querySelector(".jkl").style.color="#ffffff";
+    document.querySelector(".mno").style.color="#000000";
+    document.querySelector(".pqr").style.color="#ffffff";
   }
 
   const tabAnother5 = (e) =>{
     e.preventDefault();
     setTabIndex(6);
-    document.getElementById("abc").style.backgroundColor="#D30806";
-    document.getElementById("def").style.backgroundColor="#D30806";
-    document.getElementById("ghi").style.backgroundColor="#D30806";
-    document.getElementById("jkl").style.backgroundColor="#D30806";
-    document.getElementById("mno").style.backgroundColor="#D30806";
-    document.getElementById("pqr").style.backgroundColor="#FDC91E";
+    document.querySelector(".abc").style.backgroundColor="#D30806";
+    document.querySelector(".def").style.backgroundColor="#D30806";
+    document.querySelector(".ghi").style.backgroundColor="#D30806";
+    document.querySelector(".jkl").style.backgroundColor="#D30806";
+    document.querySelector(".mno").style.backgroundColor="#D30806";
+    document.querySelector(".pqr").style.backgroundColor="#FDC91E";
 
-    document.getElementById("abc").style.color="#ffffff";
-    document.getElementById("def").style.color="#ffffff";
-    document.getElementById("ghi").style.color="#ffffff";
-    document.getElementById("jkl").style.color="#ffffff";
-    document.getElementById("mno").style.color="#ffffff";
-    document.getElementById("pqr").style.color="#000000";
+    document.querySelector(".abc").style.color="#ffffff";
+    document.querySelector(".def").style.color="#ffffff";
+    document.querySelector(".ghi").style.color="#ffffff";
+    document.querySelector(".jkl").style.color="#ffffff";
+    document.querySelector(".mno").style.color="#ffffff";
+    document.querySelector(".pqr").style.color="#000000";
   }
 
   return (
@@ -132,7 +191,8 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
     {
       details.map((val,index)=>{
         return(
-          <div className="aruniti" key={index}>
+          <div>
+          <div className={`aruniti ${val.fg}`} key={index}>
           <div>
           <div className="tangiji flex items-start justify-between">
               <div className="first-tanji">
@@ -168,10 +228,6 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
                    </ul>
                </div>
                <div className="profile-doctor2">
-                     {/* <div className="broucher">
-                         <img src={broucher} alt="broucher" />
-                          <h3>Hospital Brochure</h3>
-                     </div> */}
                      <div className="get-in-touch">
                          <h3>Get in touch with us</h3>
                          <p className="fhi">Consult our Experts to get best of the care. To book an appointment, please call:</p>
@@ -185,15 +241,15 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
                </div>
           </div>
           <div className="group-detail-btn">
-                       <button id="abc" onClick={tabAnother} className="qualiy">Experience</button>
-                       <button id="def" onClick={tabAnother1} className="ml-3">Post MBBS</button>
-                       <button id="ghi" onClick={tabAnother2} className="ml-3">Ongoing Training</button>
-                       <button id="jkl" onClick={tabAnother3} className="ml-3">Awards & Achievements</button>
+                       <button  onClick={tabAnother} className="qualiy abc">Experience</button>
+                       <button  onClick={tabAnother1} className="ml-3 def">Post MBBS</button>
+                       <button  onClick={tabAnother2} className="ml-3 ghi">Ongoing Training</button>
+                       <button  onClick={tabAnother3} className="ml-3 jkl">Awards & Achievements</button>
                    </div>
                    <div className="group-detail-btn group-details-btn">
                        
-                       <button id="mno" onClick={tabAnother4} className="">Participations</button>
-                       <button id="pqr" onClick={tabAnother5} className="ml-3">Philanthropy</button>
+                       <button  onClick={tabAnother4} className="mno">Participations</button>
+                       <button  onClick={tabAnother5} className="ml-3 pqr">Philanthropy</button>
                        
                    </div>
           </div>
@@ -550,6 +606,253 @@ const CardiologyDetails = ({apointPop,setApointPop}) => {
                </div>
           </div> */}
       </div>
+
+      <div className={`aruniti ${val.gh}`} key={val.id}>
+          <div>
+          <div className="tangiji flex items-start justify-between">
+              <div className="first-tanji">
+              <h1>{val.name}</h1>
+                   <p>{val.content}</p>
+                   <div className="hod"></div>
+              </div>
+              <div className="second-tanji">
+              <div className="broucher">
+                         <img src={broucher} alt="broucher" />
+                          <h3>Hospital Brochure</h3>
+                     </div>
+              </div>
+          </div>
+          <div className="profile-doctor">
+               <div className="profile-doctor1">
+                   <div className=" text-right">
+                   <img src={val.images} alt="images" />
+                   </div>
+               </div>
+               {/* <div className="educarion">
+                  <h2>Education</h2>
+                  <ul>
+                    <li>Completed MBBS Degree with Rotation Internship from MKCG Medical College and Hospital, a 700 Bedded hospital in Berhampur, Odisha (1990-1995)</li>
+                  </ul>
+               </div>
+               <div className="expertise">
+                   <h2>Area of Expertise</h2>
+                   <ul>
+                    <li>Diabetes management</li>
+                    <li>Thyroid disorder</li>
+                    <li>Obesity & related disorder</li>
+                   </ul>
+               </div> */}
+               <div className="profile-doctor2">
+                     <div className="get-in-touch">
+                         <h3>Get in touch with us</h3>
+                         <p className="fhi">Consult our Experts to get best of the care. To book an appointment, please call:</p>
+                         <div className=" flex justify-center mt-7">
+                         <div className="contact-kar">
+                             <img src={phone} alt="phone" />
+                             <p>1800 8333 238</p>
+                         </div>
+                         </div>
+                     </div>
+               </div>
+          </div>
+          <div className="group-detail-btn">
+                       <button  onClick={aruntTab} className="qualiy abc www">Qualifications</button>
+                       <button  onClick={aruntTab1} className="ml-3 xxx def">Clinical Experience</button>
+                       <button  onClick={aruntTab2} className="ml-3 yyy ghi">Research & Papers</button>
+                       <button  onClick={aruntTab3} className="ml-3 zzz jkl">Awards & Achievements</button>
+                   </div>
+                   {/* <div className="group-detail-btn group-details-btn">
+                       
+                       <button id="mno" onClick={tabAnother4} className="">Participations</button>
+                       <button id="pqr" onClick={tabAnother5} className="ml-3">Philanthropy</button>
+                       
+                   </div> */}
+          </div>
+          <div className="profil-information">
+          <div>
+              <div className="profile-information1">
+                   <div className="ul">
+                      {
+                        tab === 1 && (
+                          <ul>
+                      <li>Completed MBBS Degree (1990-1995) with one year Rotating Internship (1995- 1996) from MKCG Medical College and Hospital, a 700 Bedded hospital in Berhampur, Orissa</li>
+
+                         <li>Comprehensive hands-on training in the Department of Pathology in All India Institute of Medical Sciences, New Delhi (2600 Bedded Apex Tertiary care institute) from 1997 to 1998</li>
+                         <li>Intensive clinical training including OT (operation theatre) and ICU exposure in the Department of Anaesthesiology in All India Institute of Medical Sciences, New Delhi (2600 Bedded Apex Tertiary care institute) in 1998</li>
+                         <li>Clinical and surgical training in the Department of Surgery in Lady Hardinge Medical College & Sucheta Kripalani Hospital, New Delhi (600 Bedded Apex Tertiary care institute) from 1998 to 1999</li>
+                         <li>
+                         Comprehensive training leading to independent patient handling and participation in clinical trials in Department of Psychiatry in Vidyasagar Institute of Mental Health and Neurosciences, New Delhi (250 Bedded Tertiary care institute) from 1999 to 2001
+                         </li>
+                         <li>
+                         Comprehensive Surgical and Clinical Training (DNB) in Ophthalmology in Venu Eye Institute arid Research Centre, New Delhi (200 Bedded Tertiary care institute with 5 secondary care satellite hospitals and 13 primary vision centers) from 2002 to 2005
+                         </li>
+                         <li>
+                         Fellowship course in Low Vision Assessment and Prescription in Venu Eye Institute in 2005
+                         </li>
+                         <li>
+                         Extensive training in Eye Bank procedures from 2003 to 2006 that involved sensitization of people to Eye Donation, collection of eyeballs from deceased donors, cold-chain transport to eye bank, harvesting, processing and grading of tissue
+                         </li>
+                         <li>
+                         Comprehensive Surgical and Administrative work experience as Second in charge Ophthalmic surgeon in Dhankot Hospital, a secondary level satellite hospital of Venu Eye Institute and Research Centre in 2006
+                         </li>
+                         <li>
+                         Experience in setting up Eye clinic and Daycare Operative unit as Consultant Ophthalmologist and Surgeon in Lifeline Healthcare Hospital, Gurgaon in 2006
+                         </li>
+                      </ul>
+                        )
+                      }
+
+                      {
+                        tab === 2 && (
+                          <ul>
+                      <li>
+                      My present area of interest and expertise is in the field of Ophthalmology both clinical and surgical. I had logged more than 5000 successful surgeries by the time I completed my training in Ophthalmology in 2005. Since 2007 I have practiced independently associated with various Hospitals such as Lifeline Healthcare, Lall Eye Hospital, Centre for Sight, Arunodaya Deseret as visiting Consultant Ophthalmologist. I have also spearheaded setting up of the Eye Units at some of these places. I am also an accredited Assessor by Quality Council of India (QCI) and have inspected various Hospitals for continued and new empanelment with CGHS. Currently I am consultant in charge of the Ophthalmology unit of KP Spandan Clinic and Diagnostics.
+                      </li>
+                         <li>
+                         I follow evidence and protocol-based guidelines in my clinical practice and surgical procedures. I am competent in diagnosing and suggesting management of a wide range of ophthalmological conditions including cataract, glaucoma, corneal, conjunctival, retinal and extraocular pathologies. I am actively involved in screening and treating the patients with Diabetic Eye Diseases in KP Spandan. The ophthalmology unit of KP Spandan is well equipped with all the diagnostic equipment such as slit lamp, applanation tonometer, gonioscope, direct and indirect ophthalmoscopes, retinoscope, refraction unit with contrast and colour vision assessment and mydriatic and non mydriatic fundoscope with camera to name a few.
+                         </li>
+
+                         <li>
+                         Our Eye unit in KP Spandan is equipped to handle minor OPD procedures such as corneal foreign body removal. For additional day-care procedures such as YAG capsulotomy and iridotomy, FFA, OCT, Humphrey visual field assessment, PRP of retina and AntiVEGF intravitreal injection I currently take my patients to various hospitals in Gurgaon where I have independent procedure rights.
+                         </li>
+                         <li>
+                         For Surgical procedures I currently have operation rights as visiting surgeon in many Hospitals in Gurgaon. I am competent in usual ophthalmological surgeries including Microincision cataract surgery with foldable IOL through Phacoemulsification, Trabeculectomy, Pterygium excision and conjunctiva! autograft, Nasolacrymal duct surgeries, corneoscleral tear repair and lid surgeries with good post surgical results.
+                         </li>
+                         <li>
+                         I also have a competent ophthalmic referral system in place with my fellow ophthalmologists to handle cases that require further specialised care like retina surgery.
+                         </li>
+                         <li>
+                         Presently I am a successful Ophthalmologist practicing along with my husband Dr. T. Rajdev Patro in our organisation by the name KP SPANDAN CLINIC AND DIAGNOSTICS, since June 2008. We cater to around 7 lakh population of Gurgaon City. I am especially popular for ophthalmic diagnosis and management of young children and elderly who are usually uncooperative for examination elsewhere.
+                         </li>
+                         <li>
+                         Additionally I also look after the Administration of KP Spandan Clinic and Diagnostics including processes and protocols, staff coordination, patient interaction and Visiting Doctor relations.
+                         </li>
+                      </ul>
+                        )
+                      }
+
+                      {
+                        tab === 3 && (
+                          <ul>
+                      <li>
+                      Co-investigator in an International, Double-blind, Placebo-controlled clinical drug trial for patients with Acute Mania from 2000 to 2001
+                      </li>
+                         <li>
+                         Thesis submitted and accepted in 2005 titled – “Study of astigmatism in two-point Scleral fixated Posterior chamber intraocular lens implants.”
+                         </li>
+
+                         <li>
+                         Conducted a study comparing Tonoscreen-20, an experimental device to measure intraocular pressure, with Goldmann applanation tonometry in 2006
+                         </li>
+                         <li>
+                         Participated in Pre Congress CME program on Child and Maternal Health under the aegis of FOGS! at Pune in 1996
+                         </li>
+                         <li>
+                         Participated and contributed to scientific deliberations in 50th Annual Conference of Otolaryngologists at New Delhi in 1998
+                         </li>
+                         <li>
+                         Presented Free Paper on Impact of Malnutrition on Pregnant Women and Fetus at All Orissa Conference of Obstetrics and Gynecology at Rourkela in 1998
+                         </li>
+                         <li>
+                         Participated and contributed to Workshop on Reproductive and Child Health Care at Rourkela, Orissa, in 1999
+                         </li>
+                         <li>Participated in 51st Annual Conference Association of Otolaryng’ologists of India at Guwahati, Assam in 1999</li>
+                         <li>Presented a free paper at The National Conference of Indian Association of Surgical Oncology held from 15th -17th September 2000 at Puri, Orissa</li>
+                         <li>Presented paper titled “Psychological changes in patients suffering from chronic sinusitis” at 52nd Annual Conference of Association of Otolaryngologists held at Cochin on 7th January 2000</li>
+
+                         <li>Presented paper on Prevalence and Prevention of Rhinosporidiosis at Annual Conference of Otolaryngologists of India, Orissa State Branch at Cuttack, Orissa in 2001</li>
+                         <li>Delivered Lectures on “Panic Disorder”, Attention Deficit Hyperactivity Disorder” and “Alcohol Dependence” in The Third Orientation Course in Clinical Psychiatry and Allied Behavioral Sciences For Family Physicians at New Delhi in 2001</li>
+                         <li>Participated in Expressions 2001, a school based pilot project on holistic health and was part of panel discussion on Contemporary Global Perspectives on Child and Adolescent Aggression at VIMHANS, New Delhi in 2001</li>
+                         <li>Presented Paper with poster presentation on a new technique for screening intraocular pressure at XVth Annual Conference of Glaucoma Society of India, at Ahmedabad, December 2005</li>
+                         <li>Actively involved in Teaching programs for students of 3 year Optometry Degree courses at Venu Eye Institute and Research Centre from 2002 to 2006</li>
+                         <li>Participated as Delegate cum Faculty member in Conference for Genital Tuberculosis & Infertility at Southend Fertility and IVF Centre, New Delhi in 2012</li>
+                         <li>Delegate and active participant in Annual and Mid-term conferences of Delhi Ophthalmological Society (DOS) 2002 onwards till date</li>
+                      </ul>
+                        )
+                      }
+
+                      {
+                        tab === 4 && (
+                          <ul>
+                      <li>
+                      LIFE Member Award for IMACGP, India
+                      </li>
+                         <li>
+                         LIFE MEMBER AWARD from Red Cross Society of India for Blood Donation and Lifesaving activities
+                         </li>
+
+                         <li>
+                         Awarded by Impact India Foundation, An International Initiative Against Avoidable Disablement promoted by UNDP, UNICEF and WHO for rendering voluntary services to The Lifeline Express, the world’s first Hospital on a train
+                         </li>
+                         <li>
+                         Awarded by Village Panchayat of Palra, Gurgaon for Organizing Child Eye Screening Program
+                         </li>
+                         <li>
+                         Awarded by Seva Bharti Gurugram for continued support to Eye Camp for underprivileged in the urban slums in and around Gurgaon
+                         </li>
+                         <li>
+                         Life Member of Delhi Ophthalmological Society
+                         </li>
+                         <li>Advisor to Nazar Nawaz Charitable Eye Foundation and Hospital in Nuh, Mewat Dist. Haryan</li>
+                      </ul>
+                        )
+                      }
+                   </div>
+              </div>
+              <div className="doctor-contact1">
+                 <h2>Contact Details</h2>
+                 <div className="doctor-number flex items-start justify-between">
+                    <div className="numberji mt-4">
+                     <div className="number flex items-center">
+                         <img src={phonebhai} alt="" />
+                         <p>1800 8333 238</p>
+                     </div>
+                     <div className="number flex items-center mt-2">
+                         <img src={emailbhai} alt="" />
+                         <p>info@localhost</p>
+                     </div>
+                     </div>
+                     <div className="locat flex items-start">
+                        <img src={locbhai} alt="" />
+                        <p>Plot # 1Malibu TowneSector - 47, Gurugram</p>
+                     </div>
+                     <div className="social-p">
+                       <h4>Social Profiles</h4>
+                       <div className="img-flex mt-4 flex items-center justify-center">
+                          <img src={fbbhai} alt="" />
+                          <img className="ins" src={insbhai} alt="" />
+                          <img className="ins" src={twitbhai} alt="" />
+                          <img className="ins" src={linkbhai} alt="" />
+                       </div>
+                     </div>
+                 </div>
+               </div>
+          </div>
+              <div>
+              <div className="profile-information2">
+                   <p>I had gall bladder problem & also borderline sugar issues. I consulted few doctors in Gwalior, had undergone various treatments but was not satisfied. A friend told me about Dr. Patro and I thought of second opinion. Hence, I came to Delhi to consult Dr. Patro at Major. Dr. Patro is very compassionate & he heard all my daily struggles. I am impressed with the way Major team handled my problem, help me in getting better & changing my approach towards my lifestyle. Major Hospital provides the Best Treatment For Diabetes In India. All staff at Major are very helpful & dedicated to their work. I never felt that I am a patient here, but always felt like friend, or like a member of family.</p>
+                   <img className=" float-right kota" src={kota} alt="" />
+              </div>
+                 <div className="deepak1 mt-4">
+                 <p className="deepak">Mr. Deepak Jain</p>
+                 <p className="deepak">LIC Agent, Gwalior</p>
+                 </div>
+                 <div className="doctor-contact3">
+               <div className="doctor-contact2">
+                  <p>Major has helped me in dealing with my diabetes & the kind of attention they have shown, I am amazed. Now I know how to deal with my diabetes & this has changed my life completely.</p>
+               </div>
+
+               <div className="deepak1 mt-4">
+                 <p className="deepak">Bindu Gupta</p>
+                 <p className="deepak">House Wife,, Gurugram</p>
+                 </div>
+
+               </div>
+              </div>
+          </div>
+      </div>
+        </div>
+      
         )
       })
     }

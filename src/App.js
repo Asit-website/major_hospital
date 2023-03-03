@@ -33,6 +33,7 @@ import Cornary from './screens/treatMent/Cornary';
 import LabTest from './screens/treatMent/LabTest';
 import Doctors from './screens/Doctors';
 import Query from './components/Query';
+import HealthCheckupDetails from './screens/HealthCheckupDetails';
 function App() {
   const [apointPop,setApointPop] = useState(false);
   const [registerPop,setRegisterPop] = useState(false);
@@ -47,6 +48,7 @@ function App() {
           <Route path='/cardio' element={<Cardiology apointPop={apointPop} setApointPop={setApointPop}/>}/>
           <Route  path='/cardio/:id' element={<CardiologyDetails apointPop={apointPop} setApointPop={setApointPop}/>}/>
           <Route path='/health' element={<HealthCheckup apointPop={apointPop} setApointPop={setApointPop}/>}/>
+          <Route path='/health/:id' element={<HealthCheckupDetails/>}/>
           <Route path='/iodolgy' element={<Iodology/>}/>
           <Route path='/acheive' element={<Achievement/>}/>
           <Route path='/medicine' element={<InternalMedicine apointPop={apointPop} setApointPop={setApointPop}/>}/>
@@ -76,6 +78,7 @@ function App() {
           <Route path='/doctors' element={<Doctors apointPop={apointPop} setApointPop={setApointPop}/>}/>
 
           <Route path='/query/:q'  element={<Query apointPop={apointPop} setApointPop={setApointPop} />} />
+
       </Routes>
       <Footer apointPop={apointPop} setApointPop={setApointPop}/>
     </Router>

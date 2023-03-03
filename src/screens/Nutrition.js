@@ -1,9 +1,8 @@
 import React,{useState} from 'react'
 import ApointmentPopup from '../popup/ApointmentPopup'
-import btn from '../images/btn.png'
 import Frame from '../images/Frame.png'
 import hath from '../images/hath.jpg'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import nutrition1 from '../images/nutratrion1.png';
 import nutrition3 from '../images/nutration3.png';
 import cardiologyApi from '../api/cardilogiApi';
@@ -12,11 +11,11 @@ import mango1 from '../images/mango1.png'
 import mango2 from '../images/mango2.png'
 const Nutrition = ({apointPop,setApointPop}) => {
     const [item,setItem] = useState(cardiologyApi);
-    const [visible,setVisible] = useState(3);
+    // const [visible,setVisible] = useState(3);
 
-    const showMoreDoctore = () =>{
-        setVisible((prevValue)=> prevValue + 3);
-    }
+    // const showMoreDoctore = () =>{
+    //     setVisible((prevValue)=> prevValue + 3);
+    // }
   return (
      <>
             <div className="medicine-back medicine-back1">
@@ -77,7 +76,7 @@ const Nutrition = ({apointPop,setApointPop}) => {
                           <h3 className='exy mt-2'>Consult with experienced doctors</h3>
                           <div className="sard">
             {
-              item.slice(0,visible).map(val=>{
+              item.slice(19,22).map(val=>{
                 return(
                   <>
                   <div key={val.id} className="card card1">
@@ -117,14 +116,13 @@ const Nutrition = ({apointPop,setApointPop}) => {
               })
             }
             </div> 
-                <p   onClick={showMoreDoctore} className='see_more cursor-pointer'>See More Doctors</p>
+               <NavLink to="/doctors"><p className='see_more cursor-pointer'>See More Doctors</p></NavLink>
                      </div>
                      </div>
                       
             </div>
 
             <div className='our-blogs our-blogs2 py-2  px-10'>
-              
               <h2 className='text-center text-3xl font-bold gast'>Nutrition Services Blogs</h2>
               <p className='stays text-center'>Stay up to date with our most recent news and updates</p>
 

@@ -12,7 +12,8 @@ const cardiologyApi = [
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
         location:"delhi",
-        images2:"image/patro.png"
+        images2:"image/patro.png",
+        gh:"gh"
     },
     {
         id:"2",
@@ -26,7 +27,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/untar.png"],
         appoint:"Book an Appointment",
-        location:"delhi"
+        location:"delhi",
+        gh:"gh"
     },
     {
         id:"3",
@@ -40,7 +42,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/half.png"],
         appoint:"Book an Appointment",
-        location:"haryana"
+        location:"haryana",
+        gh:"gh"
     },
     {
         id:"4",
@@ -54,7 +57,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"haryana"
+        location:"haryana",
+        gh:"gh"
     },
     {
         id:"5",
@@ -68,7 +72,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"mumbai"
+        location:"mumbai",
+        gh:"gh"
     },
     {
         id:"6",
@@ -82,7 +87,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"mumbai"
+        location:"mumbai",
+        gh:"gh"
     },
 
     {
@@ -97,7 +103,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"mumbai"
+        location:"mumbai",
+        gh:"gh"
     },
     {
         id:"8",
@@ -111,7 +118,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"mumbai"
+        location:"mumbai",
+        gh:"gh"
     },
     {
         id:"9",
@@ -125,7 +133,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"haryana"
+        location:"haryana",
+        gh:"gh"
     },
     {
         id:"10",
@@ -139,12 +148,13 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"mumbai"
+        location:"mumbai",
+        gh:"gh",
     },
     {
         id:"11",
-        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283442/asit/dr3_rj35lo.png",
-        name:"Dr. Mahi Sharma",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1677849716/arun_yxrqae.png",
+        name:"Dr. Arundhati Kar",
         content:"Senior Ophthalmology Expert at Major",
         content1:"Hospital Haryana",
         view:"View Profile",
@@ -153,7 +163,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"haryana",
+        location:"Gurugram",
+        fg:"fg"
     },
     {
         id:"12",
@@ -167,7 +178,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"mumbai"
+        location:"mumbai",
+        gh:"gh"
     },
     {
         id:"13",
@@ -181,7 +193,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"mumbai"
+        location:"mumbai",
+        gh:"gh"
     },
     {
         id:"14",
@@ -195,7 +208,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"mumbai"
+        location:"mumbai",
+        gh:"gh"
     },
     {
         id:"15",
@@ -209,7 +223,8 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"haryana"
+        location:"haryana",
+        gh:"gh",
     },
     {
         id:"16",
@@ -223,50 +238,100 @@ const cardiologyApi = [
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"mumbai"
+        location:"mumbai",
+        gh:"gh"
     },
 
     {
         id:"17",
         images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283436/asit/dr1_byfydh.png",
         name:"Dr. Rohan Sharma",
-        content:"Senior Cardiology Expert at Major",
+        content:"Senior Physiotherapy Expert at Major",
         content1:"Hospital Haryana",
         view:"View Profile",
-        information:"Associate Director Cardiology",
+        information:"Associate Director Physiotherapy",
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/untar.png"],
         appoint:"Book an Appointment",
-        location:"delhi"
+        location:"delhi",
+        gh:"gh"
     },
     {
         id:"18",
         images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283355/asit/dr_i9c19c.png",
         name:"Dr. Mahi Rawat",
-        content:"Senior Cardiology Expert at Major",
+        content:"Senior Physiotherapy Expert at Major",
         content1:"Hospital Haryana",
         view:"View Profile",
-        information:"Associate Director Cardiology",
+        information:"Associate Director Physiotherapy",
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/half.png"],
         appoint:"Book an Appointment",
-        location:"haryana"
+        location:"haryana",
+        gh:"gh"
     },
     {
         id:"19",
         images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283436/asit/dr1_byfydh.png",
         name:"Dr. Rohan Sharma",
-        content:"Senior Cardiology Expert at Major",
+        content:"Senior Physiotherapy Expert at Major",
         content1:"Hospital Haryana",
         view:"View Profile",
-        information:"Associate Director Cardiology",
+        information:"Associate Director Physiotherapy",
         informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
         informationCont1:"(VIETNAM), FESC.",
         image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
         appoint:"Book an Appointment",
-        location:"haryana"
+        location:"haryana",
+        gh:"gh"
+    },
+
+    {
+        id:"20",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283436/asit/dr1_byfydh.png",
+        name:"Dr. Rohan Sharma",
+        content:"Senior Nutrition  Expert at Major",
+        content1:"Hospital Haryana",
+        view:"View Profile",
+        information:"Associate Director Nutrition Services",
+        informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
+        informationCont1:"(VIETNAM), FESC.",
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/untar.png"],
+        appoint:"Book an Appointment",
+        location:"delhi",
+        gh:"gh"
+    },
+    {
+        id:"21",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283355/asit/dr_i9c19c.png",
+        name:"Dr. Mahi Rawat",
+        content:"Senior Nutrition  Expert at Major",
+        content1:"Hospital Haryana",
+        view:"View Profile",
+        information:"Associate Director Nutrition Services",
+        informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
+        informationCont1:"(VIETNAM), FESC.",
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/half.png"],
+        appoint:"Book an Appointment",
+        location:"haryana",
+        gh:"gh"
+    },
+    {
+        id:"22",
+        images:"https://res.cloudinary.com/ecommerce-website/image/upload/v1675283436/asit/dr1_byfydh.png",
+        name:"Dr. Rohan Sharma",
+        content:"Senior Nutrition  Expert at Major",
+        content1:"Hospital Haryana",
+        view:"View Profile",
+        information:"Associate Director Nutrition Services",
+        informationCont:"MBBS, MD, DM, FSCAI, FIC(USA), FPD (MICHIGAN USA), FPI",
+        informationCont1:"(VIETNAM), FESC.",
+        image1:["image/vect.png","image/vect.png","image/vect.png","image/vect.png","image/vect.png"],
+        appoint:"Book an Appointment",
+        location:"haryana",
+        gh:"gh"
     },
     
 ]
