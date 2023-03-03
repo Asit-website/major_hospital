@@ -4998,5 +4998,9 @@ input[type=date]:focus::-webkit-datetime-edit {
   width: auto;
   border-radius: 25px;
 }
-
-
+.vid-pause{
+  filter: brightness(0.5);  
+}
+.invert1{
+  filter: invert(1) !important;
+}
