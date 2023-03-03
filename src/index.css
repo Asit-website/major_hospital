@@ -818,6 +818,9 @@ max-width: 100%;
   justify-content: space-between;
   margin-top: 20px;
 }
+.paisa-btn{
+  margin-top: 20px;
+}
 .health-btn .know_more{
   width: 150px;
   background-color: #FDC91E;
@@ -841,6 +844,12 @@ max-width: 100%;
 .health-sox{
   padding: 15px;
 }
+.paisa-logo p{
+  color: #222F3E;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
 .para-he{
   margin-top: 3px;
 }
@@ -854,6 +863,55 @@ max-width: 100%;
 .systen:hover.tigh{
   display: flex;
   cursor: pointer;
+}
+.health-details-back{
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 38vh;
+  background-image: url('./images/pixel.png'), radial-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: darken;
+  margin: 0px 80px;
+  margin-top: 160px;
+}
+.health-det-sect{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.health-det-sect h2{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 48px;
+  color: #ffffff;
+  line-height: 50px;
+}
+.halth-detail{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 40px 80px;
+}
+.halth-detail p{
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+.table tr{
+  border-style: hidden;
+  width: 50%;
+  float: left;
+}
+.fg{
+  display: none;
+}
+.gh{
+  display: none;
 }
 /* ==================end=========================== */
 
@@ -4569,20 +4627,20 @@ input[type=date]:focus::-webkit-datetime-edit {
   margin-left: 40px;
   margin-top: 30px;
 }
-#abc{
-  padding: 12px 48px;
+.abc{
+  padding: 12px 48px !important;
 }
-#def{
-  padding: 12px 50px;
+.def{
+  padding: 12px 50px !important;
 }
-#ghi{
-  padding: 12px 35px;
+.ghi{
+  padding: 12px 35px !important;
 }
-#mno{
-  padding: 12px 35px;
+.mno{
+  padding: 12px 35px !important;
 }
-#pqr{
-  padding: 12px 32px;
+.pqr{
+  padding: 12px 32px !important;
 }
 .group-details-btn{
   margin-top: -14px;

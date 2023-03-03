@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import HealthCheckupApi from "../api/HealthCheckupApi";
 import ApointmentPopup from "../popup/ApointmentPopup";
+import roju from '../images/roju.png';
+import { NavLink } from "react-router-dom";
 const HealthCheckup = ({ apointPop, setApointPop }) => {
   const [health, setHealth] = useState(HealthCheckupApi);
 
@@ -44,7 +46,7 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
     <>
       <div className="cardio-back cardio-check">
         <div className="cardio-sect">
-          <h2>Book Health Check-Up</h2>
+          <h2>Preventive Health - Checkup</h2>
         </div>
       </div>
       
@@ -87,7 +89,7 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
             return (
               <React.Fragment key={index}>
                 <div className="health-box">
-                  <div className={`off ${val.off1}`}>
+                  <div className={`off`}>
                     <p>
                       {val.percentage} <br /> {val.percentage1}
                     </p>
@@ -97,10 +99,20 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
                     <h2>{val.advance}</h2>
                     <div className="para-he">
                       <p>{val.range}</p>
-                      <p>{val.willness}</p>
+                      {/* <p>{val.willness}</p> */}
                     </div>
+                     <div className="paisa-btn flex items-center justify-between">
+                        <div className="paisa-logo flex items-center">
+                           <img width={13} height={13} src={roju} alt="roju" />
+                           <p className="ml-1">{val.dis}</p>
+                        </div>
+                        <div className="paisa-logo flex items-center">
+                           <img width={13} height={13} src={roju} alt="roju" />
+                           <p className="ml-1">{val.dis1}</p>
+                        </div>
+                     </div>
                     <div className="health-btn">
-                      <button className="know_more">{val.know}</button>
+                     <NavLink to={`/health/${val.id}`}><button className="know_more">{val.know}</button></NavLink>
                       <button
                         onClick={() => setApointPop(true)}
                         className="book_more"

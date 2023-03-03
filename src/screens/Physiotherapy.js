@@ -71,8 +71,8 @@ On the off chance that you’ve ever been in an auto collision or experienced a 
                         <div className="name-card">
                           <div className="text-card">
                             <h3>{val.name}</h3>
-                            <p>Senior Dental Expert at Major</p>
-                            <p>Hospital Haryana</p>
+                            <p>{val.content}</p>
+                            <p>{val.content1}</p>
                           </div>
                           <div className="viwe-profile">
                             <Link to={`/cardio/${val.id}`}>
