@@ -3,11 +3,12 @@ import HealthCheckupApi from "../api/HealthCheckupApi";
 import ApointmentPopup from "../popup/ApointmentPopup";
 import roju from '../images/roju.png';
 import { NavLink } from "react-router-dom";
+
 const HealthCheckup = ({ apointPop, setApointPop }) => {
   const [health, setHealth] = useState(HealthCheckupApi);
 
   const allGender = [
-    ...new Set(HealthCheckupApi.map((CurrElem) => CurrElem.gender)),
+    ...new Set(HealthCheckupApi.map((CurrElem) => CurrElem.gender))
   ];
 
   const [genItem, setGenItem] = useState(allGender);
@@ -25,22 +26,22 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
     setHealth(newItem);
   };
 
-  const allLocation = [...new Set(HealthCheckupApi.map((CurrElem)=> CurrElem.location))];
+  const allLocation = [...new Set(HealthCheckupApi.map((CurrElem) => CurrElem.location))];
 
-  const [locationItem,setLocationItem] = useState(allLocation);
-  
-  const filterItem1 = (cate) =>{
-      if(cate === "all"){
-        setHealth(HealthCheckupApi);
-        return;
-      }
+  const [locationItem, setLocationItem] = useState(allLocation);
 
-      const newItem1 = HealthCheckupApi.filter((curr)=>{
-          return curr.location === cate
-      });
+  const filterItem1 = (cate) => {
+    if (cate === "all") {
+      setHealth(HealthCheckupApi);
+      return;
+    }
 
-      setHealth(newItem1);
-  }
+    const newItem1 = HealthCheckupApi.filter((curr) => {
+      return curr.location === cate
+    });
+
+    setHealth(newItem1);
+  };
 
   return (
     <>
@@ -49,32 +50,32 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
           <h2>Preventive Health - Checkup</h2>
         </div>
       </div>
-      
+
       <div className="filter-group flex items-center py-6">
         <div className="inps-group">
           <div className="second-nsp second-nsp1 flex items-center">
             <label for="underline_select" class="sr-only">
               Underline select
             </label>
-            <select onChange={(e)=> filterItem1(e.target.value)} id="underline_select" class="block py-2  pyo">
+            <select onChange={(e) => filterItem1(e.target.value)} id="underline_select" class="block py-2  pyo">
               <option value="all">Select Location</option>
-               {
-                locationItem.map((val,index)=>{
-                    return <option key={index} value={val}>{val}</option>
+              {
+                locationItem.map((val, index) => {
+                  return <option key={index} value={val}>{val}</option>
                 })
-               }
+              }
             </select>
           </div>
         </div>
-       
+
         <div className="second-nsp second-nsp1 flex items-center">
           <label for="underline_select" class="sr-only">
             Underline select
           </label>
-          <select onChange={(event)=> filterItem(event.target.value)} id="underline_select" class="block py-2  pyo">
+          <select onChange={(event) => filterItem(event.target.value)} id="underline_select" class="block py-2  pyo">
             <option value="all1">Select Gender</option>
             {
-              genItem.map((val,index)=>{
+              genItem.map((val, index) => {
                 return <option key={index} value={val}>{val}</option>
               })
             }
@@ -101,18 +102,20 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
                       <p>{val.range}</p>
                       {/* <p>{val.willness}</p> */}
                     </div>
-                     <div className="paisa-btn flex items-center justify-between">
-                        <div className="paisa-logo flex items-center">
-                           <img width={13} height={13} src={roju} alt="roju" />
-                           <p className="ml-1">{val.dis}</p>
-                        </div>
-                        <div className="paisa-logo flex items-center">
-                           <img width={13} height={13} src={roju} alt="roju" />
-                           <p className="ml-1">{val.dis1}</p>
-                        </div>
-                     </div>
+                    <div className="paisa-btn flex items-center justify-between">
+                      <div className="paisa-logo flex items-center">
+                        <img width={13} height={13} src={roju} alt="roju" />
+                        <p className="ml-1">{val.dis}</p>
+                      </div>
+                      <div className="paisa-logo flex items-center">
+                        <img width={13} height={13} src={roju} alt="roju" />
+                        <p className="ml-1">{val.dis1}</p>
+                      </div>
+                    </div>
                     <div className="health-btn">
-                     <NavLink to={`/health/${val.id}`}><button className="know_more">{val.know}</button></NavLink>
+                      <NavLink to={`/health/${val.id}`}>
+                        <button className="know_more">{val.know}</button>
+                      </NavLink>
                       <button
                         onClick={() => setApointPop(true)}
                         className="book_more"
@@ -125,104 +128,7 @@ const HealthCheckup = ({ apointPop, setApointPop }) => {
               </React.Fragment>
             );
           })}
-          {/* <div className="health-box">
-                         <div className="off">
-                              <p>20% <br /> OFF</p>
-                         </div>
-                           <img src={shut3} alt="shut2" />
-                           <div className="health-sox">
-                           <h2>Advanced Health Checkup</h2>
-                           <div className="para-he">
-                           <p>A range of tests recommended for your</p>
-                           <p>complete wellness.</p>
-                           </div>
-                           <div className="health-btn">
-                              <button className='know_more'>Know More</button>
-                              <button className='book_more'>Book</button>
-                           </div>
-                           </div>
-                     </div>
-
-                     <div className="health-box">
-                           <img src={shut1} alt="shut2" />
-                           <div className="health-sox">
-                           <h2>Advanced Health Checkup</h2>
-                           <div className="para-he">
-                           <p>A range of tests recommended for your</p>
-                           <p>complete wellness.</p>
-                           </div>
-                           <div className="health-btn">
-                              <button className='know_more'>Know More</button>
-                              <button className='book_more'>Book</button>
-                           </div>
-                           </div>
-                     </div>
-
-                     <div className="health-box">
-                           <img src={shut2} alt="shut2" />
-                           <div className="health-sox">
-                           <h2>Advanced Health Checkup</h2>
-                           <div className="para-he">
-                           <p>A range of tests recommended for your</p>
-                           <p>complete wellness.</p>
-                           </div>
-                           <div className="health-btn">
-                              <button className='know_more'>Know More</button>
-                              <button className='book_more'>Book</button>
-                           </div>
-                           </div>
-                     </div> */}
         </div>
-
-        {/* <div className="health-sard mt-9">
-                     <div className="health-box">
-                         <div className="off">
-                              <p>20% <br /> OFF</p>
-                         </div>
-                           <img src={shut3} alt="shut2" />
-                           <div className="health-sox">
-                           <h2>Advanced Health Checkup</h2>
-                           <div className="para-he">
-                           <p>A range of tests recommended for your</p>
-                           <p>complete wellness.</p>
-                           </div>
-                           <div className="health-btn">
-                              <button className='know_more'>Know More</button>
-                              <button className='book_more'>Book</button>
-                           </div>
-                           </div>
-                     </div>
-
-                     <div className="health-box">
-                           <img src={shut1} alt="shut2" />
-                           <div className="health-sox">
-                           <h2>Advanced Health Checkup</h2>
-                           <div className="para-he">
-                           <p>A range of tests recommended for your</p>
-                           <p>complete wellness.</p>
-                           </div>
-                           <div className="health-btn">
-                              <button className='know_more'>Know More</button>
-                              <button className='book_more'>Book</button>
-                           </div>
-                           </div>
-                     </div>
-
-                     <div className="health-box">
-                           <img src={shut2} alt="shut2" />
-                           <div className="health-sox">
-                           <h2>Advanced Health Checkup</h2>
-                           <div className="para-he">
-                           <p>A range of tests recommended for your</p>
-                           <p>complete wellness.</p>
-                           </div>
-                           <div className="health-btn">
-                              <button className='know_more'>Know More</button>
-                              <button className='book_more'>Book</button>
-                           </div>
-                           </div>
-                     </div>
-                 </div> */}
       </div>
 
       {apointPop && <ApointmentPopup setApointPop={setApointPop} />}
