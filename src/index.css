@@ -3124,7 +3124,12 @@ input[type=date]:focus::-webkit-datetime-edit {
     padding: 60px 30px;
     margin-top: 160px;
   }
- 
+  .health-details-back{
+    margin: 0 30px ;
+  }
+  .halth-detail{
+    padding: 40px 30px;
+  }
   .aruniti{
     padding: 30px 30px !important;
   }
@@ -3309,6 +3314,18 @@ input[type=date]:focus::-webkit-datetime-edit {
     padding: 40px 30px;
   }
 }
+
+@media only screen and (max-width:668px){
+  .halth-detail p{
+    font-size: 10px;
+  }
+  .halth-detail{
+    padding: 40px 10px;
+  }
+  .health-details-back{
+    margin: 0 10px !important;
+  }
+}
 @media only screen and (max-width:1023px){
   .card-details{
     flex-direction: column;
@@ -3353,6 +3370,9 @@ input[type=date]:focus::-webkit-datetime-edit {
 @media only screen and (max-width:972px){
   .first-word img{
     height: 400px;
+  }
+  .health-details-back{
+    margin-top: 224px !important;
   }
   .margin-top{
     margin-top: 224px !important;
@@ -3892,6 +3912,15 @@ input[type=date]:focus::-webkit-datetime-edit {
   /* ==============changes=============== */
   .ytment{
     margin: 0 20px;
+  }
+  .halth-detail{
+    justify-content: space-between !important;
+  }
+  .health-det-sect h2{
+    line-height: 55px;
+  }
+  .health-details-back{
+    margin-top: 224px !important;
   }
   .all-section-disases{
     margin: 0px 20px !important;
@@ -4985,13 +5014,28 @@ input[type=date]:focus::-webkit-datetime-edit {
   .broucher img{
     width: 25px;
   }
+  .halth-detail p{
+    font-size: 9px;
+  }
   .broucher h3{
     font-size: 22px;
   }
+  .health-btn{
+    flex-direction: column;
+  }
+  .health-btn .book_more{
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+  }
 }
 
-@media only screen and (max-width:280px){
-
+@media only screen and (max-width:297px){
+  .health-details-back{
+    margin-top: 248px !important;
+  }
+  .health-det-sect h2{
+    font-size: 40px;
+  }
 }
 .card9{
   background-color: #FFFFFF;
@@ -4999,7 +5043,7 @@ input[type=date]:focus::-webkit-datetime-edit {
   border-radius: 25px;
 }
 .vid-pause{
-  filter: brightness(0.5);  
+  filter: brightness(0.8);  
 }
 .invert1{
   filter: invert(1) !important;

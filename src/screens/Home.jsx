@@ -17,13 +17,7 @@ import { SpecialistCard } from '../components/SpecialistCard'
 import { AppointmentForm } from '../components/AppointmentForm'
 
 
-// importing images
-import dr from '../images/dr.png'
-import dr1 from '../images/dr1.png'
-import dr2 from '../images/dr2.png'
-import dr3 from '../images/dr3.png'
 import vect from '../images/vect.png'
-import untar from '../images/untar.png'
 import testimonial from '../images/testimonial-img.png'
 import test01 from '../images/test01.png'
 import test02 from '../images/test02.png'
@@ -34,8 +28,8 @@ import test06 from '../images/test06.png'
 import test07 from '../images/test07.png'
 import test08 from '../images/test08.png'
 import test09 from '../images/test09.png'
-import women from '../images/women.png'
-import women1 from '../images/women1.png'
+// import women from '../images/women.png'
+// import women1 from '../images/women1.png'
 import patient_w from '../images/patient-story-w.png'
 import btn from '../images/btn.png'
 import blog01 from '../images/blog01.png'
@@ -43,10 +37,6 @@ import blog02 from '../images/blog02.png'
 import blog03 from '../images/blog03.png'
 import ApointmentPopup from '../popup/ApointmentPopup';
 import { Link, NavLink } from 'react-router-dom';
-import cardio3 from '../images/cardio3.png'
-import cardio4 from '../images/cardio4.png'
-import cardio5 from '../images/cardio5.png'
-
 const specialists = [
   {
     id: 1,
@@ -300,8 +290,8 @@ export const Home = ({ apointPop, setApointPop }) => {
                   <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z" />
                 </svg>
                 {/* <img src={women1} alt="women" /> */}
-                <video className='vid-pause'>
-                  <source src="/videos/vid1.mp4" type="video/mp4" />
+                <video  className='vid-pause'>
+                  <source  src="/videos/vid1.mp4" type="video/mp4" />
                 </video>
               </div>
             </SwiperSlide>
@@ -318,7 +308,7 @@ export const Home = ({ apointPop, setApointPop }) => {
                   <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z" />
                 </svg>
                 {/* <img src={women} alt="women1" /> */}
-                <video className='vid-pause'>
+                <video  className='vid-pause'>
                   <source src="/videos/vid1.mp4" type="video/mp4" />
                 </video>
               </div>
@@ -394,8 +384,20 @@ export const Home = ({ apointPop, setApointPop }) => {
           <SwiperSlide>
             <div className='patient-stories-section flex mx-[130px] items-center my-[80px] max-lg:mx-[50px] max-md:flex-col max-md:my-0'>
               <div className="wo-img relative w-[50%] max-md:w-[95%]">
-                <img className='imhk cursor-pointer' src={btn} alt="" />
-                <img src={patient_w} alt="women" />
+                <img className='imhk cursor-pointer' src={btn} alt="" onClick={(e)=>{
+                    handleVideo(e,true);
+                }} />
+                <svg xmlns="http://www.w3.org/2000/svg" onClick={(e) => {
+                  handleVideo(e, false);
+                }} width="54" height="54" fill="currentColor" className="hidden imhk cursor-pointer invert1 bi bi-pause-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z" />
+                </svg>
+                {/* <img src={women1} alt="women" /> */}
+                <video className='vid-pause'>
+                  <source src="/videos/vid1.mp4" type="video/mp4" />
+                </video>
+                {/* <img src={patient_w} alt="women" /> */}
                 <div className='swipe-left-btn absolute right-0 bottom-5 ' onClick={() => swiperRef1.current.slidePrev()}>
                   <FaAngleLeft />
                 </div>
@@ -414,8 +416,21 @@ export const Home = ({ apointPop, setApointPop }) => {
           <SwiperSlide>
             <div className='patient-stories-section flex mx-[130px] items-center my-[80px] max-lg:mx-[50px] max-md:flex-col max-md:my-0'>
               <div className="wo-img relative w-[50%] max-md:w-[95%]">
-                <img className='imhk cursor-pointer' src={btn} alt="" />
-                <img src={patient_w} alt="women" />
+                {/* <img className='imhk cursor-pointer' src={btn} alt="" />
+                <img src={patient_w} alt="women" /> */}
+                <img className='imhk cursor-pointer' src={btn} alt="" onClick={(e)=>{
+                    handleVideo(e,true);
+                }} />
+                <svg xmlns="http://www.w3.org/2000/svg" onClick={(e) => {
+                  handleVideo(e, false);
+                }} width="54" height="54" fill="currentColor" className="hidden imhk cursor-pointer invert1 bi bi-pause-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z" />
+                </svg>
+                {/* <img src={women1} alt="women" /> */}
+                <video className='vid-pause'>
+                  <source src="/videos/vid1.mp4" type="video/mp4" />
+                </video>
                 <div className='swipe-left-btn absolute right-0 bottom-5 ' onClick={() => swiperRef1.current.slidePrev()}>
                   <FaAngleLeft />
                 </div>
@@ -434,8 +449,21 @@ export const Home = ({ apointPop, setApointPop }) => {
           <SwiperSlide>
             <div className='patient-stories-section flex mx-[130px] items-center my-[80px] max-lg:mx-[50px] max-md:flex-col max-md:my-0'>
               <div className="wo-img relative w-[50%] max-md:w-[95%]">
-                <img className='imhk cursor-pointer' src={btn} alt="" />
-                <img src={patient_w} alt="women" />
+                {/* <img className='imhk cursor-pointer' src={btn} alt="" />
+                <img src={patient_w} alt="women" /> */}
+                <img className='imhk cursor-pointer' src={btn} alt="" onClick={(e)=>{
+                    handleVideo(e,true);
+                }} />
+                <svg xmlns="http://www.w3.org/2000/svg" onClick={(e) => {
+                  handleVideo(e, false);
+                }} width="54" height="54" fill="currentColor" className="hidden imhk cursor-pointer invert1 bi bi-pause-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z" />
+                </svg>
+                {/* <img src={women1} alt="women" /> */}
+                <video className='vid-pause'>
+                  <source src="/videos/vid1.mp4" type="video/mp4" />
+                </video>
                 <div className='swipe-left-btn absolute right-0 bottom-5 ' onClick={() => swiperRef1.current.slidePrev()}>
                   <FaAngleLeft />
                 </div>
@@ -454,8 +482,21 @@ export const Home = ({ apointPop, setApointPop }) => {
           <SwiperSlide>
             <div className='patient-stories-section flex mx-[130px] items-center my-[80px] max-lg:mx-[50px] max-md:flex-col max-md:my-0'>
               <div className="wo-img relative w-[50%] max-md:w-[95%]">
-                <img className='imhk cursor-pointer' src={btn} alt="" />
-                <img src={patient_w} alt="women" />
+                {/* <img className='imhk cursor-pointer' src={btn} alt="" />
+                <img src={patient_w} alt="women" /> */}
+                <img className='imhk cursor-pointer' src={btn} alt="" onClick={(e)=>{
+                    handleVideo(e,true);
+                }} />
+                <svg xmlns="http://www.w3.org/2000/svg" onClick={(e) => {
+                  handleVideo(e, false);
+                }} width="54" height="54" fill="currentColor" className="hidden imhk cursor-pointer invert1 bi bi-pause-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z" />
+                </svg>
+                {/* <img src={women1} alt="women" /> */}
+                <video className='vid-pause'>
+                  <source src="/videos/vid1.mp4" type="video/mp4" />
+                </video>
                 <div className='swipe-left-btn absolute right-0 bottom-5 ' onClick={() => swiperRef1.current.slidePrev()}>
                   <FaAngleLeft />
                 </div>

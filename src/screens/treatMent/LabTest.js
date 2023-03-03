@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import ApointmentPopup from '../../popup/ApointmentPopup';
 import HealthCheckupApi from '../../api/HealthCheckupApi';
+import { NavLink } from 'react-router-dom';
 const LabTest = ({apointPop,setApointPop}) => {
   const [health, setHealth] = useState(HealthCheckupApi);
   const filterBySearch = (event) => {
@@ -42,7 +43,7 @@ const LabTest = ({apointPop,setApointPop}) => {
             return (
               <React.Fragment key={index}>
                 <div className="health-box">
-                  <div className={`off ${val.off1}`}>
+                  <div className={`off`}>
                     <p>
                       {val.percentage} <br /> {val.percentage1}
                     </p>
@@ -55,7 +56,7 @@ const LabTest = ({apointPop,setApointPop}) => {
                       <p>{val.willness}</p>
                     </div>
                     <div className="health-btn">
-                      <button className="know_more">{val.know}</button>
+                     <NavLink to={`/health/${val.id}`}><button className="know_more">{val.know}</button></NavLink>
                       <button
                         onClick={() => setApointPop(true)}
                         className="book_more"
