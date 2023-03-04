@@ -13,8 +13,8 @@ const Iodology = () => {
         <div className="iodology-section">
             <div className="first-iodo">
                 <h2>Our Ideology</h2>
-                <h3>Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry</h3>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                {/* <h3>Lorem Ipsum is simply dummy text of the <br /> printing and typesetting industry</h3> */}
+                <p>Major Hospital in association with Centre of Diabetes and Allied sciences  believes in providing personalized and committed treatment services.Our vision is to provide pateint-centered health care where all the patient achieve their Best health and well-being, we keep ourselves educated and use innovative approaches to enhance health care services and strive to deliver quality health care.</p>
                <NavLink to="/contact"><button>Contact us</button></NavLink>
             </div>
             <div className="second-iodo">
