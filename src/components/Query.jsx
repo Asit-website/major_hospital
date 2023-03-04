@@ -8,6 +8,7 @@ const Query = ({appointPop,setApointPop}) => {
     const { q } = useParams();
     console.log(q);
     console.log(cardilogiApi);
+
     return (
         <>
             <div className='margin-top'>
@@ -58,7 +59,7 @@ const Query = ({appointPop,setApointPop}) => {
                     <div className="health-card health-card1">
                     <div className="flex flex-wrap items-center justify-center health-sard mt-1 health-sard3">
                         {HealthCheckupApi.map((val, index) => {
-                            if (val.advance.toLocaleLowerCase().includes(q.toLocaleLowerCase()) || val.range.toLocaleLowerCase().includes(q.toLocaleLowerCase()) || val.willness.toLocaleLowerCase().includes(q.toLocaleLowerCase()))
+                            if (val.advance.toLocaleLowerCase().includes(q.toLocaleLowerCase()) || val.range.toLocaleLowerCase().includes(q.toLocaleLowerCase()))
                                 return (
                                     <div key={index} className="health-box">
                                         <div className={`off ${val.off1}`}>
